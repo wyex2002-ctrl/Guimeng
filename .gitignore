@@ -1,0 +1,10 @@
+# Only reproducible working files; baseline archives and source bytecode stay tracked.
+__pycache__/
+*.py[cod]
+/native_work/
+/compile_work/
+/deliverables/
+/game_v177.res
+/module_*_v177.ljbc
+.pytest_cache/
+.venv/

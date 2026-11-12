@@ -1199,3 +1199,10 @@ UTF-8源码先转GBK，以官方LuaJIT2.0 b83bcba编译；保留source/line信�
 
 6. 维护与迁移
 先读本节，再看前版历史。python3 patch_v177.py --runtime /path/to/luajit；python3 test_v177.py --runtime /path/to/luajit；python3 package_v177.py。无runtime时patch使用已编译的.ljbc，test从附带官方源码构建LuaJIT。维护包含base_v176.zip、源码、字节码、脚本、测试及完整历史；玩家包独立发布，只含Lib/game.res、log/及累计编号玩家说明。日志仍直接写入游戏log目录，不产生log/log。
+
+
+四十五、v1.177 本地 Git + Codex 迁移接手（2026-11-13）
+本次只维护工程与环境兼容，不修改游戏规则。baseline-v1.177 指向 486159b9d6e53eed2a5d9313402936eafda9cae4，保留全部输入源码、字节码、基线包、依赖源码和累计历史。新增 AGENTS.md、PROJECT_STATUS.md 及精确临时文件忽略规则。
+Windows Python 3.13.15 可重建；脚本中文读取及 JSON 写入显式指定 UTF-8。打包默认输出改为工程内 deliverables，可用 --output 指定；维护包使用当前完整维护记录并纳入交接文档，避免丢失迁移记录。Windows 测试须指定官方 LuaJIT 2.0 --runtime；不再误调用 Linux make 默认路径。
+使用附带编译字节码重建成功：game.res 为2689762字节，SHA-256为18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f。静态资源与原型检查通过；原生回归因缺少 make/LuaJIT/C工具链未运行，随包 validation_v177.json 仍是云端历史结果，不代表本机通过。没有完整客户端测试，没有新实机杀怪日志，小怪声望不能当作彻底解决。
+具体环境结果、安装方法和后续命令见 PROJECT_STATUS.md。取得官方2.0运行时并完成正常/hot回归后再正式打包发布。本次未安装或覆盖实际游戏目录和存档。v1.175/v1.176启动修复、显式沙箱API和原保护持续保留；玩家包仍只含累计编号功能说明，日志直接写log，不产生log/log。

@@ -11,7 +11,7 @@ from patch_v177 import W,BASE,BASE_SHA,MENUS,STARTS
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--runtime');a=ap.parse_args()
  with zipfile.ZipFile(BASE) as z:before=z.read('Lib/game.res')
- after=(W/'game_v177.res').read_bytes();b=json.loads((W/'build_v177.json').read_text());assert hashlib.sha256(before).hexdigest()==BASE_SHA
+ after=(W/'game_v177.res').read_bytes();b=json.loads((W/'build_v177.json').read_text(encoding='utf-8'));assert hashlib.sha256(before).hexdigest()==BASE_SHA
  x,old=decode(before,range(2,86,2));y,new=decode(after,range(2,86,2));changes={int(k):v for k,v in b['changed_prototypes'].items()}
  assert x.protos[0].bc==y.protos[0].bc and before[-10:]==after[-10:]
  assert sorted(x.protos[0].nkgc-1-i for i,(u,v) in enumerate(zip(x.protos[0].kraw,y.protos[0].kraw)) if u!=v)==[12,14,22]
@@ -38,6 +38,8 @@ def main():
  work=W/'native_work';work.mkdir(exist_ok=True)
  if a.runtime:runtime=Path(a.runtime).resolve()
  else:
+  if os.name=='nt':
+   raise SystemExit('Structural checks passed; native regressions NOT run. On Windows build bundled LuaJIT 2.0 with src/msvcbuild.bat, then use --runtime PATH/luajit.exe; automatic make build requires Linux/WSL.')
   with tarfile.open(W/'LuaJIT-2.0-b83bcba.tar.gz') as z:z.extractall(work,filter='data')
   tmp=work/'tmp';tmp.mkdir(exist_ok=True)
   r=subprocess.run(['make','-j4'],cwd=work/'luajit20',env=os.environ|{'TMPDIR':str(tmp)},capture_output=True)
@@ -63,7 +65,7 @@ def main():
  d=new[22];(work/'spawn.ljbc').write_bytes(standalone(d,trees(d),3))
  runs=[]
  for name in ['systems_regression_v177.lua','reputation_regression_v177.lua']:
-  src=work/name;src.write_bytes((W/name).read_text().encode('gbk'))
+  src=work/name;src.write_bytes((W/name).read_text(encoding='utf-8').encode('gbk'))
   for mode in ['normal','hot']:
    r=subprocess.run([str(runtime),str(src),str(work),mode],capture_output=True,timeout=60)
    (work/(name+'.'+mode+'.stdout')).write_bytes(r.stdout);(work/(name+'.'+mode+'.stderr')).write_bytes(r.stderr)
@@ -80,5 +82,5 @@ def main():
    'actual death/currency/save/respawn; numeric-string compatibility and actual data protection wrapper; Sys-owned logging without global alias',
    'all other prototypes byte-identical, including recent startup fixes and original native protection'],
   'limitations':'Native LuaJIT2.0 with actual export/protection and callback bytecode, engine primitives mocked; no Windows client; no new live kill log to establish the remaining ordinary-reputation root cause.'}
- (W/'validation_v177.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='runs'},ensure_ascii=False,indent=2))
+ (W/'validation_v177.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n');print(json.dumps({k:v for k,v in result.items() if k!='runs'},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

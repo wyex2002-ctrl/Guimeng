@@ -16,7 +16,7 @@ def compile_source(runtime):
  tmp=W/'compile_work';tmp.mkdir(exist_ok=True);compiler=tmp/'compile.lua'
  compiler.write_text('local f=assert(io.open(arg[2],"wb"));f:write(string.dump(assert(loadfile(arg[1]))));f:close()')
  for name in ['daily_double_v177','activate_double_v177','kill_reputation_v177']:
-  src=tmp/(name+'_gbk.lua');src.write_bytes((W/(name+'.lua')).read_text().encode('gbk'))
+  src=tmp/(name+'_gbk.lua');src.write_bytes((W/(name+'.lua')).read_text(encoding='utf-8').encode('gbk'))
   subprocess.run([str(runtime),str(compiler),str(src),str(W/(name+'.ljbc'))],check=True)
 
 def equipment(d):
@@ -97,7 +97,7 @@ def build():
   'daily_seconds':{'normal':7200,'active_premium':14400,'cap':86400,'same_day_premium_topup':True},
   'double_activation':'already active shows live balance; no duplicate buff or repeated grant of same daily time',
   'reputation':'numeric-string compatibility; use actual Sys.__gm_diag_checkpoint_v159 receiver; 10% per eligible ordinary kill and Boss ceil(level/3) unchanged; client kill log required to establish remaining cause'}
- (W/'build_v177.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in result.items() if k!='generator_relocations'},ensure_ascii=False,indent=2))
+ (W/'build_v177.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n');print(json.dumps({k:v for k,v in result.items() if k!='generator_relocations'},ensure_ascii=False,indent=2))
 if __name__=='__main__':
  ap=argparse.ArgumentParser();ap.add_argument('--runtime');a=ap.parse_args()
  if a.runtime:compile_source(Path(a.runtime).resolve())
