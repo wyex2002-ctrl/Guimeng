@@ -1,0 +1,15 @@
+{
+  "resource_sha256": "5bb07bec86dacd418cc8f5968f5403dd281807590f091e756647cad8ffa1115c",
+  "files": [
+    {
+      "file": "guimeng-v1.178-diagnostics.zip",
+      "bytes": 2700705,
+      "sha256": "8448c10bff57ab229e6bf81d9c69f7d4c51242d460ddb01aee14c7a0bd5e7895"
+    },
+    {
+      "file": "guimeng-v1.178-maintenance.zip",
+      "bytes": 3778204,
+      "sha256": "2462030cdffdc3f9529507eade3f97bc2794545ca8fe53fc152946bbf69c757e"
+    }
+  ]
+}
