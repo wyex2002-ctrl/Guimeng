@@ -34,6 +34,8 @@
     "docs/修改记录_维护版.txt",
     "docs/迁移与验证历史.md",
     "maintenance/LuaJIT-2.0-b83bcba.tar.gz",
+    "maintenance/accuracy_v180.ljbc",
+    "maintenance/accuracy_v180.lua",
     "maintenance/activate_double_v177.ljbc",
     "maintenance/activate_double_v177.lua",
     "maintenance/attach_diagnostics_v179.ljbc",
@@ -45,6 +47,7 @@
     "maintenance/diagnostics_regression_v179.lua",
     "maintenance/diagnostics_v179.ljbc",
     "maintenance/diagnostics_v179.lua",
+    "maintenance/gameplay_regression_v180.lua",
     "maintenance/kill_reputation_v177.ljbc",
     "maintenance/kill_reputation_v177.lua",
     "maintenance/kill_reputation_v179.ljbc",
@@ -54,20 +57,25 @@
     "maintenance/manifest.json",
     "maintenance/native_test_utils.py",
     "maintenance/package_v179.py",
+    "maintenance/package_v180.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
+    "maintenance/patch_v180.py",
     "maintenance/player_changes_v177.json",
+    "maintenance/player_changes_v180.json",
     "maintenance/reputation_regression_v177.lua",
     "maintenance/reputation_regression_v179.lua",
     "maintenance/resource_tools.py",
     "maintenance/runtime.py",
+    "maintenance/sync_policy.json",
     "maintenance/systems_regression_v177.lua",
     "maintenance/test_v177.py",
-    "maintenance/test_v179.py"
+    "maintenance/test_v179.py",
+    "maintenance/test_v180.py"
   ],
   "generated_reports": [
-    "maintenance/build_v179.json",
-    "maintenance/validation_v179.json"
+    "maintenance/build_v180.json",
+    "maintenance/validation_v180.json"
   ]
 }

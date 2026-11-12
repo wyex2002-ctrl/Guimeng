@@ -1,13 +1,13 @@
 # 归梦维护约定
 
-当前版本 v1.179。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节和第四十九节；历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.180。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节和第四十九节；历史冲突以最新节为准，版本尾数按整数比较。
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v179.py`、`python3 maintenance/test_v179.py`、`python3 maintenance/package_v179.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v180.py`、`python3 maintenance/test_v180.py`、`python3 maintenance/package_v180.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
-- v177 构建与测试是 v179 的直接依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- v177 与 v179 构建/测试是 v180 的直接依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
@@ -25,3 +25,7 @@
 玩家说明保留累计编号功能，不写详细版本历史或概率。日志直接写游戏 log，不产生 log/log。没有完整 Windows 客户端实测，不得把受控回归称为客户端验证；小怪声望效果仍须新版实机日志确认。
 
 补丁命名采用 `归梦v2.26_魔改补丁_v1.xxx.zip`。下载文件集中在 `downloads` 分支；main 保存维护工程。不要覆盖真实游戏目录或存档；native_work、compile_work 仅用于工程验证。
+
+## 同步频率
+
+用户要求：维护源码每三个版本同步一次GitHub（上次v1.179，下次v1.182；当前v1.180为1/3），补丁下载分支每版更新。本地每版保留提交和完整维护包，不能每次生成补丁就推送main。进度记录在maintenance/sync_policy.json。
