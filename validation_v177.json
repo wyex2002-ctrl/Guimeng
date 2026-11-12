@@ -1,0 +1,46 @@
+{
+  "version": "v1.177",
+  "all_passed": true,
+  "sha256": "18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f",
+  "bytes": 2689762,
+  "native_luajit_run": true,
+  "full_windows_game_run": false,
+  "reputation_remaining_client_cause_unconfirmed": true,
+  "runs": [
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "normal",
+      "output": "DAILY_AND_BUFF_PASS\tnormal\t4331\nAFFIX_PASS\tnormal\t118638\nPASS\tnormal\t118638\n"
+    },
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "hot",
+      "output": "DAILY_AND_BUFF_PASS\thot\t4331\nAFFIX_PASS\thot\t118638\nPASS\thot\t118638\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "normal",
+      "output": "REPUTATION_PASS\tnormal\t145810\nPASS\tnormal\t145810\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "hot",
+      "output": "REPUTATION_PASS\thot\t145810\nPASS\thot\t145810\n"
+    }
+  ],
+  "checks": [
+    "daily 2h/active-membership4h, actual buff membership flag, same-day topup from old marker, toggling/reload/dedupe/cap/next day",
+    "all seven actual menus and activation closures preserve owner and display active balance without duplicate buff",
+    "actual original shared-balance buff tick consumes time; new DB globals limited to original exports under actual sandbox protection",
+    "actual rarity generation 10 slots x 3..7 affixes x250: critical/penetration occur on all five allowed slots and nowhere else; clothes/shoes have no attack elements",
+    "actual death/currency/save/respawn; numeric-string compatibility and actual data protection wrapper; Sys-owned logging without global alias",
+    "all other prototypes byte-identical, including recent startup fixes and original native protection"
+  ],
+  "limitations": "Native LuaJIT2.0 with actual export/protection and callback bytecode, engine primitives mocked; no Windows client; no new live kill log to establish the remaining ordinary-reputation root cause.",
+  "clean_maintenance_rebuild": {
+    "clean_maintenance_rebuild": true,
+    "recompiled_sources": true,
+    "sha256": "18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f",
+    "bytes": 2689762
+  }
+}
