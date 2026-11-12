@@ -1,0 +1,39 @@
+{
+  "version": "v1.179",
+  "all_passed": true,
+  "sha256": "2e6f04d2bcdd97e3c50b457cce58238d576df689c4032fb2dfc138f8648d842c",
+  "bytes": 2697268,
+  "diagnostics_runs": [
+    "DIAGNOSTICS_PASS\tnormal\t24\n",
+    "DIAGNOSTICS_PASS\thot\t24\n",
+    "REPUTATION_PASS\tnormal\t146936\nPASS\tnormal\t146936\n",
+    "REPUTATION_PASS\thot\t146936\nPASS\thot\t146936\n",
+    "PUBLIC_INTEGRATION_PASS\tnormal\t10\n",
+    "PUBLIC_INTEGRATION_PASS\thot\t10\n"
+  ],
+  "gameplay_regressions": [
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "normal",
+      "output": "DAILY_AND_BUFF_PASS\tnormal\t4331\nAFFIX_PASS\tnormal\t118638\nPASS\tnormal\t118638\n"
+    },
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "hot",
+      "output": "DAILY_AND_BUFF_PASS\thot\t4331\nAFFIX_PASS\thot\t118638\nPASS\thot\t118638\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "normal",
+      "output": "REPUTATION_PASS\tnormal\t145810\nPASS\tnormal\t145810\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "hot",
+      "output": "REPUTATION_PASS\thot\t145810\nPASS\thot\t145810\n"
+    }
+  ],
+  "public_sys_interface_tested": true,
+  "full_windows_game_run": false,
+  "validated_utc": "2026-11-12T23:04:25.182708+00:00"
+}

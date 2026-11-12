@@ -8,3 +8,9 @@ __pycache__/
 /module_*_v177.ljbc
 .pytest_cache/
 .venv/
+
+/game_v178.res
+/module_*_v178.ljbc
+
+/game_v179.res
+/module_*_v179.ljbc

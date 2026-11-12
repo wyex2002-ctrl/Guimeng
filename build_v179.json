@@ -1,0 +1,22 @@
+{
+  "version": "v1.179",
+  "base_sha256": "18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f",
+  "sha256": "2e6f04d2bcdd97e3c50b457cce58238d576df689c4032fb2dfc138f8648d842c",
+  "bytes": 2697268,
+  "added_prototypes": 24,
+  "added_event_prototypes": 2,
+  "changed_original_prototypes": {
+    "14": [
+      632,
+      645
+    ],
+    "22": [
+      60,
+      61,
+      62,
+      63,
+      109
+    ]
+  },
+  "reward_rules_changed": false
+}

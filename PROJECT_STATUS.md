@@ -1,5 +1,46 @@
 # 当前状态（2026-11-13，Asia/Shanghai）
 
+## v1.179 小怪声望公开接口修复与日志接入修正（2026-11-13，Asia/Shanghai）
+
+已收到v1.178四份新版实机日志，用户确认Boss有声望、小怪无声望。关键日志只有启动/读档，没有hooks.ready；diagnostics.ready的class=nil，hooks=true仅表示pcall未报错，并不代表钩子生效。错误日志为信息按钮调用结束游戏的forced.script.exit，不能据此断言声望函数报错。
+
+对照原module14/constructor648与只读包装proto13，客户端公开Sys仅导出run/game_start/add/get，无法直接访问内部Hero、script_setting或诊断字段。原get/proto416明确支持hero、obj、__gm_diag_checkpoint_v159。旧测试把内部Sys对象提供给事件环境，未覆盖该隔离边界，导致缺陷漏检。使用实际原公开包装字节码复现：21级人物、7级小怪旧版在随机判定前停止；Boss仍可入账。
+
+v1.179：声望日志通过Sys.get('__gm_diag_checkpoint_v159')获取；人物实时等级通过Sys.get('hero').属性.等级获取；召唤物归属使用Sys.get('obj',id)。随机数接口不依赖不可见的script_setting：原Gly取随机数（module14/proto90）直接调用引擎:取随机整数，现使用同一个引擎整数API和参数约定，未改概率或奖励规则。保留会员双倍、装备词条、死亡每生命一次、待入账队列、原声望货币API以及启动和数据库沙箱保护。
+
+日志安装不再依赖安装器环境中的类_事件。事件模块实际注册完类后，通过已公开的诊断函数发送类对象，安装器接收后挂接死亡/伤害/事件回调，记录hooks.ready。此专用接入消息不进入原历史logger。降低读档物品恢复对关键日志的冲刷；保留读档里程碑、声望、死亡、错误及退出信息。修正错误文件内残留v1.105标记为当前v1.179。不会向数据库沙箱补齐pcall/xpcall，不新增DB全局。
+
+正常/hot验证：公开Sys接口声望回归各146936项断言，包含旧版失败/Boss正常的复现、截图等级、真实引擎RNG调用约定、概率分箱、归属、阈值、存档、队列、重复死亡及保护代理。诊断回归各24项，真实事件模块注册+只读Sys/getter+隔离的安装器集成回归各10项；原系统正常/hot各118638项及原基线回归通过。非目标原型、资源结构、跳转与常量范围检查通过。实际客户端/引擎原语尚需Windows复测，不能把受控回归称为完整实机修复已确认。
+
+构建：python3 patch_v179.py（直接使用附带编译字节码）；可加--runtime官方LuaJIT2.0绝对路径重编译三组v179源。测试：python3 test_v179.py --runtime官方LuaJIT2.0绝对路径。打包：python3 package_v179.py。保留所有v177输入及工具，维护包默认无运行时二进制，使用同梱官方2.0源码构建；不使用普通Lua或2.1。
+
+玩家补丁命名：归梦v2.26_魔改补丁_v1.179.zip。退出游戏并备份存档、原Lib/game.res后覆盖。本轮未覆盖实际游戏目录。重新击杀后查看声望，并提供detail/critical/run/error日志；预期关键日志出现hooks.ready、death.enter、reputation.v179及award或具体skip原因。无需删除存档或重开角色。
+
+当前资源：2697268字节；SHA-256：2e6f04d2bcdd97e3c50b457cce58238d576df689c4032fb2dfc138f8648d842c。
+
+
+## v1.178 诊断增强（2026-11-13，Asia/Shanghai）
+
+本轮收到 v1.177 实机日志、实际 game.res 和截图：资源哈希符合 v1.177；21级人物击杀7级多钩猫符合等级门槛，但旧实机日志无声望结算记录，具体原因未确认。按用户要求仅增强日志，不改变声望概率、奖励、等级条件或其他游戏规则。
+
+新增 diagnostics_v178.lua 及官方 LuaJIT 2.0 编译字节码。基于原 v1.177 确定性重建，只扩展 module14 原诊断安装器645并插入其新子函数；所有原游戏逻辑原型逐字节保持一致。没有向数据库沙箱加入 pcall/xpcall 或新增数据库全局。
+
+日志直接使用原生文件 API 的 Log/ 路径（引擎映射到游戏 log），不叠加 log/log：
+- guimeng_detail_latest.txt：最多512条，记录抽样脚本调用、前5次/每100次受伤及潜在致死伤害、死亡入口/返回、死亡回调、声望各阶段与异常。
+- guimeng_critical_latest.txt：独立保留最多256条关键记录，普通攻击流量不挤掉死亡/声望/错误记录。
+- 启动时各保留一份 *_previous.txt。旧 guimeng_run_latest.txt 和 guimeng_error_latest.txt 继续保留。新增日志使用 GBK，与游戏字符串一致。
+- 上下文含递增序号、时间、state/script、对象id/名称/阵营/hp/等级/BOSS/主人/已结算标记、攻击者/击杀者、实时人物等级。声望日志沿用原 entry/skip/roll/award/defer/error 信息。异常含受保护采集的堆栈，消息限长1200字符。
+- 日志读写异常被隔离；包装器保留参数、含nil的多返回值及原错误对象。类未加载时在后续脚本调用尝试安装钩子，并记录 hooks.ready。首次安装记录 diagnostics.ready，便于确认是否安装成功。
+
+构建：python3 patch_v178.py（使用随附已编译字节码）；源码重编译可加 --runtime /绝对路径/官方luajit。测试：python3 test_v178.py --runtime /绝对路径/官方luajit。打包：python3 package_v178.py。使用同梱官方 LuaJIT 2.0，未用2.1替代。
+
+本轮验证：正常/hot诊断回归各24项，正常/hot实际声望入口与新日志钩子集成回归各10项；v1.177系统正常/hot各118638项、声望正常/hot各145810项断言通过。结构、跳转、常量及非目标原型一致性通过。模拟磁盘写失败、重启轮换、普通流量冲刷、延迟加载、错误传播与nil返回均覆盖。实际客户端运行性能和兼容性仍需Windows验证。
+
+安装前退出游戏并备份存档和原资源。复现小怪击杀后退出，提供 log/guimeng_detail_latest.txt、guimeng_critical_latest.txt、guimeng_run_latest.txt 及 guimeng_error_latest.txt（若有）；若已重启则同时提供 previous。此次是诊断版，不宣称小怪声望故障已修复，也没有完整Windows客户端实测。
+
+当前资源：2695914字节；SHA-256：5bb07bec86dacd418cc8f5968f5403dd281807590f091e756647cad8ffa1115c。
+
+
 ## 已发布云环境本轮独立接手验证（2026-11-13，Asia/Shanghai）
 
 本节是最新状态；下方“历史迁移记录”描述此前 Windows 机器，不代表当前云环境缺少工具。用户已发布云环境，本轮在发布后恢复的实例重新执行验证，未修改游戏规则、源码、输入字节码或依赖。
