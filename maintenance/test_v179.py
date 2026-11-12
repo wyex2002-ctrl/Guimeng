@@ -4,6 +4,7 @@ from resource_tools import decode
 from native_test_utils import trees,standalone
 from ljdis import OPS
 from bytecode_relocate import BRANCHES
+from runtime import ensure_runtime
 W=Path(__file__).resolve().parent
 
 def main(runtime):
@@ -78,4 +79,4 @@ print('PUBLIC_INTEGRATION_PASS',mode,count)
  result={'version':'v1.179','all_passed':True,'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'diagnostics_runs':runs,'gameplay_regressions':json.loads((base/'validation_v177.json').read_text())['runs'],'public_sys_interface_tested':True,'full_windows_game_run':False}
  (W/'validation_v179.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':
- a=argparse.ArgumentParser();a.add_argument('--runtime',required=True);main(a.parse_args().runtime)
+ a=argparse.ArgumentParser();a.add_argument('--runtime');args=a.parse_args();main(str(Path(args.runtime).resolve()) if args.runtime else str(ensure_runtime()))

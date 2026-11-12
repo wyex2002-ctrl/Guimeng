@@ -1,16 +1,11 @@
-# Only reproducible working files; baseline archives and source bytecode stay tracked.
 __pycache__/
 *.py[cod]
-/native_work/
-/compile_work/
-/deliverables/
-/game_v177.res
-/module_*_v177.ljbc
 .pytest_cache/
 .venv/
-
-/game_v178.res
-/module_*_v178.ljbc
-
-/game_v179.res
-/module_*_v179.ljbc
+/maintenance/native_work/
+/maintenance/compile_work/
+/maintenance/deliverables/
+/maintenance/game_*.res
+/maintenance/module_*.ljbc
+/maintenance/build_v*.json
+/maintenance/validation_v*.json

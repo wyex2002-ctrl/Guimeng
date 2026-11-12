@@ -1,40 +1,27 @@
-# 归梦维护工程接手约定
+# 归梦维护约定
 
-维护基线为《归梦 v2.26》魔改 v1.177；Git 标签 `baseline-v1.177` 是云端维护工程导入快照。先读 README.txt、PROJECT_STATUS.md、修改记录_维护版.txt 开头及第四十四节，再改动。历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.179。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节和第四十九节；历史冲突以最新节为准，版本尾数按整数比较。
 
-## 结构与必须保留的文件
+## 工程与输入
 
-- `base_v176.zip`：重建输入，内含上一版玩家资源，不能删除或替换。
-- 三组 `*_v177.lua` / 同名 `.ljbc`：UTF-8 源码与官方 LuaJIT 2.0 编译字节码均须保留；默认重建直接依赖字节码。
-- `patch_v177.py`、`test_v177.py`、`package_v177.py`：构建、回归、打包入口。
-- `ljtool.py`、`ljdis.py`、`patch_v139.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py`：必要底层工具；旧版本号不表示可删。
-- `systems_regression_v177.lua`、`reputation_regression_v177.lua`：实际字节码回归。
-- `LuaJIT-2.0-b83bcba.tar.gz`：官方依赖源码；不可换成 LuaJIT 2.1 或普通 Lua。
-- `build_v177.json`、`validation_v177.json`：构建与历史验证记录；后者随包原件不代表本机测试通过。
-- `修改记录_维护版.txt`、`history_through_v176.txt`、`maintenance_notes_v177.txt`、`player_changes_v177.json`：完整历史、当前节与玩家累计功能来源。
+- 在仓库根目录运行 `python3 maintenance/patch_v179.py`、`python3 maintenance/test_v179.py`、`python3 maintenance/package_v179.py`。Python 3.12+，仅依赖标准库。
+- 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
+- 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
+- v177 构建与测试是 v179 的直接依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
+- 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
-## 构建、测试、发布
+## 修改与验证
 
-在工程目录使用 Python 3.12+（依赖标准库；本机可用 `python`，勿依赖 Windows 的 python3 商店别名）。
+- 保留累计修改，尤其 v1.175 的 Ux 待应用难度、初始化顺序和原环境保护，以及 v1.176 的显式 API 导出修复。
+- 数据库沙箱不提供 pcall/xpcall；不得通过 `_G` 回退或手动补齐 API 掩盖错误。原生事件的 Sys 是只读公开接口，使用 `get` 读取 hero、obj 和诊断函数；测试必须覆盖此边界，不能只提供内部 Sys 对象。
+- 随机整数使用原 Gly 函数相同的引擎 API；不为绕过错误开放内部对象。
+- 每次修改同步当前状态和完整维护记录。改源码后使用官方运行时重编译，审查编译字节码及资源哈希。
+- 发布前执行重建、正常/hot 回归、资源结构和非目标原型一致性检查、ZIP 完整性和玩家资源哈希检查，并从维护包干净解压独立重建。
+- 更新 `maintenance/manifest.json` 中的文件清单，确保维护包包括所有必要输入和当前文档。不要把构建缓存、游戏目录或存档提交 Git。
 
-```powershell
-python patch_v177.py
-python test_v177.py --runtime C:/tools/luajit20/src/luajit.exe
-python package_v177.py
-```
+## 交付边界
 
-有官方运行时时可用 `python patch_v177.py --runtime <绝对路径>` 从源码重新编译，会重写三份受跟踪字节码，须审查差异与最终哈希。Linux/WSL 可用 `python3`；`test_v177.py` 不带 runtime 会解压依赖并调用 `make -j4`。Windows 自动 make 路径不适用，须显式指定已构建运行时。
+玩家说明保留累计编号功能，不写详细版本历史或概率。日志直接写游戏 log，不产生 log/log。没有完整 Windows 客户端实测，不得把受控回归称为客户端验证；小怪声望效果仍须新版实机日志确认。
 
-发布前先重建、核对目标哈希、完成正常及 hot 两模式回归，检查 validation 是本轮生成的，不能用随包云端结果冒充本机测试。默认包输出在工程 `deliverables/`，可用 `--output <目录>` 指定；不会安装游戏。玩家包 `归梦v2.26_魔改补丁_v1.177.zip` 仅含 `Lib/game.res`、`log/` 和玩家说明；维护包 `Guimeng_v1.177_maintenance.zip` 保留重建输入和迁移文档。验证 ZIP 完整性和玩家包资源哈希后才可对外发布。本次无原生运行时，不发布。
-
-## 长期边界
-
-保留全部累计修改，尤其 v1.175 的 Ux 待应用难度、初始化顺序与原环境保护，以及 v1.176 显式 API 导出修复。数据库沙箱没有 pcall/xpcall，不得用 `_G` 回退或普通 Lua 环境补齐这些 API 来掩盖问题。现有测试中其他引擎替身须按作用域审查。
-
-玩家说明仅保留累计编号功能，不写详细版本历史和概率；详细修改、测试和限制写入维护记录。日志直接写游戏 log，不能形成 log/log。小怪声望仍须新版实机杀怪日志，不能宣称彻底解决；受控原生回归也不等于完整客户端实测。
-
-每次修改同步 PROJECT_STATUS.md 和维护记录；维护包使用当前完整维护记录，避免打包丢失迁移追加内容。不要覆盖实际游戏目录或存档。native_work、compile_work、生成模块与资源仅用于工程验证，不可安装。
-
-## 当前维护版本 v1.179
-
-当前入口为 patch_v179.py、test_v179.py --runtime <官方LuaJIT2.0>、package_v179.py；保留全部v177输入。先读PROJECT_STATUS最新节和维护记录第四十九节。原生事件使用只读公开Sys，必须通过get读取hero、obj和诊断函数；禁止仅用内部Sys替身作为接口验证。随机整数使用与原Gly函数相同的引擎API，不能靠开放内部对象掩盖问题。
+补丁命名采用 `归梦v2.26_魔改补丁_v1.xxx.zip`。下载文件集中在 `downloads` 分支；main 保存维护工程。不要覆盖真实游戏目录或存档；native_work、compile_work 仅用于工程验证。

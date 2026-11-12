@@ -1272,3 +1272,8 @@ v1.179：声望日志通过Sys.get('__gm_diag_checkpoint_v159')获取；人物�
 玩家补丁命名：归梦v2.26_魔改补丁_v1.179.zip。退出游戏并备份存档、原Lib/game.res后覆盖。本轮未覆盖实际游戏目录。重新击杀后查看声望，并提供detail/critical/run/error日志；预期关键日志出现hooks.ready、death.enter、reputation.v179及award或具体skip原因。无需删除存档或重开角色。
 
 当前资源：2697268字节；SHA-256：2e6f04d2bcdd97e3c50b457cce58238d576df689c4032fb2dfc138f8648d842c。
+
+
+五十、维护仓库整理（2026-11-13）
+
+目录和入口迁移见根README.md，删除和恢复说明见docs/仓库整理记录.md。原资源与游戏规则保持v1.179不变；当前源码收录到main，下载统一到downloads分支。删除的两份历史文本已核对完整包含于本总记录；v177依赖与必要底层工具继续保留。归档报告只作历史证据。

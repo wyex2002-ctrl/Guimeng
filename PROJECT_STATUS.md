@@ -1,93 +1,15 @@
 # 当前状态（2026-11-13，Asia/Shanghai）
 
-## v1.179 小怪声望公开接口修复与日志接入修正（2026-11-13，Asia/Shanghai）
+当前维护版本 **v1.179**。本轮仅整理仓库结构和可复用开发入口，不改变游戏逻辑或补丁资源。
 
-已收到v1.178四份新版实机日志，用户确认Boss有声望、小怪无声望。关键日志只有启动/读档，没有hooks.ready；diagnostics.ready的class=nil，hooks=true仅表示pcall未报错，并不代表钩子生效。错误日志为信息按钮调用结束游戏的forced.script.exit，不能据此断言声望函数报错。
+- `main` 收录最新 v1.179 源码，工程文件移至 `maintenance/`，文档和历史报告移至 `docs/`。
+- 删除已被 v1.179 取代的 v1.178 实现、旧 v1.177 打包入口、被总维护记录完整包含的两份重复历史，以及过时 README.txt。
+- 保留当前重建直接依赖的 v1.177 构建/测试、底层工具、输入包、全部所需源/字节码和官方 LuaJIT 2.0 源码。
+- 历史状态在 `docs/迁移与验证历史.md`；旧路径仅作历史记录。整理前完整状态已存入 Git 提交 `0836616`。
+- 下载文件集中到 `downloads` 分支，旧下载分支通过 archive 标签保留后移除，历史下载提交可恢复。
 
-对照原module14/constructor648与只读包装proto13，客户端公开Sys仅导出run/game_start/add/get，无法直接访问内部Hero、script_setting或诊断字段。原get/proto416明确支持hero、obj、__gm_diag_checkpoint_v159。旧测试把内部Sys对象提供给事件环境，未覆盖该隔离边界，导致缺陷漏检。使用实际原公开包装字节码复现：21级人物、7级小怪旧版在随机判定前停止；Boss仍可入账。
+v1.179 修复小怪读取人物实时等级及随机数接口的问题，并修正死亡日志接入；详见维护记录第四十九节。奖励概率与数值未调整。
 
-v1.179：声望日志通过Sys.get('__gm_diag_checkpoint_v159')获取；人物实时等级通过Sys.get('hero').属性.等级获取；召唤物归属使用Sys.get('obj',id)。随机数接口不依赖不可见的script_setting：原Gly取随机数（module14/proto90）直接调用引擎:取随机整数，现使用同一个引擎整数API和参数约定，未改概率或奖励规则。保留会员双倍、装备词条、死亡每生命一次、待入账队列、原声望货币API以及启动和数据库沙箱保护。
+验证入口、运行依赖和日志采集见 README.md。完整 Windows 客户端未实测，小怪声望实机修复效果仍待新日志确认。
 
-日志安装不再依赖安装器环境中的类_事件。事件模块实际注册完类后，通过已公开的诊断函数发送类对象，安装器接收后挂接死亡/伤害/事件回调，记录hooks.ready。此专用接入消息不进入原历史logger。降低读档物品恢复对关键日志的冲刷；保留读档里程碑、声望、死亡、错误及退出信息。修正错误文件内残留v1.105标记为当前v1.179。不会向数据库沙箱补齐pcall/xpcall，不新增DB全局。
-
-正常/hot验证：公开Sys接口声望回归各146936项断言，包含旧版失败/Boss正常的复现、截图等级、真实引擎RNG调用约定、概率分箱、归属、阈值、存档、队列、重复死亡及保护代理。诊断回归各24项，真实事件模块注册+只读Sys/getter+隔离的安装器集成回归各10项；原系统正常/hot各118638项及原基线回归通过。非目标原型、资源结构、跳转与常量范围检查通过。实际客户端/引擎原语尚需Windows复测，不能把受控回归称为完整实机修复已确认。
-
-构建：python3 patch_v179.py（直接使用附带编译字节码）；可加--runtime官方LuaJIT2.0绝对路径重编译三组v179源。测试：python3 test_v179.py --runtime官方LuaJIT2.0绝对路径。打包：python3 package_v179.py。保留所有v177输入及工具，维护包默认无运行时二进制，使用同梱官方2.0源码构建；不使用普通Lua或2.1。
-
-玩家补丁命名：归梦v2.26_魔改补丁_v1.179.zip。退出游戏并备份存档、原Lib/game.res后覆盖。本轮未覆盖实际游戏目录。重新击杀后查看声望，并提供detail/critical/run/error日志；预期关键日志出现hooks.ready、death.enter、reputation.v179及award或具体skip原因。无需删除存档或重开角色。
-
-当前资源：2697268字节；SHA-256：2e6f04d2bcdd97e3c50b457cce58238d576df689c4032fb2dfc138f8648d842c。
-
-
-## v1.178 诊断增强（2026-11-13，Asia/Shanghai）
-
-本轮收到 v1.177 实机日志、实际 game.res 和截图：资源哈希符合 v1.177；21级人物击杀7级多钩猫符合等级门槛，但旧实机日志无声望结算记录，具体原因未确认。按用户要求仅增强日志，不改变声望概率、奖励、等级条件或其他游戏规则。
-
-新增 diagnostics_v178.lua 及官方 LuaJIT 2.0 编译字节码。基于原 v1.177 确定性重建，只扩展 module14 原诊断安装器645并插入其新子函数；所有原游戏逻辑原型逐字节保持一致。没有向数据库沙箱加入 pcall/xpcall 或新增数据库全局。
-
-日志直接使用原生文件 API 的 Log/ 路径（引擎映射到游戏 log），不叠加 log/log：
-- guimeng_detail_latest.txt：最多512条，记录抽样脚本调用、前5次/每100次受伤及潜在致死伤害、死亡入口/返回、死亡回调、声望各阶段与异常。
-- guimeng_critical_latest.txt：独立保留最多256条关键记录，普通攻击流量不挤掉死亡/声望/错误记录。
-- 启动时各保留一份 *_previous.txt。旧 guimeng_run_latest.txt 和 guimeng_error_latest.txt 继续保留。新增日志使用 GBK，与游戏字符串一致。
-- 上下文含递增序号、时间、state/script、对象id/名称/阵营/hp/等级/BOSS/主人/已结算标记、攻击者/击杀者、实时人物等级。声望日志沿用原 entry/skip/roll/award/defer/error 信息。异常含受保护采集的堆栈，消息限长1200字符。
-- 日志读写异常被隔离；包装器保留参数、含nil的多返回值及原错误对象。类未加载时在后续脚本调用尝试安装钩子，并记录 hooks.ready。首次安装记录 diagnostics.ready，便于确认是否安装成功。
-
-构建：python3 patch_v178.py（使用随附已编译字节码）；源码重编译可加 --runtime /绝对路径/官方luajit。测试：python3 test_v178.py --runtime /绝对路径/官方luajit。打包：python3 package_v178.py。使用同梱官方 LuaJIT 2.0，未用2.1替代。
-
-本轮验证：正常/hot诊断回归各24项，正常/hot实际声望入口与新日志钩子集成回归各10项；v1.177系统正常/hot各118638项、声望正常/hot各145810项断言通过。结构、跳转、常量及非目标原型一致性通过。模拟磁盘写失败、重启轮换、普通流量冲刷、延迟加载、错误传播与nil返回均覆盖。实际客户端运行性能和兼容性仍需Windows验证。
-
-安装前退出游戏并备份存档和原资源。复现小怪击杀后退出，提供 log/guimeng_detail_latest.txt、guimeng_critical_latest.txt、guimeng_run_latest.txt 及 guimeng_error_latest.txt（若有）；若已重启则同时提供 previous。此次是诊断版，不宣称小怪声望故障已修复，也没有完整Windows客户端实测。
-
-当前资源：2695914字节；SHA-256：5bb07bec86dacd418cc8f5968f5403dd281807590f091e756647cad8ffa1115c。
-
-
-## 已发布云环境本轮独立接手验证（2026-11-13，Asia/Shanghai）
-
-本节是最新状态；下方“历史迁移记录”描述此前 Windows 机器，不代表当前云环境缺少工具。用户已发布云环境，本轮在发布后恢复的实例重新执行验证，未修改游戏规则、源码、输入字节码或依赖。
-
-- 已读 AGENTS.md、README.txt、本状态文件及维护记录开头、第四十四节；全部跟踪输入已记录 SHA-256，见 verification_v177_20261113.json。
-- GitHub main 可获取，测试源提交为 5aa783dd9f1668e361433677ec35d0f72c95bff6；已 fetch baseline-v1.177，指向 486159b9d6e53eed2a5d9313402936eafda9cae4，未移动标签。
-- Python 3.12.14、GNU Make 4.4.1、GCC 14.2.0 可用；从附带 LuaJIT-2.0-b83bcba.tar.gz 全新解压并 make -j4 构建成功。运行时报告 LuaJIT 2.0.1794164847；未使用普通 Lua 或 LuaJIT 2.1。
-- python3 patch_v177.py 重建 2689762 字节，SHA-256 为 18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f，符合目标。
-- 删除旧 validation 后，使用刚构建运行时显式执行 test_v177.py --runtime；系统回归 normal/hot 各 118638 项，声望回归 normal/hot 各 145810 项断言，全通过；静态结构与模块加载检查通过。本轮 UTC 起止时间见 validation.current_run（北京时间为 2026-11-13）。
-- package_v177.py 成功；玩家包和维护包 ZIP CRC 检查通过，玩家包 Lib/game.res 大小、哈希与重建资源一致。维护包在另一个干净目录独立解压、重建，得到同一大小和哈希，且使用本轮官方运行时重新执行四组回归全部通过。默认重建使用附带字节码，没有重新编译三份 Lua 源码。
-- 更新记录后再次打包并检查最终维护包中的文档及 validation 与工作区一致，再从最终包独立重建核对资源。文件位于 deliverables/，仅提供本轮验证产物，没有创建 GitHub Release 或发布游戏补丁。
-
-复现步骤（已有独立运行时）：python3 patch_v177.py；python3 test_v177.py --runtime /绝对路径/luajit；python3 package_v177.py。全新运行时从附带源码解压构建；本轮日志和独立副本保存在 /workspace/guimeng-verification-20261113/。脚本会生成 build/validation；后续运行应审查差异，不使用随包历史结果替代测试。
-
-限制：没有完整 Windows 客户端实测，没有新版实机杀怪日志；引擎原语仍有替身，小怪声望问题不能宣称彻底解决。没有安装到实际游戏目录或覆盖存档。本轮 Git 提交仅记录验证与文档，不修改游戏规则。
-
-## 历史迁移记录（以下为此前机器的检查）
-
-
-## GitHub 与云端迁移进度
-
-公开仓库：https://github.com/wyex2002-ctrl/Guimeng 。本地 origin 已连接该仓库，main 跟踪 origin/main；初始导入与迁移文档提交已推送，baseline-v1.177 标签保持原提交。Git 推送在使用系统既有代理 127.0.0.1:7890 后成功，仅在命令中指定代理，未修改系统网络设置。
-
-GitHub 账号授权与仓库读写权限已确认。Codex 云端目前仅检测到 Default environment，保存的仓库列表仍为空；网页操作超时，因此尚未完成可复用云环境的关联/发布，不能宣称云端回归已通过。本地 main 与基线标签已在 GitHub，可由云任务克隆。
-
-用户在 Codex 的“Work in / 工作位置”选择 Cloud，创建环境时选择 wyex2002-ctrl/Guimeng。环境准备要求：Python 3.12+、make 和 C 编译器；使用随仓库官方 LuaJIT 2.0 b83bcba 源码，不安装替代的 2.1 运行时。先读 AGENTS.md，再执行 python3 patch_v177.py、python3 test_v177.py，核对资源大小及 SHA-256。静态和正常/hot 原生测试全部通过后更新本文件与维护记录，再保存并发布环境。没有必要上传实际游戏目录和存档。
-
-云端首次接手提示：克隆上述公开仓库，确认 baseline-v1.177 标签，接手 v1.177 维护工程；本轮只检查环境、重建和回归，不改游戏规则。保留 v1.175/v1.176 启动修复及数据库显式 API/保护约束。不要把历史 validation 当作本轮通过，不宣称小怪声望实机问题彻底解决。未跑完整 Windows 客户端。
-
-维护基线 v1.177；初始 Git 工作区干净。`baseline-v1.177` 指向导入提交 `486159b9d6e53eed2a5d9313402936eafda9cae4`，本次不移动标签，不修改游戏规则。
-
-已阅读 README、维护记录开头及第四十四节，并检查构建/测试/打包及底层工具。所有必要源码、三份输入编译字节码、基线包、官方依赖源码、历史记录保持跟踪。
-
-## 本次检查结果
-
-- Python 3.13.15 可用：`C:\Users\wyex2\AppData\Local\Programs\Python\Python313\python.exe`；标准库导入和实际重建可运行。系统默认文本编码 cp936，故脚本中文输入/JSON 输出改为显式 UTF-8。
-- `python3` 指向不可执行的 WindowsApps 别名；`py --list` 未识别安装。请使用 `python`。
-- PATH 未发现 `luajit`、`make`、`gcc`、`clang`、`cl`；常见 Visual Studio/MSYS2 目录未发现工具。WSL 报告未安装。尚未完成官方 LuaJIT 2.0 构建或源码再编译。
-- `python patch_v177.py` 使用附带字节码成功重建 `game_v177.res`：2689762 字节，SHA-256 `18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f`，完全符合目标。
-- `python test_v177.py` 的资源结构、差异原型、跳转/常量、显式导出及保留启动原型静态断言已执行通过；随后缺少 make，原生测试未执行。兼容调整后 Windows 会清晰报告须指定 runtime，而非尝试 Linux make。
-- `validation_v177.json` 保留云端历史结果，本次没有覆盖为通过；没有运行完整 Windows 客户端，没有新版实机杀怪日志。
-- 打包默认输出移到工程内 deliverables，并增加 --output；维护包包含交接文档及当前完整维护记录。暂未运行正式打包/发布，须先取得本轮原生回归结果。
-
-## 补齐工具及下一步
-
-方案 A：安装 Visual Studio Build Tools 的“使用 C++ 的桌面开发”（MSVC 和 Windows SDK）。在 Developer Command Prompt 内解压随包 `LuaJIT-2.0-b83bcba.tar.gz` 至 `native_work`，进入 `native_work\luajit20\src` 执行 `msvcbuild.bat`；随后用 `python test_v177.py --runtime <luajit.exe绝对路径>`。运行时及 lua51.dll 保持同目录。不要用 LuaJIT 2.1 的构建结果替代。
-
-方案 B：管理员安装 WSL（`wsl --install -d Ubuntu`，按提示重启）；Ubuntu 中安装 `sudo apt update`、`sudo apt install python3 build-essential`。在独立维护工程内运行 `python3 patch_v177.py`、`python3 test_v177.py`，脚本用随包源码 make 构建官方版本。本次未执行安装或声称上述工具已可用。
-
-运行正常/hot 全部回归并审查本轮 validation 后再打包；若从源码编译，额外核对编译字节码差异及最终资源哈希。下一次游戏规则维护仍需实机击杀日志 `log/guimeng_run_latest.txt`，以及独立的客户端验证。本次只操作维护工程。
+本轮目录迁移后重建与正常/hot回归通过，资源逐字节保持不变；同梱官方LuaJIT2.0在新缓存路径构建成功。维护包干净解压后的重建、正常/hot回归、再次打包及资源一致性全部通过。

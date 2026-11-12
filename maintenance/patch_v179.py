@@ -9,8 +9,8 @@ W=Path(__file__).resolve().parent
 
 def build(runtime=None):
  work=W/'compile_work'/'v179_base';work.mkdir(parents=True,exist_ok=True)
- for p in W.iterdir():
-  if p.is_file() and p.suffix in ('.py','.zip','.ljbc','.json','.lua','.txt','.gz'):shutil.copy2(p,work/p.name)
+ for name in json.loads((W/'manifest.json').read_text(encoding='utf-8'))['baseline_files']:
+  shutil.copy2(W/name,work/name)
  subprocess.run(['python3','patch_v177.py'],cwd=work,check=True,stdout=subprocess.DEVNULL)
  base=(work/'game_v177.res').read_bytes()
  assert hashlib.sha256(base).hexdigest()=='18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f'
