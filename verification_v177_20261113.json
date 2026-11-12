@@ -1,0 +1,71 @@
+{
+  "started_utc": "2026-11-12T22:05:06.107240+00:00",
+  "finished_utc": "2026-11-12T22:05:18.309381+00:00",
+  "source_commit": "5aa783dd9f1668e361433677ec35d0f72c95bff6",
+  "runtime": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "resource_bytes": 2689762,
+  "resource_sha256": "18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f",
+  "runs": [
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "normal",
+      "output": "DAILY_AND_BUFF_PASS\tnormal\t4331\nAFFIX_PASS\tnormal\t118638\nPASS\tnormal\t118638\n"
+    },
+    {
+      "fixture": "systems_regression_v177.lua",
+      "mode": "hot",
+      "output": "DAILY_AND_BUFF_PASS\thot\t4331\nAFFIX_PASS\thot\t118638\nPASS\thot\t118638\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "normal",
+      "output": "REPUTATION_PASS\tnormal\t145810\nPASS\tnormal\t145810\n"
+    },
+    {
+      "fixture": "reputation_regression_v177.lua",
+      "mode": "hot",
+      "output": "REPUTATION_PASS\thot\t145810\nPASS\thot\t145810\n"
+    }
+  ],
+  "independent_rebuild_passed": true,
+  "independent_test_passed": true,
+  "full_windows_game_run": false,
+  "new_live_kill_log": false,
+  "baseline_tag_commit": "486159b9d6e53eed2a5d9313402936eafda9cae4",
+  "toolchain": {
+    "python": "3.12.14",
+    "make": "4.4.1",
+    "gcc": "14.2.0"
+  },
+  "input_sha256": {
+    ".gitignore": "2a70d3a6b697f9697f87d9d77ef9469330e58610d5fb7067b223b52281ec3a30",
+    "AGENTS.md": "2ca1869974bb4b0050eef0e694abc26ff929faf5e0afab4aad568a3ed69d2a76",
+    "LuaJIT-2.0-b83bcba.tar.gz": "cd46377cf137076ad4bcf11f09295fa58466ce17fd73b8976debe323eeb94fe5",
+    "PROJECT_STATUS.md": "6a3e87e66b9ad4ac6955e9b1701bcdd4514e780378e84c231986fbfae80c90da",
+    "README.txt": "a488bd5254071365881f0f1f73fc74b2e2242b1132958f4cdf4a558042cb0a8a",
+    "activate_double_v177.ljbc": "651687bf9ede37c76d584fb1cdcfeb73665769fe03e3d2e6590421ee86da7a01",
+    "activate_double_v177.lua": "7525f06b85675aeba8cce1f1b79b178d85299e33fee7a31d25ed71053bdd84af",
+    "base_v176.zip": "d5377eda6f75374a7263a96badc7079f0f6341349c83f73ed83e2fd692eba139",
+    "build_v177.json": "e19b1ed97a82affa9b01c43c1fb5494f415eec9a38bf13516bddb048c63e2e1d",
+    "bytecode_relocate.py": "e191df7b71294e4546f2aff2b848ff7f6833b396e132f139230e18702808a579",
+    "daily_double_v177.ljbc": "75d471ebcbb90a2481d9b16799dd01192c0479aea5ed23a83af2146e1f9b73af",
+    "daily_double_v177.lua": "a8f5e05bd8c5ab5348edefe4234d188a8fc34501406ee5589057cd8b0bc7d709",
+    "history_through_v176.txt": "0534570bd209a7e5a6dc75373f9d30b153386350d1ea7ac6b38e11d1653e2c74",
+    "kill_reputation_v177.ljbc": "3af237b3dab80fcaef1f3becabda2fe7d6b40c842af857548552072107352a76",
+    "kill_reputation_v177.lua": "67c2fc4686f23a5ac20e3c2bc7bd60ce478f0131b8c9aac5b34a4c1f3695f505",
+    "ljdis.py": "659fbee42931799d82d619ca71add47073e2d5d3b219937d921af07f57929891",
+    "ljtool.py": "0ab91955d0d4d1106349a60c9158810418c580851f800eccecc57a96f6d962bc",
+    "maintenance_notes_v177.txt": "b294890ee3a831baae40545ebb3d998df02f9919a0360a329010cb316aefd93c",
+    "native_test_utils.py": "0ab3a7d0ff504f09223e4ac9da395a64f337641fde841d007e79e46a9a2622c2",
+    "package_v177.py": "1b2f141c4a2ece49f0183603831199f301e8de007f6dbed9f202f8be3f2d2a47",
+    "patch_v139.py": "9956c2c7ff79762da7e3a4345ec9f0dd0876dbada7d77571f908b3d565b68cf0",
+    "patch_v177.py": "b6b4c8f027b5e585593253ba72ae705fa44c2a0851aaa1d847e9ab6f2797e58c",
+    "player_changes_v177.json": "5610d20d36a291c7eae1f5a5a3b5ad80e2663513d0dc9c49c88d20bd17837ace",
+    "reputation_regression_v177.lua": "b09a976ffe40861c4f51139421369b027f9a16a9411c4c174d38ec8b02fa0bcf",
+    "resource_tools.py": "a5df48cfdb2fc832177b08df0351ee7b2b88e1ed39a8c8f0b41d860ae132630e",
+    "systems_regression_v177.lua": "571bfcb717eaf31d0c61ab9a71b9f3501406e4e344f760908ab10f97de0b89b1",
+    "test_v177.py": "b77e25102d23225e57ce08debb9d37a0ffd39ff9c21785da48760fd7b0c5baaf",
+    "validation_v177.json": "8e8c1cd642f51a34f76ba65a5abd186e50f7f226ccc1bf608c590efeb05dd467",
+    "修改记录_维护版.txt": "7970d57b4abdff42be78e37f552cf1603225a315653b47be20e0329fe33150cd"
+  }
+}

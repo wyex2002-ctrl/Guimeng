@@ -37,10 +37,17 @@
     "all other prototypes byte-identical, including recent startup fixes and original native protection"
   ],
   "limitations": "Native LuaJIT2.0 with actual export/protection and callback bytecode, engine primitives mocked; no Windows client; no new live kill log to establish the remaining ordinary-reputation root cause.",
+  "current_run": {
+    "started_utc": "2026-11-12T22:05:06.107240+00:00",
+    "finished_utc": "2026-11-12T22:05:18.309381+00:00",
+    "source_commit": "5aa783dd9f1668e361433677ec35d0f72c95bff6",
+    "runtime": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/"
+  },
   "clean_maintenance_rebuild": {
     "clean_maintenance_rebuild": true,
-    "recompiled_sources": true,
+    "recompiled_sources": false,
     "sha256": "18d317b5dc21073320d5d1998a68e210308da76a6cd746b696a32cea1095755f",
-    "bytes": 2689762
+    "bytes": 2689762,
+    "native_regressions_passed": true
   }
 }
