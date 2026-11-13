@@ -1,11 +1,8 @@
 {
   "source_sync_every_versions": 3,
-  "last_source_sync_version": "v1.179",
-  "pending_source_versions": [
-    "v1.180",
-    "v1.181"
-  ],
-  "next_source_sync_version": "v1.182",
+  "last_source_sync_version": "v1.182",
+  "pending_source_versions": [],
+  "next_source_sync_version": "v1.185",
   "downloads_update": "every version",
   "main_push_authorized_now": false
 }
