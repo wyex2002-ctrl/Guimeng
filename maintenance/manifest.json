@@ -61,27 +61,32 @@
     "maintenance/package_v179.py",
     "maintenance/package_v180.py",
     "maintenance/package_v181.py",
+    "maintenance/package_v182.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
     "maintenance/patch_v180.py",
     "maintenance/patch_v181.py",
+    "maintenance/patch_v182.py",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
     "maintenance/player_changes_v181.json",
+    "maintenance/player_changes_v182.json",
     "maintenance/reputation_regression_v177.lua",
     "maintenance/reputation_regression_v179.lua",
     "maintenance/resource_tools.py",
     "maintenance/runtime.py",
+    "maintenance/startup_regression_v182.lua",
     "maintenance/sync_policy.json",
     "maintenance/systems_regression_v177.lua",
     "maintenance/test_v177.py",
     "maintenance/test_v179.py",
     "maintenance/test_v180.py",
-    "maintenance/test_v181.py"
+    "maintenance/test_v181.py",
+    "maintenance/test_v182.py"
   ],
   "generated_reports": [
-    "maintenance/build_v181.json",
-    "maintenance/validation_v181.json"
+    "maintenance/build_v182.json",
+    "maintenance/validation_v182.json"
   ]
 }
