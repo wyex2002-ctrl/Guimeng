@@ -40,6 +40,7 @@
     "maintenance/activate_double_v177.lua",
     "maintenance/attach_diagnostics_v179.ljbc",
     "maintenance/attach_diagnostics_v179.lua",
+    "maintenance/autosave_regression_v187.lua",
     "maintenance/base_v176.zip",
     "maintenance/bytecode_relocate.py",
     "maintenance/check_removal_v181.json",
@@ -70,6 +71,7 @@
     "maintenance/package_v184.py",
     "maintenance/package_v185.py",
     "maintenance/package_v186.py",
+    "maintenance/package_v187.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -80,6 +82,7 @@
     "maintenance/patch_v184.py",
     "maintenance/patch_v185.py",
     "maintenance/patch_v186.py",
+    "maintenance/patch_v187.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -89,6 +92,7 @@
     "maintenance/player_changes_v184.json",
     "maintenance/player_changes_v185.json",
     "maintenance/player_changes_v186.json",
+    "maintenance/player_changes_v187.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -109,10 +113,11 @@
     "maintenance/test_v183.py",
     "maintenance/test_v184.py",
     "maintenance/test_v185.py",
-    "maintenance/test_v186.py"
+    "maintenance/test_v186.py",
+    "maintenance/test_v187.py"
   ],
   "generated_reports": [
-    "maintenance/build_v186.json",
-    "maintenance/validation_v186.json"
+    "maintenance/build_v187.json",
+    "maintenance/validation_v187.json"
   ]
 }
