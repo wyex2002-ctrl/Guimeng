@@ -51,6 +51,7 @@
     "maintenance/diagnostics_v179.lua",
     "maintenance/diagnostics_v184.ljbc",
     "maintenance/diagnostics_v184.lua",
+    "maintenance/frame_regression_v185.lua",
     "maintenance/gameplay_regression_v180.lua",
     "maintenance/kill_reputation_v177.ljbc",
     "maintenance/kill_reputation_v177.lua",
@@ -66,6 +67,7 @@
     "maintenance/package_v182.py",
     "maintenance/package_v183.py",
     "maintenance/package_v184.py",
+    "maintenance/package_v185.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -74,6 +76,7 @@
     "maintenance/patch_v182.py",
     "maintenance/patch_v183.py",
     "maintenance/patch_v184.py",
+    "maintenance/patch_v185.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -81,6 +84,9 @@
     "maintenance/player_changes_v182.json",
     "maintenance/player_changes_v183.json",
     "maintenance/player_changes_v184.json",
+    "maintenance/player_changes_v185.json",
+    "maintenance/profiling_v185.ljbc",
+    "maintenance/profiling_v185.lua",
     "maintenance/reputation_regression_v177.lua",
     "maintenance/reputation_regression_v179.lua",
     "maintenance/resource_tools.py",
@@ -95,10 +101,11 @@
     "maintenance/test_v181.py",
     "maintenance/test_v182.py",
     "maintenance/test_v183.py",
-    "maintenance/test_v184.py"
+    "maintenance/test_v184.py",
+    "maintenance/test_v185.py"
   ],
   "generated_reports": [
-    "maintenance/build_v184.json",
-    "maintenance/validation_v184.json"
+    "maintenance/build_v185.json",
+    "maintenance/validation_v185.json"
   ]
 }
