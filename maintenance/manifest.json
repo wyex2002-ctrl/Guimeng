@@ -60,10 +60,12 @@
     "maintenance/kill_reputation_v177.lua",
     "maintenance/kill_reputation_v179.ljbc",
     "maintenance/kill_reputation_v179.lua",
+    "maintenance/liveness_regression_v189.lua",
     "maintenance/ljdis.py",
     "maintenance/ljtool.py",
     "maintenance/manifest.json",
     "maintenance/native_frame_regression_v186.lua",
+    "maintenance/native_frame_regression_v189.lua",
     "maintenance/native_test_utils.py",
     "maintenance/package_v179.py",
     "maintenance/package_v180.py",
@@ -75,6 +77,7 @@
     "maintenance/package_v186.py",
     "maintenance/package_v187.py",
     "maintenance/package_v188.py",
+    "maintenance/package_v189.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -87,6 +90,7 @@
     "maintenance/patch_v186.py",
     "maintenance/patch_v187.py",
     "maintenance/patch_v188.py",
+    "maintenance/patch_v189.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -98,10 +102,14 @@
     "maintenance/player_changes_v186.json",
     "maintenance/player_changes_v187.json",
     "maintenance/player_changes_v188.json",
+    "maintenance/player_changes_v189.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
     "maintenance/profiling_v186.lua",
+    "maintenance/profiling_v189.ljbc",
+    "maintenance/profiling_v189.lua",
+    "maintenance/regression_v189.lua",
     "maintenance/reputation_regression_v177.lua",
     "maintenance/reputation_regression_v179.lua",
     "maintenance/resource_tools.py",
@@ -120,10 +128,11 @@
     "maintenance/test_v185.py",
     "maintenance/test_v186.py",
     "maintenance/test_v187.py",
-    "maintenance/test_v188.py"
+    "maintenance/test_v188.py",
+    "maintenance/test_v189.py"
   ],
   "generated_reports": [
-    "maintenance/build_v188.json",
-    "maintenance/validation_v188.json"
+    "maintenance/build_v189.json",
+    "maintenance/validation_v189.json"
   ]
 }
