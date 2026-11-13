@@ -39,8 +39,11 @@ def relocated_debug(p,mapping,owners):
         start=last+tail.u();end=start+tail.u();last=start
         ns,ne=relocate(start),relocate(end)
         newvars.extend(name);newvars.extend(uleb(ns-last_new));newvars.extend(uleb(ne-ns));last_new=ns
-    assert tail.p==len(tail.b),(p.idx,tail.p,len(tail.b))
-    return numeric,newlines+names+newvars
+    # Historical patches retain opaque padding after the debug terminator.
+    # LuaJIT stops parsing variable records at the terminator; preserve the
+    # suffix byte-for-byte instead of interpreting it as live PC ranges.
+    suffix=tail.b[tail.p:]
+    return numeric,newlines+names+newvars+suffix
 
 def replace_instructions(p,replacements):
     """Insert straight-line fragments and relocate branches AND debug ranges."""

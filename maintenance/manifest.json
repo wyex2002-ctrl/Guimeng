@@ -42,6 +42,8 @@
     "maintenance/attach_diagnostics_v179.lua",
     "maintenance/base_v176.zip",
     "maintenance/bytecode_relocate.py",
+    "maintenance/check_removal_v181.json",
+    "maintenance/checks_regression_v181.lua",
     "maintenance/daily_double_v177.ljbc",
     "maintenance/daily_double_v177.lua",
     "maintenance/diagnostics_regression_v179.lua",
@@ -58,12 +60,15 @@
     "maintenance/native_test_utils.py",
     "maintenance/package_v179.py",
     "maintenance/package_v180.py",
+    "maintenance/package_v181.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
     "maintenance/patch_v180.py",
+    "maintenance/patch_v181.py",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
+    "maintenance/player_changes_v181.json",
     "maintenance/reputation_regression_v177.lua",
     "maintenance/reputation_regression_v179.lua",
     "maintenance/resource_tools.py",
@@ -72,10 +77,11 @@
     "maintenance/systems_regression_v177.lua",
     "maintenance/test_v177.py",
     "maintenance/test_v179.py",
-    "maintenance/test_v180.py"
+    "maintenance/test_v180.py",
+    "maintenance/test_v181.py"
   ],
   "generated_reports": [
-    "maintenance/build_v180.json",
-    "maintenance/validation_v180.json"
+    "maintenance/build_v181.json",
+    "maintenance/validation_v181.json"
   ]
 }
