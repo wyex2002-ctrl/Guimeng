@@ -1,13 +1,13 @@
 # 归梦维护约定
 
-当前版本 v1.185。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节和第五十六节；历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.186。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节和第五十七节；历史冲突以最新节为准，版本尾数按整数比较。
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v185.py`、`python3 maintenance/test_v185.py`、`python3 maintenance/package_v185.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v186.py`、`python3 maintenance/test_v186.py`、`python3 maintenance/package_v186.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
-- v177、v179、v180、v181、v182、v183、v184 构建/测试是 v185 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- v177、v179、v180、v181、v182、v183、v184、v185 构建/测试是 v186 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
@@ -31,6 +31,8 @@ v181按用户明确要求移除了物品、角色及脚本反篡改检测，不�
 必须另测零输入实际构造器导出的public.run更新，不用手工动态代理隐藏安装顺序；无需按键或技能操作就应出现perf.play.enter/return与后续汇总。
 
 性能回归必须覆盖实际技能槽module36/proto9 → 主角技能module26/proto55 → 只读Sys/get → 实际checkpoint的路径，不能只跑不产生日志的空调度。普通skill.*跟踪采用时间/数量合并，含error的阶段及关键记录立即落盘；perf.frame按低频汇总原生更新/回调/checkpoint耗时，计时为inclusive clock，不能叫作实测渲染FPS。
+
+新增主更新阶段计时必须执行原module14/proto385完整零输入帧，比较插桩前后引擎调用顺序；显式测试计时钩子缺失/非函数时仍可运行，用受控原生阶段耗时验证归因。替换片段中的原跳转也须重定位，不能只验证目标未越界。阶段和回调计时有嵌套，不可相加视作独占时间。
 
 ## 交付边界
 
