@@ -1,13 +1,13 @@
 # 归梦维护约定
 
-当前版本 v1.182。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节和第五十三节；历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.183。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节和第五十四节；历史冲突以最新节为准，版本尾数按整数比较。
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v182.py`、`python3 maintenance/test_v182.py`、`python3 maintenance/package_v182.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v183.py`、`python3 maintenance/test_v183.py`、`python3 maintenance/package_v183.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
-- v177、v179、v180、v181 构建/测试是 v182 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- v177、v179、v180、v181、v182 构建/测试是 v183 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
@@ -24,6 +24,8 @@ v181按用户明确要求移除了物品、角色及脚本反篡改检测，不�
 
 修改数据代理后，必须覆盖公共方法的真实 table.copy(value, true)、table.check、table.convert、insert_/remove_/getn 及角色原始初始化调用链；不能用 Lua clone mock 代替这条集成测试。保留空 __p 标识只用于代理识别，不恢复数值镜像检查。
 
+删除检测代码时必须逐项核对被删除的函数注册和被置空函数的返回约定。版本/频道初始化测试执行真实注册语句、原始页面工厂和Main，不手工注入金轮法王等游戏函数；停用检测仍保留原接口表或回调返回类型，不能将返回表/true的函数一律改为RET0。
+
 ## 交付边界
 
 玩家说明保留累计编号，用简单易懂的效果描述；不写详细版本历史和概率，尽量不写公式或数值，具体数值留在维护记录。日志直接写游戏 log，不产生 log/log。没有完整 Windows 客户端实测，不得把受控回归称为客户端验证；小怪声望效果仍须新版实机日志确认。
@@ -32,4 +34,4 @@ v181按用户明确要求移除了物品、角色及脚本反篡改检测，不�
 
 ## 同步频率
 
-用户要求：维护源码每三个版本同步一次GitHub（本批v1.180～v1.182；本轮同步后下次v1.185），补丁下载分支每版更新。本地每版保留提交和完整维护包，不能每次生成补丁就推送main。进度记录在maintenance/sync_policy.json。
+用户要求：维护源码每三个版本同步一次GitHub（上批已同步至v1.182；下次v1.185），补丁下载分支每版更新。本地每版保留提交和完整维护包，不能每次生成补丁就推送main。进度记录在maintenance/sync_policy.json。
