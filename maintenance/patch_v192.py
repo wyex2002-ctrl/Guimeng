@@ -27,9 +27,16 @@ def repair(p):
  q.bc[mp[23]+1]=jump(mp[23]+1,mp[57],10)
  return Proto(rebuild_proto(q),p.idx),mp
 
-def build(runtime=None):
- subprocess.run(['python3',str(W/'patch_v191.py')]+(['--runtime',runtime]if runtime else []),cwd=W,check=True,stdout=subprocess.DEVNULL)
- base=(W/'game_v191.res').read_bytes();assert hashlib.sha256(base).hexdigest()==BASE_SHA
+def build(runtime=None,rebuild_history=False):
+ # The predecessor is an immutable, hash-pinned build input. Reusing it
+ # does not claim to have recompiled or retested its historical sources.
+ path=W/'game_v191.res';base=path.read_bytes()if path.is_file()else b''
+ reused=not rebuild_history and hashlib.sha256(base).hexdigest()==BASE_SHA
+ if not reused:
+  print('Building predecessor resource (missing, mismatched, or explicitly requested).',flush=True)
+  subprocess.run(['python3',str(W/'patch_v191.py')]+(['--runtime',runtime]if runtime else []),cwd=W,check=True,stdout=subprocess.DEVNULL)
+  base=path.read_bytes()
+ assert hashlib.sha256(base).hexdigest()==BASE_SHA
  outer,mods=decode(base,[12,14,30]);mods[12].protos[283],mp=repair(mods[12].protos[283])
  for d in mods.values():
   for i,p in enumerate(d.protos):
@@ -47,7 +54,7 @@ def build(runtime=None):
   encrypted=rc4(packet,bytes.fromhex('2621215f5f6b6c5fb2e25f495f30'));value=encrypted if m==12 else encrypted.hex().upper().encode()
   p=outer.protos[0];k=p.nkgc-1-m;p.kgc[k]=value;p.kraw[k]=encstr(value)
  data=rc4(rebuild_dump(outer,{0}),b'_Npi_dest__cc_&%_23')+base[-10:];(W/'game_v192.res').write_bytes(data)
- result={'version':'v1.192','base_sha256':BASE_SHA,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'changed_prototypes':changes,'control_lookup_reads':[18,198,244],'aux_relocations':mp,'rules_changed':False}
+ result={'version':'v1.192','base_sha256':BASE_SHA,'base_reused':reused,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'changed_prototypes':changes,'control_lookup_reads':[18,198,244],'aux_relocations':mp,'rules_changed':False}
  (W/'build_v192.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print({k:v for k,v in result.items()if k!='aux_relocations'})
 if __name__=='__main__':
- a=argparse.ArgumentParser();a.add_argument('--runtime');x=a.parse_args();build(str(Path(x.runtime).resolve())if x.runtime else None)
+ a=argparse.ArgumentParser();a.add_argument('--runtime');a.add_argument('--rebuild-history',action='store_true',help='Rebuild predecessor sources instead of reusing the hash-pinned resource');x=a.parse_args();build(str(Path(x.runtime).resolve())if x.runtime else None,x.rebuild_history)

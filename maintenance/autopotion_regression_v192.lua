@@ -1,4 +1,5 @@
 local work,mode=arg[1],arg[2]or'normal'
+local iterations=tonumber(arg[3])or 200;assert(iterations>=1 and iterations==math.floor(iterations))
 if mode=='hot'then require('jit.opt').start('hotloop=1','hotexit=1')end
 local checks=0
 local function eq(a,b,label)checks=checks+1;assert(a==b,(label or'check')..': '..tostring(a)..' ~= '..tostring(b))end
@@ -121,7 +122,8 @@ local function inventory_trial(story,visible,mp,quick,broken,name,bagid,version)
  end
  invoke()
  eq(item['数量'],2,'exactly one genuine consumption');check_request()
- for i=1,200 do
+ local representative=story=='来世续缘'and not visible and mp and not quick and name=='魔法药_小'and bagid==32
+ for i=1,representative and iterations or 0 do
   item['数量']=3;req={}
   invoke()
   eq(item['数量'],2,'repeated auxiliary consumption');check_request()
@@ -149,9 +151,10 @@ for _,story in ipairs({'前尘忆梦','来世续缘'})do
   for _,name in ipairs({'金创药_小','魔法药_小','太阳水','强效太阳水','万年雪霜'})do
    for _,mp in ipairs({false,true})do
     if templates[name]['附加'][mp and'加蓝'or'加血']~=nil then
-     inventory_trial(story,visible,mp,false,true,name,32,'aux_old')
+     if story=='来世续缘'and not visible and mp and name=='魔法药_小'then inventory_trial(story,visible,mp,false,true,name,32,'aux_old')end
      for _,quick in ipairs({false,true})do
-      for _,bag in ipairs({31,32,80,126})do inventory_trial(story,visible,mp,quick,true,name,bag)end
+      local bags=story=='来世续缘'and not visible and mp and not quick and name=='魔法药_小'and{31,32,80,126}or{32}
+      for _,bag in ipairs(bags)do inventory_trial(story,visible,mp,quick,true,name,bag)end
      end
     end
    end

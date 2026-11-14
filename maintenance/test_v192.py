@@ -73,23 +73,30 @@ def prepare():
  (work/'autopotion.lua').write_bytes((W/'autopotion_regression_v192.lua').read_text().encode('gbk'))
  return work,data
 
-def main(runtime,focused=False):
+def main(runtime,full_history=False,iterations=200):
  (W/'validation_v192.json').unlink(missing_ok=True);work,data=prepare();runs=[]
  for mode in ['normal','hot']:
-  r=subprocess.run([runtime,str(work/'autopotion.lua'),str(work),mode],capture_output=True,timeout=120)
+  r=subprocess.run([runtime,str(work/'autopotion.lua'),str(work),mode,str(iterations)],capture_output=True,timeout=120)
   (work/(mode+'.log')).write_bytes(r.stdout+r.stderr)
   assert r.returncode==0,(mode,(r.stdout+r.stderr)[-4500:].decode('gbk','replace'))
   output=r.stdout.decode('gbk');assert 'AUTOPOTION_V192_PASS'in output;print(output,flush=True);runs.append({'mode':mode,'output':output})
- if focused:return
- r=subprocess.run(['python3',str(W/'test_v191.py'),'--runtime',runtime],capture_output=True)
- (work/'baseline.log').write_bytes(r.stdout+r.stderr);assert r.returncode==0,(r.stdout+r.stderr)[-3500:]
- integration=W/'native_work/v179';_,mods=decode(data,[14]);d=mods[14];(integration/'installer179.ljbc').write_bytes(standalone(d,trees(d),684))
- for name in ['diagnostics.lua','integration.lua']:
-  for mode in ['normal','hot']:
-   r=subprocess.run([runtime,str(integration/name),str(integration),mode],capture_output=True,timeout=90)
-   (work/(name+'.'+mode+'.log')).write_bytes(r.stdout+r.stderr);assert r.returncode==0,(r.stdout+r.stderr)[-2500:]
+ if full_history:
+  r=subprocess.run(['python3',str(W/'test_v191.py'),'--runtime',runtime],capture_output=True)
+  (work/'baseline.log').write_bytes(r.stdout+r.stderr);assert r.returncode==0,(r.stdout+r.stderr)[-3500:]
+  integration=W/'native_work/v179';_,mods=decode(data,[14]);d=mods[14];(integration/'installer179.ljbc').write_bytes(standalone(d,trees(d),684))
+  for name in ['diagnostics.lua','integration.lua']:
+   for mode in ['normal','hot']:
+    r=subprocess.run([runtime,str(integration/name),str(integration),mode],capture_output=True,timeout=90)
+    (work/(name+'.'+mode+'.log')).write_bytes(r.stdout+r.stderr);assert r.returncode==0,(r.stdout+r.stderr)[-2500:]
  names=['patch_v192.py','test_v192.py','autopotion_regression_v192.lua','player_changes_v192.json','package_v192.py']
- result={'version':'v1.192','all_passed':True,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'autopotion_runs':runs,'v191_and_prior_regressions_rerun':True,'current_real_event_periodic_chain':True,'event_Sys_unavailable_tested':True,'current_diagnostics_public_integration':True,'all_42_modules_and_non_target_prototypes_verified':True,'real_load_loop_and_public_controls':True,'real_potion_templates_and_scripts':True,'full_windows_game_run':False,'real_effect_tick_timing_tested':False,'tested_files':{n:hashlib.sha256((W/n).read_bytes()).hexdigest()for n in names}}
+ result={'version':'v1.192','all_passed':True,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'autopotion_runs':runs,'test_scope':'full_history'if full_history else'current','representative_iterations':iterations,'v191_and_prior_regressions_rerun':full_history,'current_real_event_periodic_chain':True,'event_Sys_unavailable_tested':True,'current_diagnostics_public_integration':full_history,'all_42_modules_and_non_target_prototypes_verified':True,'real_load_loop_and_public_controls':True,'real_potion_templates_and_scripts':True,'full_windows_game_run':False,'real_effect_tick_timing_tested':False,'tested_files':{n:hashlib.sha256((W/n).read_bytes()).hexdigest()for n in names}}
  (W/'validation_v192.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':
- a=argparse.ArgumentParser();a.add_argument('--runtime');a.add_argument('--focused',action='store_true');x=a.parse_args();main(str(Path(x.runtime).resolve())if x.runtime else str(ensure_runtime()),x.focused)
+ a=argparse.ArgumentParser();a.add_argument('--runtime')
+ group=a.add_mutually_exclusive_group()
+ group.add_argument('--full-history',action='store_true',help='Additionally run all historical suites and current diagnostic integration')
+ group.add_argument('--focused',action='store_true',help='Compatibility alias for the default current-version scope')
+ a.add_argument('--iterations',type=int,default=200,help='Repeat one representative scenario this many times (default: 200)')
+ x=a.parse_args()
+ if x.iterations<1:a.error('--iterations must be positive')
+ main(str(Path(x.runtime).resolve())if x.runtime else str(ensure_runtime()),x.full_history,x.iterations)

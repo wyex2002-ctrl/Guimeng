@@ -39,7 +39,21 @@ python maintenance/test_v192.py --runtime C:/tools/luajit20/src/luajit.exe
 python maintenance/package_v192.py
 ```
 
-默认重建使用跟踪的字节码；如修改了构建链中的 Lua 源码，可给 `patch_v192.py` 加 `--runtime <官方运行时绝对路径>` 重新编译，并审查字节码及资源哈希变化。
+日常入口默认复用哈希匹配的上一版固定资源，只重建本版，并只跑当前相关测试；首次缺少基线时仍需完整构建。测试保留正常/hot及真实事件沙箱，重复调用默认集中在一个代表场景约200次，其他必要边界各测一次。
+
+同一个问题反复修复仍未解决时，可增加次数和历史回归：
+
+```bash
+python3 maintenance/test_v192.py --iterations 2000 --full-history
+```
+
+修改历史构建源码、上游Lua或依赖时，必须显式重建历史；需要重新编译Lua时同时指定官方运行时：
+
+```bash
+python3 maintenance/patch_v192.py --rebuild-history --runtime /absolute/path/to/luajit
+```
+
+`--runtime`本身只选择编译器，不取消固定基线复用。复用不代表历史源码已重新编译或重测，报告会记录实际范围。精简入口在main最新维护工程中；本次不重发v192玩家包或维护包，已发布包保留原交付快照。
 
 生成的资源、报告、日志、运行时和 ZIP 均在 `maintenance/` 的忽略路径下，不提交 Git。玩家包和维护包输出到 `maintenance/deliverables/`。维护包保持与仓库相同的目录结构，解压后可独立运行以上命令。
 
