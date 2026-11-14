@@ -49,6 +49,7 @@
     "maintenance/bytecode_relocate.py",
     "maintenance/check_removal_v181.json",
     "maintenance/checks_regression_v181.lua",
+    "maintenance/comfort_regression_v194.lua",
     "maintenance/daily_double_v177.ljbc",
     "maintenance/daily_double_v177.lua",
     "maintenance/diagnostics_regression_v179.lua",
@@ -85,6 +86,7 @@
     "maintenance/package_v191.py",
     "maintenance/package_v192.py",
     "maintenance/package_v193.py",
+    "maintenance/package_v194.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -102,6 +104,7 @@
     "maintenance/patch_v191.py",
     "maintenance/patch_v192.py",
     "maintenance/patch_v193.py",
+    "maintenance/patch_v194.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -118,6 +121,7 @@
     "maintenance/player_changes_v191.json",
     "maintenance/player_changes_v192.json",
     "maintenance/player_changes_v193.json",
+    "maintenance/player_changes_v194.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -149,10 +153,11 @@
     "maintenance/test_v190.py",
     "maintenance/test_v191.py",
     "maintenance/test_v192.py",
-    "maintenance/test_v193.py"
+    "maintenance/test_v193.py",
+    "maintenance/test_v194.py"
   ],
   "generated_reports": [
-    "maintenance/build_v193.json",
-    "maintenance/validation_v193.json"
+    "maintenance/build_v194.json",
+    "maintenance/validation_v194.json"
   ]
 }
