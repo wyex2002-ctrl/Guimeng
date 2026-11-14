@@ -20,7 +20,25 @@ local function setup(raw)
  local info=load('item_info',{table={copy=copy},pairs=pairs});debug.setupvalue(info,1,S)
  local U={['独角兽下']=function()return config end,['胚子考虑']=function()return{['装备操作']=0}end,['啾啾啵啵']=function()return{['职业']='战士',['等级']=100,['性别']='男',['人物选择']=1}end}
  local env={type=type,tonumber=tonumber,tostring=tostring,pairs=pairs,ipairs=ipairs,math=math,string=string,table={copy=copy,remove=table.remove},['Ux雌']=U,['Gly独']={['取道具信息_名称']=info,['取随机数']=function(a,b)return math.random(a,b)end},['物品格子18']={},['商店窗口']={['可视']=false},['商店窗口2']={['可视']=false},['格式化数值']=tostring,['L常量']={},['FXru胃啪']={['职业']='战士',['性别']='男',['等级']=100}}
- return base,info,load('gen',env),load('tip_old',env),load('tip',env),load('gen_old',env)
+ return base,info,load('gen',env),load('tip_old',env),load('tip',env),load('gen_old',env),load('duplicate',env)
+end
+-- Reproduce the user's two screenshots without assigning a desired total.
+do
+ local base,info,gen,_,tip,_,duplicate=setup(configs[1]);base['属性']['身体舒适']=1
+ math.randomseed(199);local plain
+ for i=1,200 do
+  local item=copy(info(base['名称']));gen(item,40,3)
+  if item['身体舒适']==1 then plain=item;break end
+ end
+ assert(plain,'ordinary roll without a comfort bonus')
+ local oldtext=duplicate(plain,1,32);local now=tip(plain,1,32)
+ eq(oldtext:find('舒适:1',1,true)~=nil,true);eq(oldtext:find('舒适:+1',1,true)~=nil,true)
+ eq(now:find('#W舒适:1',1,true)~=nil,true);eq(now:find('(+1)',1,true),nil,'duplicate base is not a bonus')
+ local pool=config['防御属性'];config['防御属性']={'身体舒适'}
+ local actual=copy(info(base['名称']));gen(actual,1,1);config['防御属性']=pool
+ eq(actual['身体舒适'],2,'actual generation adds one to base one')
+ local text=tip(actual,1,32)
+ eq(text:find('#c(-8323200)舒适:2',1,true)~=nil,true);eq(text:find('(+1)',1,true)~=nil,true)
 end
 math.randomseed(197);local generated=0;local representative
 for index,raw in ipairs(configs)do

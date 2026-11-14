@@ -7,6 +7,8 @@ from bytecode_relocate import BRANCHES,numeric_and_debug
 from patch_v139 import ad,jump
 from ljdis import OPS
 from runtime import ensure_runtime
+from ljtool import Proto
+from patch_v194 import repair_tooltip as old_duplicate_tooltip
 from test_v192 import lua
 W=Path(__file__).resolve().parent
 
@@ -24,6 +26,9 @@ def main(runtime):
    for pc,x in enumerate(p.bc):
     if OPS[x&255]in BRANCHES:assert 0<=pc+1+(x>>16)-32768<p.nbc,(m,i,pc)
  _,reference=decode((W/'game_v193.res').read_bytes(),[12])
+ d=reference[12];saved=d.protos[300]
+ d.protos[300],_=old_duplicate_tooltip(Proto(saved.raw,300))
+ (work/'duplicate.ljbc').write_bytes(standalone(d,trees(d),300));d.protos[300]=saved
  p,q=reference[12].protos[300],new[12].protos[300]
  assert old[12].protos[193].raw==new[12].protos[193].raw
  assert all(q.bc[i]==x for i,x in enumerate(p.bc)if i!=702)
