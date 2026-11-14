@@ -59,6 +59,7 @@
     "maintenance/diagnostics_v179.lua",
     "maintenance/diagnostics_v184.ljbc",
     "maintenance/diagnostics_v184.lua",
+    "maintenance/display_regression_v200.lua",
     "maintenance/frame_regression_v185.lua",
     "maintenance/gameplay_regression_v180.lua",
     "maintenance/hit_regression_v196.lua",
@@ -95,6 +96,7 @@
     "maintenance/package_v197.py",
     "maintenance/package_v198.py",
     "maintenance/package_v199.py",
+    "maintenance/package_v200.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -118,6 +120,7 @@
     "maintenance/patch_v197.py",
     "maintenance/patch_v198.py",
     "maintenance/patch_v199.py",
+    "maintenance/patch_v200.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -140,6 +143,7 @@
     "maintenance/player_changes_v197.json",
     "maintenance/player_changes_v198.json",
     "maintenance/player_changes_v199.json",
+    "maintenance/player_changes_v200.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -179,10 +183,11 @@
     "maintenance/test_v196.py",
     "maintenance/test_v197.py",
     "maintenance/test_v198.py",
-    "maintenance/test_v199.py"
+    "maintenance/test_v199.py",
+    "maintenance/test_v200.py"
   ],
   "generated_reports": [
-    "maintenance/build_v199.json",
-    "maintenance/validation_v199.json"
+    "maintenance/build_v200.json",
+    "maintenance/validation_v200.json"
   ]
 }
