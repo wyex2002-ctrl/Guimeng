@@ -1,13 +1,13 @@
 # 归梦维护约定
 
-当前版本 v1.191。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节、第五十七节、第五十八节、第五十九节和第六十节、第六十一节和第六十二节和第六十三节；历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.192。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节、第五十七节、第五十八节、第五十九节和第六十节、第六十一节和第六十二节和第六十三节和第六十四节；历史冲突以最新节为准，版本尾数按整数比较。
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v191.py`、`python3 maintenance/test_v191.py`、`python3 maintenance/package_v191.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v192.py`、`python3 maintenance/test_v192.py`、`python3 maintenance/package_v192.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
-- v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190 构建/测试是 v191 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190、v191 构建/测试是 v192 的依赖；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
@@ -58,4 +58,4 @@ v181按用户明确要求移除了物品、角色及脚本反篡改检测，不�
 
 原35/36、256/257灵助手和14/218原生领取设置器保持原字节码。测试必须执行12/292实际经验函数注册、正常经验→真实递归储存，以及原12/37手动事件→原14/220公开实体工厂/14/218私有经验请求→真实22/43 EXP增加；不能用普通佣兵table代替会消费__gm_claim_exp_v148请求的原生公开代理。覆盖原版四种、两人/混用、满额/最后一次/备用替换、次数0/死亡/缺席、正常倍率及重复调用；物品数据导出/重载只能写为受控字段回归，不得称为已完成Windows退出重入实测。
 
-自动用药的库存查找使用现有只读Sys.get('item_arr')，不能把Ux配置.主角格子按原生ID索引：原12/179把实际控件table.insert为紧凑列表。不得修改共享列表的布局迁就自动用药；回归须执行原加载循环及真实48/23公开控件绑定，覆盖六个快捷格实际存在但为空、背包位置31/32/80/126、两剧情和五种真实药品模板/脚本。引擎药效计时未实测时只声明原脚本请求与真实手动路径一致，不把有限恢复原语替身写成Windows实际回血验证。旧版ID索引夹具漏测的历史必须记录。
+自动用药属于script_setting事件沙箱，不能使用只在pl_setting界面环境导出的Sys。v191误用Sys.get(item_arr)已由实机日志证实会在低生命/低魔法时退出，旧第六十三节API可用性结论以第六十四节更正为准。使用原Gly独.取控件对象('物品格子'..ID)的已有O(1)名称查询；不改共享紧凑控件列表，不开放新API，不向事件环境注入Sys。测试必须执行当前14/378的真实script_setting保护安装器、原14/301导出的实际查询函数、实际12/20周期用药片段→12/283→真实物品事件/原生使用/格子消耗链，明确断言事件env.Sys/pcall/_G为nil，与界面Sys分开。原v191在同一环境应复现上传日志的Sys nil错误；新版本覆盖两剧情、五种真实药品、六个快捷格、背包开/关、31/32/80/126、缺失控件、阈值和耗尽及反复调用。恢复请求有限替身不能称为Windows药效tick实测。
