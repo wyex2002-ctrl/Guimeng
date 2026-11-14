@@ -1,13 +1,13 @@
 # 归梦维护约定
 
-当前版本 v1.192。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节、第五十七节、第五十八节、第五十九节和第六十节、第六十一节和第六十二节和第六十三节和第六十四节和第六十五节和第六十六节；历史冲突以最新节为准，版本尾数按整数比较。
+当前版本 v1.193。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节、第五十七节、第五十八节、第五十九节和第六十节、第六十一节和第六十二节和第六十三节和第六十四节和第六十五节和第六十六节和第六十七节；历史冲突以最新节为准，版本尾数按整数比较。
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v192.py`、`python3 maintenance/test_v192.py`、`python3 maintenance/package_v192.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v193.py`、`python3 maintenance/test_v193.py`、`python3 maintenance/package_v193.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
-- v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190、v191 构建是 v192 首次完整重建的依赖，历史测试按需运行；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
+- v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190、v191、v192 构建是 v193 首次完整重建的依赖，历史测试按需运行；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
 
@@ -74,3 +74,5 @@ v181按用户明确要求移除了物品、角色及脚本反篡改检测，不�
 
 当前v192入口已落实精简流程：patch_v192.py默认复用与BASE_SHA匹配的上一版固定资源，只重建本版；基线缺失/哈希不符时自动完整生成。历史源码、上游Lua或依赖改动必须用--rebuild-history（需重编译时另传--runtime），不得把复用基线说成历史源码已重新编译。test_v192.py默认只跑当前专项，--iterations默认200，重复集中在一个代表场景，其余边界各测一次；--full-history才递归跑旧版回归及完整诊断。反复未解决的问题按实际线索用--iterations或--full-history扩大验证，必要时增加新的真实调用场景，不能只叠加次数。正常/hot和真实沙箱/用药链仍保留，报告明确记录当前范围，未跑历史项目标false。
 本轮仅优化维护工具并同步main，不改变游戏资源或重发v192下载包；已发布维护包仍是原交付快照，精简入口见main最新维护源码。
+
+当前v193仅修改148种四/五级强化书模板显示名，并在14/437原存档覆盖表应用前将强化书4/5的显示名校正为模板名，避免旧存档和缓存提示还显示旧名称。内部名称、目标技能、等级标记、价格、学习/使用脚本和普通秘籍/残篇保留。只调整传入覆盖表的显示名，不改其他保存字段，不改变存档格式。维护测试执行真实437/443、数据代理、原table.copy和原名称/格子查询；正常/hot当前专项即可，不默认重跑全部历史或多轮干净构建。当前下载v193，v192入口的提速策略继续沿用；旧版包为历史快照。
