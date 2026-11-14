@@ -105,6 +105,7 @@
     "maintenance/package_v203.py",
     "maintenance/package_v204.py",
     "maintenance/package_v205.py",
+    "maintenance/package_v206.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -134,6 +135,7 @@
     "maintenance/patch_v203.py",
     "maintenance/patch_v204.py",
     "maintenance/patch_v205.py",
+    "maintenance/patch_v206.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -162,6 +164,7 @@
     "maintenance/player_changes_v203.json",
     "maintenance/player_changes_v204.json",
     "maintenance/player_changes_v205.json",
+    "maintenance/player_changes_v206.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -181,6 +184,9 @@
     "maintenance/summon_regression_v195.lua",
     "maintenance/sync_policy.json",
     "maintenance/systems_regression_v177.lua",
+    "maintenance/talisman_dead_regression_v206.lua",
+    "maintenance/talisman_dead_v206.ljbc",
+    "maintenance/talisman_dead_v206.lua",
     "maintenance/talisman_regression_v190.lua",
     "maintenance/test_v177.py",
     "maintenance/test_v179.py",
@@ -210,11 +216,12 @@
     "maintenance/test_v203.py",
     "maintenance/test_v204.py",
     "maintenance/test_v205.py",
+    "maintenance/test_v206.py",
     "maintenance/window_hp_v204.ljbc",
     "maintenance/window_hp_v204.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v205.json",
-    "maintenance/validation_v205.json"
+    "maintenance/build_v206.json",
+    "maintenance/validation_v206.json"
   ]
 }
