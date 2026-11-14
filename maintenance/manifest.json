@@ -75,6 +75,9 @@
     "maintenance/ljdis.py",
     "maintenance/ljtool.py",
     "maintenance/manifest.json",
+    "maintenance/melee_regression_v208.lua",
+    "maintenance/melee_timing_v208.ljbc",
+    "maintenance/melee_timing_v208.lua",
     "maintenance/native_frame_regression_v186.lua",
     "maintenance/native_frame_regression_v189.lua",
     "maintenance/native_test_utils.py",
@@ -107,6 +110,7 @@
     "maintenance/package_v205.py",
     "maintenance/package_v206.py",
     "maintenance/package_v207.py",
+    "maintenance/package_v208.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -138,6 +142,7 @@
     "maintenance/patch_v205.py",
     "maintenance/patch_v206.py",
     "maintenance/patch_v207.py",
+    "maintenance/patch_v208.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -168,6 +173,7 @@
     "maintenance/player_changes_v205.json",
     "maintenance/player_changes_v206.json",
     "maintenance/player_changes_v207.json",
+    "maintenance/player_changes_v208.json",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -224,11 +230,12 @@
     "maintenance/test_v205.py",
     "maintenance/test_v206.py",
     "maintenance/test_v207.py",
+    "maintenance/test_v208.py",
     "maintenance/window_hp_v204.ljbc",
     "maintenance/window_hp_v204.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v207.json",
-    "maintenance/validation_v207.json"
+    "maintenance/build_v208.json",
+    "maintenance/validation_v208.json"
   ]
 }
