@@ -11,4 +11,4 @@
 
 没有完整Windows客户端或本版实际战斗日志；测试使用原字节码片段/原生入口及有限引擎替身，受控回归不等于实机验证。小怪声望既有验证边界继续保留。每次更新同步main与downloads，不创建Release，不覆盖玩家存档，不公开用户原始日志。
 
-源码提交：https://github.com/wyex2002-ctrl/Guimeng/commit/9940cf4a9396b4f07ebacbc8bb1a1e1ef208d908
+源码提交：https://github.com/wyex2002-ctrl/Guimeng/commit/d3d04eaf26265c97d49fac6ed86bc64e9631e78a
