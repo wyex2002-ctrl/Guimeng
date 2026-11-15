@@ -357,10 +357,17 @@
     "maintenance/portal_labels_v224.lua",
     "maintenance/portal_labels_v224.ljbc",
     "maintenance/guard_font_regression_v224.lua",
-    "maintenance/portal_regression_v224.lua"
+    "maintenance/portal_regression_v224.lua",
+    "maintenance/patch_v225.py",
+    "maintenance/test_v225.py",
+    "maintenance/package_v225.py",
+    "maintenance/player_changes_v225.json",
+    "maintenance/portal_labels_v225.lua",
+    "maintenance/portal_labels_v225.ljbc",
+    "maintenance/portal_regression_v225.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v224.json",
-    "maintenance/validation_v224.json"
+    "maintenance/build_v225.json",
+    "maintenance/validation_v225.json"
   ]
 }
