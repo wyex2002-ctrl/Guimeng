@@ -378,7 +378,14 @@
     "maintenance/cooldown_mask_v227.ljbc",
     "maintenance/cooldown_audit_v227.json",
     "maintenance/cooldown_regression_v227.lua",
-    "docs/reports/skill_cooldowns_v227.md"
+    "docs/reports/skill_cooldowns_v227.md",
+    "maintenance/patch_v228.py",
+    "maintenance/test_v228.py",
+    "maintenance/package_v228.py",
+    "maintenance/player_changes_v228.json",
+    "maintenance/cooldown_mask_v228.lua",
+    "maintenance/cooldown_mask_v228.ljbc",
+    "maintenance/cooldown_regression_v228.lua"
   ],
   "generated_reports": [
     "maintenance/build_v225.json",
@@ -386,6 +393,8 @@
     "maintenance/build_v226.json",
     "maintenance/validation_v226.json",
     "maintenance/build_v227.json",
-    "maintenance/validation_v227.json"
+    "maintenance/validation_v227.json",
+    "maintenance/build_v228.json",
+    "maintenance/validation_v228.json"
   ]
 }
