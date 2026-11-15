@@ -1,0 +1,15 @@
+{
+  "resource_sha256": "73ef3a71b7c0f5827a234b8fa6a031532fda71fed2fa65f4a1b647da771edb88",
+  "packages": [
+    {
+      "name": "归梦v2.26_魔改补丁_v1.218.zip",
+      "bytes": 2676708,
+      "sha256": "a48d3962ee3168dfa4da22ef1632b99a1acf75861297ad011b58b1d982eecd71"
+    },
+    {
+      "name": "Guimeng_v1.218_maintenance.zip",
+      "bytes": 4435467,
+      "sha256": "46395c213f2be9d81c4ee7eaf404520bdc2a2a8034760b521d47023cb0621381"
+    }
+  ]
+}
