@@ -51,6 +51,7 @@
     "maintenance/check_removal_v181.json",
     "maintenance/checks_regression_v181.lua",
     "maintenance/combat_regression_v216.lua",
+    "maintenance/combat_regression_v217.lua",
     "maintenance/comfort_regression_v194.lua",
     "maintenance/comfort_regression_v197.lua",
     "maintenance/comfort_regression_v198.lua",
@@ -91,6 +92,8 @@
     "maintenance/melee_timing_v211.lua",
     "maintenance/melee_timing_v216.ljbc",
     "maintenance/melee_timing_v216.lua",
+    "maintenance/melee_timing_v217.ljbc",
+    "maintenance/melee_timing_v217.lua",
     "maintenance/native_frame_regression_v186.lua",
     "maintenance/native_frame_regression_v189.lua",
     "maintenance/native_test_utils.py",
@@ -132,6 +135,7 @@
     "maintenance/package_v214.py",
     "maintenance/package_v215.py",
     "maintenance/package_v216.py",
+    "maintenance/package_v217.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -172,6 +176,7 @@
     "maintenance/patch_v214.py",
     "maintenance/patch_v215.py",
     "maintenance/patch_v216.py",
+    "maintenance/patch_v217.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -211,6 +216,7 @@
     "maintenance/player_changes_v214.json",
     "maintenance/player_changes_v215.json",
     "maintenance/player_changes_v216.json",
+    "maintenance/player_changes_v217.json",
     "maintenance/portal_labels_v212.ljbc",
     "maintenance/portal_labels_v212.lua",
     "maintenance/portal_labels_v213.ljbc",
@@ -292,11 +298,12 @@
     "maintenance/test_v214.py",
     "maintenance/test_v215.py",
     "maintenance/test_v216.py",
+    "maintenance/test_v217.py",
     "maintenance/window_hp_v204.ljbc",
     "maintenance/window_hp_v204.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v216.json",
-    "maintenance/validation_v216.json"
+    "maintenance/build_v217.json",
+    "maintenance/validation_v217.json"
   ]
 }
