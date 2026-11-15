@@ -124,6 +124,7 @@
     "maintenance/package_v209.py",
     "maintenance/package_v210.py",
     "maintenance/package_v211.py",
+    "maintenance/package_v212.py",
     "maintenance/patch_v139.py",
     "maintenance/patch_v177.py",
     "maintenance/patch_v179.py",
@@ -159,6 +160,7 @@
     "maintenance/patch_v209.py",
     "maintenance/patch_v210.py",
     "maintenance/patch_v211.py",
+    "maintenance/patch_v212.py",
     "maintenance/performance_regression_v184.lua",
     "maintenance/player_changes_v177.json",
     "maintenance/player_changes_v180.json",
@@ -193,6 +195,12 @@
     "maintenance/player_changes_v209.json",
     "maintenance/player_changes_v210.json",
     "maintenance/player_changes_v211.json",
+    "maintenance/player_changes_v212.json",
+    "maintenance/portal_labels_v212.ljbc",
+    "maintenance/portal_labels_v212.lua",
+    "maintenance/portal_regression_v212.lua",
+    "maintenance/portal_routes_v212.json",
+    "maintenance/portal_routes_v212.py",
     "maintenance/profiling_v185.ljbc",
     "maintenance/profiling_v185.lua",
     "maintenance/profiling_v186.ljbc",
@@ -253,11 +261,12 @@
     "maintenance/test_v209.py",
     "maintenance/test_v210.py",
     "maintenance/test_v211.py",
+    "maintenance/test_v212.py",
     "maintenance/window_hp_v204.ljbc",
     "maintenance/window_hp_v204.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v211.json",
-    "maintenance/validation_v211.json"
+    "maintenance/build_v212.json",
+    "maintenance/validation_v212.json"
   ]
 }
