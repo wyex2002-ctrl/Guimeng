@@ -1,13 +1,13 @@
-# 当前补丁 v1.221（仓库按钮大小、对齐与反馈）
+# 当前补丁 v1.222（仓库按钮大小、对齐与反馈）
 
-玩家下载 `归梦v2.26_魔改补丁_v1.221.zip`；维护包 `Guimeng_v1.221_maintenance.zip`；校验值 `checksums_v221.json`。
+玩家下载 `归梦v2.26_魔改补丁_v1.222.zip`；维护包 `Guimeng_v1.222_maintenance.zip`；校验值 `checksums_v222.json`。
 
 退出游戏，备份存档及原Lib/game.res，解压玩家包覆盖；异常时提供游戏log日志。
 
-仓库按钮放大30%（55×22），与左侧按钮相距5像素、上下居中。悬停上浮1像素，按下下沉1像素，点击区域固定，配色保持。
+仓库按钮保持55×22，更正为距右侧关闭区域约5像素并上下居中。皮肤调暗，九片采样保留立体斜边，消除位移露出的亮边。悬停上浮1像素，按下下沉1像素，点击区域固定；其他配色保持。
 
 官方LuaJIT2.0正常/hot专项通过，包含实际按钮/控件/精灵链、动态对齐和反馈及原物品专项；两包完整性和资源匹配通过。底层图形为有限边界，最终Windows观感需安装确认。保留220修复、叠加出售、999回城卷及其他累计功能。
 
-main/downloads同步，无Release，不覆盖存档、不公开日志。详见第九十七节。
+main/downloads同步，无Release，不覆盖存档、不公开日志。详见第九十八节。
 
-源码提交：https://github.com/wyex2002-ctrl/Guimeng/commit/5d1b8dfd9a342b42f8f756604ad5bb208e91917c
+源码提交：https://github.com/wyex2002-ctrl/Guimeng/commit/52b78d1b3b39bdfd07db7269437efe7d686cd912
