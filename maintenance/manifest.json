@@ -307,10 +307,17 @@
     "maintenance/test_v217.py",
     "maintenance/test_v218.py",
     "maintenance/window_hp_v204.ljbc",
-    "maintenance/window_hp_v204.lua"
+    "maintenance/window_hp_v204.lua",
+    "maintenance/patch_v219.py",
+    "maintenance/test_v219.py",
+    "maintenance/package_v219.py",
+    "maintenance/warehouse_button_v219.lua",
+    "maintenance/warehouse_button_v219.ljbc",
+    "maintenance/inventory_regression_v219.lua",
+    "maintenance/player_changes_v219.json"
   ],
   "generated_reports": [
-    "maintenance/build_v218.json",
-    "maintenance/validation_v218.json"
+    "maintenance/build_v219.json",
+    "maintenance/validation_v219.json"
   ]
 }
