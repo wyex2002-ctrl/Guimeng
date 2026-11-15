@@ -401,7 +401,20 @@
     "maintenance/player_changes_v230.json",
     "maintenance/repeat_skill_v230.lua",
     "maintenance/repeat_skill_v230.ljbc",
-    "maintenance/repeat_regression_v230.lua"
+    "maintenance/repeat_regression_v230.lua",
+    "maintenance/patch_v231.py",
+    "maintenance/test_v231.py",
+    "maintenance/package_v231.py",
+    "maintenance/player_changes_v231.json",
+    "maintenance/repeat_skill_v231.lua",
+    "maintenance/repeat_skill_v231.ljbc",
+    "maintenance/repeat_border_v231.lua",
+    "maintenance/repeat_border_v231.ljbc",
+    "maintenance/diagnostics_v231.lua",
+    "maintenance/diagnostics_v231.ljbc",
+    "maintenance/repeat_regression_v231.lua",
+    "maintenance/repeat_diagnostics_v231.lua",
+    "maintenance/repeat_log_regression_v231.lua"
   ],
   "generated_reports": [
     "maintenance/build_v225.json",
@@ -415,6 +428,8 @@
     "maintenance/build_v229.json",
     "maintenance/validation_v229.json",
     "maintenance/build_v230.json",
-    "maintenance/validation_v230.json"
+    "maintenance/validation_v230.json",
+    "maintenance/build_v231.json",
+    "maintenance/validation_v231.json"
   ]
 }
