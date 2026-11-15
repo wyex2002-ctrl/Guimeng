@@ -321,10 +321,17 @@
     "maintenance/warehouse_button_v220.lua",
     "maintenance/warehouse_button_v220.ljbc",
     "maintenance/inventory_regression_v220.lua",
-    "maintenance/player_changes_v220.json"
+    "maintenance/player_changes_v220.json",
+    "maintenance/patch_v221.py",
+    "maintenance/test_v221.py",
+    "maintenance/package_v221.py",
+    "maintenance/warehouse_button_v221.lua",
+    "maintenance/warehouse_button_v221.ljbc",
+    "maintenance/inventory_regression_v221.lua",
+    "maintenance/player_changes_v221.json"
   ],
   "generated_reports": [
-    "maintenance/build_v220.json",
-    "maintenance/validation_v220.json"
+    "maintenance/build_v221.json",
+    "maintenance/validation_v221.json"
   ]
 }
