@@ -9,3 +9,4 @@ __pycache__/
 /maintenance/module_*.ljbc
 /maintenance/build_v*.json
 /maintenance/validation_v*.json
+/work/

@@ -364,10 +364,17 @@
     "maintenance/player_changes_v225.json",
     "maintenance/portal_labels_v225.lua",
     "maintenance/portal_labels_v225.ljbc",
-    "maintenance/portal_regression_v225.lua"
+    "maintenance/portal_regression_v225.lua",
+    "maintenance/patch_v226.py",
+    "maintenance/test_v226.py",
+    "maintenance/cooldown_regression_v226.lua",
+    "maintenance/package_v226.py",
+    "maintenance/player_changes_v226.json"
   ],
   "generated_reports": [
     "maintenance/build_v225.json",
-    "maintenance/validation_v225.json"
+    "maintenance/validation_v225.json",
+    "maintenance/build_v226.json",
+    "maintenance/validation_v226.json"
   ]
 }
