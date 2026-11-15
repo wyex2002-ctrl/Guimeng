@@ -342,10 +342,25 @@
     "maintenance/warehouse_button_v223.lua",
     "maintenance/warehouse_button_v223.ljbc",
     "maintenance/inventory_regression_v223.lua",
-    "maintenance/player_changes_v223.json"
+    "maintenance/player_changes_v223.json",
+    "maintenance/patch_v224.py",
+    "maintenance/test_v224.py",
+    "maintenance/package_v224.py",
+    "maintenance/warehouse_button_v224.lua",
+    "maintenance/warehouse_button_v224.ljbc",
+    "maintenance/inventory_regression_v224.lua",
+    "maintenance/player_changes_v224.json",
+    "maintenance/guard_ignore_v224.lua",
+    "maintenance/guard_ignore_v224.ljbc",
+    "maintenance/font_layout_v224.lua",
+    "maintenance/font_layout_v224.ljbc",
+    "maintenance/portal_labels_v224.lua",
+    "maintenance/portal_labels_v224.ljbc",
+    "maintenance/guard_font_regression_v224.lua",
+    "maintenance/portal_regression_v224.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v223.json",
-    "maintenance/validation_v223.json"
+    "maintenance/build_v224.json",
+    "maintenance/validation_v224.json"
   ]
 }
