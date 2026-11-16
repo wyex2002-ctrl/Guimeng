@@ -531,10 +531,18 @@
     "maintenance/oil_use_v245.ljbc",
     "maintenance/oil_reset_v245.lua",
     "maintenance/oil_reset_v245.ljbc",
-    "maintenance/luck_regression_v245.lua"
+    "maintenance/luck_regression_v245.lua",
+    "maintenance/patch_v246.py",
+    "maintenance/test_v246.py",
+    "maintenance/package_v246.py",
+    "maintenance/player_changes_v246.json",
+    "maintenance/luck_system_v246.lua",
+    "maintenance/luck_system_v246.ljbc",
+    "maintenance/luck_rules_v246.lua",
+    "maintenance/luck_regression_v246.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v245.json",
-    "maintenance/validation_v245.json"
+    "maintenance/build_v246.json",
+    "maintenance/validation_v246.json"
   ]
 }
