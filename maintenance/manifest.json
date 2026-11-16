@@ -421,10 +421,17 @@
     "maintenance/player_changes_v232.json",
     "maintenance/repeat_regression_v232.lua",
     "maintenance/repeat_skill_v232.lua",
-    "maintenance/repeat_skill_v232.ljbc"
+    "maintenance/repeat_skill_v232.ljbc",
+    "maintenance/patch_v233.py",
+    "maintenance/test_v233.py",
+    "maintenance/package_v233.py",
+    "maintenance/player_changes_v233.json",
+    "maintenance/repeat_skill_v233.lua",
+    "maintenance/repeat_skill_v233.ljbc",
+    "maintenance/repeat_regression_v233.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v232.json",
-    "maintenance/validation_v232.json"
+    "maintenance/build_v233.json",
+    "maintenance/validation_v233.json"
   ]
 }
