@@ -520,10 +520,21 @@
     "maintenance/luck_rules_v244.lua",
     "maintenance/oil_use_v244.ljbc",
     "maintenance/luck_regression_v244.lua",
-    "docs/祝福油与幸运系统.md"
+    "docs/祝福油与幸运系统.md",
+    "maintenance/patch_v245.py",
+    "maintenance/test_v245.py",
+    "maintenance/package_v245.py",
+    "maintenance/player_changes_v245.json",
+    "maintenance/luck_system_v245.lua",
+    "maintenance/luck_system_v245.ljbc",
+    "maintenance/luck_rules_v245.lua",
+    "maintenance/oil_use_v245.ljbc",
+    "maintenance/oil_reset_v245.lua",
+    "maintenance/oil_reset_v245.ljbc",
+    "maintenance/luck_regression_v245.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v244.json",
-    "maintenance/validation_v244.json"
+    "maintenance/build_v245.json",
+    "maintenance/validation_v245.json"
   ]
 }
