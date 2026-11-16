@@ -1,15 +1,15 @@
-# v1.244 祝福油坐骑强化与幸运系统
+# v1.245 佣兵独立幸运与祝福油使用来源
 
-玩家：[归梦v2.26_魔改补丁_v1.244.zip](归梦v2.26_魔改补丁_v1.244.zip)
+玩家：[归梦v2.26_魔改补丁_v1.245.zip](归梦v2.26_魔改补丁_v1.245.zip)
 
-完整维护包：[Guimeng_v1.244_maintenance.zip](Guimeng_v1.244_maintenance.zip)
+完整维护包：[Guimeng_v1.245_maintenance.zip](Guimeng_v1.245_maintenance.zip)
 
-校验：[checksums_v244.json](checksums_v244.json)
+校验：[checksums_v245.json](checksums_v245.json)
 
-退出游戏并备份存档及原Lib/game.res，再覆盖玩家包。
+退出游戏并备份存档和原Lib/game.res，再覆盖玩家包。
 
-祝福油右键强化已装备坐骑：0必成，1～6为40%升、30%降、30%不变，最高7；每次有效消耗1瓶。装备幸运影响主角与其召唤物攻防最大取值，技能幸运和原行会幸运直接相加，攻防各自独立一次。宝宝实时读取主角幸运。规则集中，说明见源码docs/祝福油与幸运系统.md。
+佣兵与其召唤物使用佣兵自己的装备幸运，不借主角幸运。佣兵背包右键祝福油强化佣兵坐骑；主角背包/角色物品快捷栏强化主角坐骑。强化概率及7点上限保持；旧油自动补快捷标记/更新Main，引用无油时不免费强化或扣掉引用。其余物品右键转移行为保持。
 
-正常/hot当前相关回归与双包校验通过；图形/实体基础等有限，只有保存字段重载，没有完整Windows存档重入/视觉实测。不增加拾取开关，保留原Alt11×11及每怪一瓶祝福油测试掉落。
+官方LuaJIT2.0正常/hot当前相关回归和双包校验通过；图形/实体基础/事件桥接有限，没有完整Windows快捷输入/视觉或退出读档实测。规则集中luck_rules_v245.lua，详见源码docs/祝福油与幸运系统.md及第一百二十一节。
 
-源码：https://github.com/wyex2002-ctrl/Guimeng/commit/25dc5bbb0b038781679679b3b905858dea9dc18f
+源码：https://github.com/wyex2002-ctrl/Guimeng/commit/1ab451ab8bb99dc7c40ab806c43b65ed5ccf35ce
