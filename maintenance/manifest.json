@@ -557,10 +557,19 @@
     "maintenance/player_changes_v248.json",
     "maintenance/luck_regression_v248.lua",
     "maintenance/merc_regression_v248.lua",
-    "docs/佣兵幸运攻击闪退修复.md"
+    "docs/佣兵幸运攻击闪退修复.md",
+    "maintenance/patch_v249.py",
+    "maintenance/test_v249.py",
+    "maintenance/package_v249.py",
+    "maintenance/player_changes_v249.json",
+    "maintenance/luck_rules_v249.lua",
+    "maintenance/luck_system_v249.lua",
+    "maintenance/luck_system_v249.ljbc",
+    "maintenance/luck_regression_v249.lua",
+    "maintenance/b3_regression_v249.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v248.json",
-    "maintenance/validation_v248.json"
+    "maintenance/build_v249.json",
+    "maintenance/validation_v249.json"
   ]
 }
