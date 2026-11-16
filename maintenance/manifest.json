@@ -550,10 +550,17 @@
     "maintenance/melee_timing_v247.lua",
     "maintenance/melee_timing_v247.ljbc",
     "maintenance/combat_regression_v247.lua",
-    "docs/翔空剑法锁定判定.md"
+    "docs/翔空剑法锁定判定.md",
+    "maintenance/patch_v248.py",
+    "maintenance/test_v248.py",
+    "maintenance/package_v248.py",
+    "maintenance/player_changes_v248.json",
+    "maintenance/luck_regression_v248.lua",
+    "maintenance/merc_regression_v248.lua",
+    "docs/佣兵幸运攻击闪退修复.md"
   ],
   "generated_reports": [
-    "maintenance/build_v247.json",
-    "maintenance/validation_v247.json"
+    "maintenance/build_v248.json",
+    "maintenance/validation_v248.json"
   ]
 }
