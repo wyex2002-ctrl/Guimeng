@@ -539,10 +539,21 @@
     "maintenance/luck_system_v246.lua",
     "maintenance/luck_system_v246.ljbc",
     "maintenance/luck_rules_v246.lua",
-    "maintenance/luck_regression_v246.lua"
+    "maintenance/luck_regression_v246.lua",
+    "maintenance/patch_v247.py",
+    "maintenance/test_v247.py",
+    "maintenance/package_v247.py",
+    "maintenance/player_changes_v247.json",
+    "maintenance/luck_system_v247.lua",
+    "maintenance/luck_system_v247.ljbc",
+    "maintenance/luck_regression_v247.lua",
+    "maintenance/melee_timing_v247.lua",
+    "maintenance/melee_timing_v247.ljbc",
+    "maintenance/combat_regression_v247.lua",
+    "docs/翔空剑法锁定判定.md"
   ],
   "generated_reports": [
-    "maintenance/build_v246.json",
-    "maintenance/validation_v246.json"
+    "maintenance/build_v247.json",
+    "maintenance/validation_v247.json"
   ]
 }
