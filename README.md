@@ -1,17 +1,15 @@
-# v1.241 补齐神水独立回调修复
+# v1.242 神水提示与拾取选项
 
-玩家：[归梦v2.26_魔改补丁_v1.241.zip](归梦v2.26_魔改补丁_v1.241.zip)
+玩家：[归梦v2.26_魔改补丁_v1.242.zip](归梦v2.26_魔改补丁_v1.242.zip)
 
-完整维护包：[Guimeng_v1.241_maintenance.zip](Guimeng_v1.241_maintenance.zip)
+完整维护包：[Guimeng_v1.242_maintenance.zip](Guimeng_v1.242_maintenance.zip)
 
-校验：[checksums_v241.json](checksums_v241.json)
+校验：[checksums_v242.json](checksums_v242.json)
 
-退出游戏并备份存档和原Lib/game.res，再覆盖玩家包；维护包用于开发。
+退出游戏，备份存档和原Lib/game.res，再覆盖玩家包。
 
-上一版只修到两个道具实际回调，测试给24种模板装同样的两个兄弟Main，漏掉其他真实绑定。241沿道具注册→脚本工厂→自身Main盘点49份同类脚本，补齐其余47份神水默认倍率，按各自真正工厂验证24种原神水；加成、时长、行会双倍/分享和消耗保持。
+神水Buff悬停显示实际属性加成。仓库左侧两行勾选框：拾取时自动出售默认勾选，自动拾取默认关闭；开启自动拾取每秒执行Alt逻辑，范围11×11。祝福油测试为每击败一只怪物额外掉一瓶，名称红色并更新说明，幸运功能仍未开放。
 
-旧240真实道具工厂可精确复现此次61411/table乘法错误。官方LuaJIT2.0正常/hot当前相关回归通过：24种神水各自回调、49工厂身份及神水分支、两剧情/行会/佣兵边界、真实代理/元数据/库存消费/Buff，以及普通药品原参数对照。底层图形、回血请求和最终属性等有限，没有完整Windows实机验证；详见第一百一十七节。
+官方LuaJIT2.0正常/hot专项通过，图形、地面拾取及最终掉落请求等为有限接口，没有完整Windows实机验证。详见源码PROJECT_STATUS与第一百一十八节。保留241消费修复及此前累计功能，不改其他字体颜色边框。main/downloads双包，无Release。
 
-保留240仓库按钮和莲月剑光、239永久Buff与238提示，其他颜色/字体/边框不变。main/downloads双包，无Release；上传原始日志不公开，旧测试/报告/下载不回写。
-
-源码：https://github.com/wyex2002-ctrl/Guimeng/commit/5d6aa8c8e92231e127cb8e8343ffb23ecf9f1b30
+源码：https://github.com/wyex2002-ctrl/Guimeng/commit/11686aca1fc179d3e96b756bb87ac3bce535b4c7
