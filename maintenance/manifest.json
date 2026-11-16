@@ -573,10 +573,17 @@
     "maintenance/player_changes_v250.json",
     "maintenance/luck_system_v250.lua",
     "maintenance/luck_system_v250.ljbc",
-    "maintenance/luck_regression_v250.lua"
+    "maintenance/luck_regression_v250.lua",
+    "maintenance/patch_v251.py",
+    "maintenance/test_v251.py",
+    "maintenance/package_v251.py",
+    "maintenance/player_changes_v251.json",
+    "maintenance/luck_system_v251.lua",
+    "maintenance/luck_system_v251.ljbc",
+    "maintenance/luck_regression_v251.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v250.json",
-    "maintenance/validation_v250.json"
+    "maintenance/build_v251.json",
+    "maintenance/validation_v251.json"
   ]
 }
