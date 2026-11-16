@@ -457,10 +457,15 @@
     "maintenance/test_v237.py",
     "maintenance/package_v237.py",
     "maintenance/shield_regression_v237.lua",
-    "maintenance/player_changes_v237.json"
+    "maintenance/player_changes_v237.json",
+    "maintenance/patch_v238.py",
+    "maintenance/test_v238.py",
+    "maintenance/package_v238.py",
+    "maintenance/player_changes_v238.json",
+    "maintenance/shield_regression_v238.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v237.json",
-    "maintenance/validation_v237.json"
+    "maintenance/build_v238.json",
+    "maintenance/validation_v238.json"
   ]
 }
