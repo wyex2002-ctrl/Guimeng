@@ -482,10 +482,28 @@
     "maintenance/test_v241.py",
     "maintenance/package_v241.py",
     "maintenance/water_regression_v241.lua",
-    "maintenance/player_changes_v241.json"
+    "maintenance/player_changes_v241.json",
+    "maintenance/patch_v242.py",
+    "maintenance/test_v242.py",
+    "maintenance/package_v242.py",
+    "maintenance/player_changes_v242.json",
+    "maintenance/water_regression_v242.lua",
+    "maintenance/ui_regression_v242.lua",
+    "maintenance/pickup_regression_v242.lua",
+    "maintenance/oil_regression_v242.lua",
+    "maintenance/range_pickup_v242.lua",
+    "maintenance/oil_drop_v242.lua",
+    "maintenance/oil_drop_v242.ljbc",
+    "maintenance/oil_reset_v242.lua",
+    "maintenance/oil_reset_v242.ljbc",
+    "maintenance/pickup_options_v242.lua",
+    "maintenance/pickup_options_v242.ljbc",
+    "maintenance/pickup_tick_v242.lua",
+    "maintenance/pickup_tick_v242.ljbc",
+    "maintenance/frame_regression_v242.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v241.json",
-    "maintenance/validation_v241.json"
+    "maintenance/build_v242.json",
+    "maintenance/validation_v242.json"
   ]
 }
