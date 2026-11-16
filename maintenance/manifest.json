@@ -477,10 +477,15 @@
     "maintenance/warehouse_button_v240.ljbc",
     "maintenance/melee_timing_v240.lua",
     "maintenance/melee_timing_v240.ljbc",
-    "maintenance/player_changes_v240.json"
+    "maintenance/player_changes_v240.json",
+    "maintenance/patch_v241.py",
+    "maintenance/test_v241.py",
+    "maintenance/package_v241.py",
+    "maintenance/water_regression_v241.lua",
+    "maintenance/player_changes_v241.json"
   ],
   "generated_reports": [
-    "maintenance/build_v240.json",
-    "maintenance/validation_v240.json"
+    "maintenance/build_v241.json",
+    "maintenance/validation_v241.json"
   ]
 }
