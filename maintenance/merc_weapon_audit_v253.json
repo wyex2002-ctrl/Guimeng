@@ -1,0 +1,1426 @@
+{
+  "version": "v1.253",
+  "count": 142,
+  "weapons": [
+    {
+      "id": 129,
+      "name": "木剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 130,
+      "name": "匕首",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 131,
+      "name": "青铜剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 132,
+      "name": "乌木剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 133,
+      "name": "铁剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 176,
+      "name": "破魂",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 177,
+      "name": "短剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 178,
+      "name": "青铜斧",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 179,
+      "name": "凌风",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 180,
+      "name": "斩马刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 181,
+      "name": "修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 182,
+      "name": "海魂",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 183,
+      "name": "偃月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 184,
+      "name": "半月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 185,
+      "name": "降魔",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 186,
+      "name": "双刃剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 217,
+      "name": "鹤嘴锄",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 218,
+      "name": "风之鹤嘴锄",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 254,
+      "name": "命运之刃",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 255,
+      "name": "银蛇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 256,
+      "name": "魔杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 323,
+      "name": "祖玛裁决之杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 324,
+      "name": "祖玛骨玉权杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 325,
+      "name": "祖玛无极棍",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 326,
+      "name": "沃玛修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 327,
+      "name": "沃玛偃月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 328,
+      "name": "沃玛降魔",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 329,
+      "name": "黄光修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 330,
+      "name": "红光偃月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 331,
+      "name": "黑光降魔",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 332,
+      "name": "虫鸣修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 333,
+      "name": "虫鸣偃月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 334,
+      "name": "虫鸣降魔",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 335,
+      "name": "腥红修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 336,
+      "name": "流星偃月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 337,
+      "name": "骨刺降魔",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 409,
+      "name": "潘夜魔杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 410,
+      "name": "潘夜血饮",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 411,
+      "name": "潘夜银蛇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 412,
+      "name": "潘夜无极棍",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 413,
+      "name": "潘夜命运之刃",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 414,
+      "name": "潘夜炼狱",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 415,
+      "name": "无名刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 416,
+      "name": "井中月",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 417,
+      "name": "炼狱",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 418,
+      "name": "血饮",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 441,
+      "name": "潜行之刃",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 442,
+      "name": "初级暗杀剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 443,
+      "name": "中级暗杀剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 444,
+      "name": "锋利匕首",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 445,
+      "name": "销骨利爪",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 446,
+      "name": "实战杀伤刀",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 447,
+      "name": "悔心匕首",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 448,
+      "name": "烟雨指引",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 449,
+      "name": "亡灵的绝望",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 450,
+      "name": "志气",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 451,
+      "name": "绝命七",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 452,
+      "name": "寒冰心脏",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 453,
+      "name": "霸王双剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 454,
+      "name": "玄武双剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 455,
+      "name": "白莲宽刃刀",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 456,
+      "name": "红连万发",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 457,
+      "name": "钢铁之水",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 481,
+      "name": "诺玛族修罗",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 482,
+      "name": "诅咒银蛇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 483,
+      "name": "诺玛族魔杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 500,
+      "name": "裁决之杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 501,
+      "name": "骨玉权杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 502,
+      "name": "无极棍",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 503,
+      "name": "红色决议",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 504,
+      "name": "屠龙",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 505,
+      "name": "嗜魂法杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 506,
+      "name": "逍遥扇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 507,
+      "name": "玄月",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 508,
+      "name": "霹雷",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 509,
+      "name": "铁轮",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 510,
+      "name": "龙纹剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 511,
+      "name": "天命",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 512,
+      "name": "旋风流星刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 513,
+      "name": "飞魂魔刃",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 514,
+      "name": "封魔剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 515,
+      "name": "暗真魔刀",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 533,
+      "name": "赤血宝剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 534,
+      "name": "破山剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 535,
+      "name": "天神法杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 536,
+      "name": "泰轮拂尘",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 548,
+      "name": "锋翼剑",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 561,
+      "name": "期望之屠龙",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 562,
+      "name": "期望之嗜魂法杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 563,
+      "name": "期望之逍遥扇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 564,
+      "name": "期望之玄月",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 631,
+      "name": "苍翠裁决之杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 632,
+      "name": "苍翠骨玉权杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 633,
+      "name": "苍翠无极棍",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 634,
+      "name": "苍翠玄武双剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 647,
+      "name": "海盗裁决之杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 648,
+      "name": "海盗骨玉权杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 649,
+      "name": "海盗无极棍",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 650,
+      "name": "海盗玄武双剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 666,
+      "name": "玄武之屠龙",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 667,
+      "name": "玄武之嗜魂法杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 668,
+      "name": "玄武之逍遥扇",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 669,
+      "name": "玄武之玄月",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 851,
+      "name": "天狼刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 852,
+      "name": "龙爪杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 853,
+      "name": "阴阳刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 854,
+      "name": "夜叉爪",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 885,
+      "name": "纯净的白灵之刃",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 886,
+      "name": "威武的狂战之刃",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 887,
+      "name": "不朽的法老之刃",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 888,
+      "name": "恐怖的亡灵之刃",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 889,
+      "name": "锋利的灵魂之刃",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 893,
+      "name": "精灵骸骨",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 894,
+      "name": "拍拍手",
+      "class": "不限",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 911,
+      "name": "Q木剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 916,
+      "name": "Q虎牙刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 917,
+      "name": "Q木弓",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 919,
+      "name": "Q碧血战士1",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 920,
+      "name": "Q碧血战士2",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 923,
+      "name": "Q虹玄法师3",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 924,
+      "name": "Q虹玄法师4",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 927,
+      "name": "Q翊仙道士5",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 928,
+      "name": "Q翊仙道士6",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 931,
+      "name": "Q飞燕刺客7",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 934,
+      "name": "Q暗鬼弓手8",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 937,
+      "name": "Q鹤嘴锄",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 951,
+      "name": "飞龙剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 964,
+      "name": "赤龙佩刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 965,
+      "name": "潜龙双剑",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 986,
+      "name": "玄冥赤剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 987,
+      "name": "深渊权杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 988,
+      "name": "邪魔血刀",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 989,
+      "name": "太初之刃",
+      "class": "刺客",
+      "explicit_binding": "刺客双手攻击",
+      "default_binding": null,
+      "effective_binding": "刺客双手攻击",
+      "mode": "melee",
+      "name_scope": "unchanged"
+    },
+    {
+      "id": 1011,
+      "name": "祈祷之刃",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1040,
+      "name": "夏马风屠龙",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1041,
+      "name": "夏马风嗜魂法杖",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1042,
+      "name": "夏马风龙纹剑",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1043,
+      "name": "夏马风玄月",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    },
+    {
+      "id": 1105,
+      "name": "死亡神的梦想",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1106,
+      "name": "巫师智慧法刺",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1107,
+      "name": "月下黑暗之光",
+      "class": "不限",
+      "explicit_binding": null,
+      "default_binding": "刺客普通攻击",
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "companion inventory/equipment only"
+    },
+    {
+      "id": 1108,
+      "name": "回音折磨之刃",
+      "class": "刺客",
+      "explicit_binding": "刺客普通攻击",
+      "default_binding": null,
+      "effective_binding": "刺客普通攻击",
+      "mode": "ranged",
+      "name_scope": "all explicit binding labels"
+    }
+  ]
+}

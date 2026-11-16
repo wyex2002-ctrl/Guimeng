@@ -591,10 +591,21 @@
     "maintenance/ground_name_color_v252.lua",
     "maintenance/ground_name_color_v252.ljbc",
     "maintenance/ground_regression_v252.lua",
-    "docs/地面药品与金币名称配色.md"
+    "docs/地面药品与金币名称配色.md",
+    "maintenance/patch_v253.py",
+    "maintenance/test_v253.py",
+    "maintenance/package_v253.py",
+    "maintenance/player_changes_v253.json",
+    "maintenance/merc_mode_v253.lua",
+    "maintenance/merc_mode_v253.ljbc",
+    "maintenance/merc_mode_regression_v253.lua",
+    "maintenance/merc_weapon_audit_v253.json",
+    "maintenance/ground_name_color_v253.lua",
+    "maintenance/ground_name_color_v253.ljbc",
+    "docs/佣兵近远程模式_v253.md"
   ],
   "generated_reports": [
-    "maintenance/build_v252.json",
-    "maintenance/validation_v252.json"
+    "maintenance/build_v253.json",
+    "maintenance/validation_v253.json"
   ]
 }
