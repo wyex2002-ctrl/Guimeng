@@ -580,10 +580,21 @@
     "maintenance/player_changes_v251.json",
     "maintenance/luck_system_v251.lua",
     "maintenance/luck_system_v251.ljbc",
-    "maintenance/luck_regression_v251.lua"
+    "maintenance/luck_regression_v251.lua",
+    "maintenance/patch_v252.py",
+    "maintenance/test_v252.py",
+    "maintenance/package_v252.py",
+    "maintenance/player_changes_v252.json",
+    "maintenance/luck_system_v252.lua",
+    "maintenance/luck_system_v252.ljbc",
+    "maintenance/luck_regression_v252.lua",
+    "maintenance/ground_name_color_v252.lua",
+    "maintenance/ground_name_color_v252.ljbc",
+    "maintenance/ground_regression_v252.lua",
+    "docs/地面药品与金币名称配色.md"
   ],
   "generated_reports": [
-    "maintenance/build_v251.json",
-    "maintenance/validation_v251.json"
+    "maintenance/build_v252.json",
+    "maintenance/validation_v252.json"
   ]
 }
