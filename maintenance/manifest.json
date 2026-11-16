@@ -510,10 +510,20 @@
     "maintenance/ui_regression_v243.lua",
     "maintenance/pickup_regression_v243.lua",
     "maintenance/oil_regression_v243.lua",
-    "maintenance/frame_regression_v243.lua"
+    "maintenance/frame_regression_v243.lua",
+    "maintenance/patch_v244.py",
+    "maintenance/test_v244.py",
+    "maintenance/package_v244.py",
+    "maintenance/player_changes_v244.json",
+    "maintenance/luck_system_v244.lua",
+    "maintenance/luck_system_v244.ljbc",
+    "maintenance/luck_rules_v244.lua",
+    "maintenance/oil_use_v244.ljbc",
+    "maintenance/luck_regression_v244.lua",
+    "docs/祝福油与幸运系统.md"
   ],
   "generated_reports": [
-    "maintenance/build_v243.json",
-    "maintenance/validation_v243.json"
+    "maintenance/build_v244.json",
+    "maintenance/validation_v244.json"
   ]
 }
