@@ -1,19 +1,19 @@
-# v1.234 技能失效诊断版
+# v1.235 施法寄存器与自动模式误取消修正
 
-本版用于定位自动模式退出后原技能快捷键无效的偶发问题。尚未确认最终根因，不声称已经修复。
+玩家：[归梦v2.26_魔改补丁_v1.235.zip](归梦v2.26_魔改补丁_v1.235.zip)
 
-玩家：[归梦v2.26_魔改补丁_v1.234.zip](归梦v2.26_魔改补丁_v1.234.zip)
+完整维护包：[Guimeng_v1.235_maintenance.zip](Guimeng_v1.235_maintenance.zip)
 
-完整维护包：[Guimeng_v1.234_maintenance.zip](Guimeng_v1.234_maintenance.zip)
+校验：[checksums_v235.json](checksums_v235.json)
 
-校验：[checksums_v234.json](checksums_v234.json)
+退出游戏，备份存档与原Lib/game.res，再覆盖玩家包；维护包用于开发。
 
-退出游戏，备份存档及原Lib/game.res，再覆盖玩家包；维护包用于开发。
+修正旧施法跳板丢失结果表/选择结果/距离寄存器及高位局部跨低位调用的问题。点击敌人、使用物品快捷项不再误取消自动模式；真实UI/NPC交互仍取消，鼠标持住/移动时自动请求等待。保留1.5秒启用、>3秒卡顿取消及Alt/Q/W/E/V豁免，费用/CD/伤害公式不变。
 
-保留233的1.5秒启用、3秒卡顿阈值、Alt/Q/W/E/V豁免和所有原释放限制。只新增按技能键时的repeat.skill_probe，记录冷却/可触发/动作/硬直及队列等，2秒限频、每30秒最多12条，不受旧240条会话诊断上限影响。不会清CD、强解角色状态或修改技能效果。
+正常/hot当前专项、额外3次hot复查及两包校验通过，涵盖真实月魂灵波/雷电术释放、伤害回调结果表、选择转换/训练名捕获、鼠标/物品按键及原冷却/日志。无完整Windows客户端实测；是否解决用户存档中月魂灵波失效需安装确认，不声称所有根因已排除。
 
-再次卡住时按住失效技能键约3秒，或间隔2秒按几次，然后尽快提供本次critical/detail/run/error；重启过附previous。普通/hot相关回归及两包校验通过，无完整Windows实测；硬直倒计时截取片段解释执行，完整助手和其他集成hot。详情见维护记录第一百一十节。
+新增最多8技能的限频保留快照，每5秒轮流重发一条，避免先试F1后用F6时早期记录丢失。安装后重启先测月魂灵波；若仍不施放，按住其快捷键约3秒，尽快提供critical/detail/run/error。详情见第一百一十一节。
 
-main/downloads同步，无Release，不公开原始日志、不覆盖存档。开始前不拉取GitHub。
+源码：https://github.com/wyex2002-ctrl/Guimeng/commit/452272fa41e2b4b81952d5ed281cac1a0153e768
 
-源码：https://github.com/wyex2002-ctrl/Guimeng/commit/3d8822b1dd9640e6fa1fc09176175802e05c2aaa
+main/downloads双包，无Release，不覆盖存档、不公开用户日志；按约定开始前未查询或拉取GitHub。
