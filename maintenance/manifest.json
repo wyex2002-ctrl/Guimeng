@@ -500,10 +500,20 @@
     "maintenance/pickup_options_v242.ljbc",
     "maintenance/pickup_tick_v242.lua",
     "maintenance/pickup_tick_v242.ljbc",
-    "maintenance/frame_regression_v242.lua"
+    "maintenance/frame_regression_v242.lua",
+    "maintenance/patch_v243.py",
+    "maintenance/test_v243.py",
+    "maintenance/package_v243.py",
+    "maintenance/player_changes_v243.json",
+    "maintenance/oil_drop_v243.lua",
+    "maintenance/oil_drop_v243.ljbc",
+    "maintenance/ui_regression_v243.lua",
+    "maintenance/pickup_regression_v243.lua",
+    "maintenance/oil_regression_v243.lua",
+    "maintenance/frame_regression_v243.lua"
   ],
   "generated_reports": [
-    "maintenance/build_v242.json",
-    "maintenance/validation_v242.json"
+    "maintenance/build_v243.json",
+    "maintenance/validation_v243.json"
   ]
 }
