@@ -467,10 +467,20 @@
     "maintenance/test_v239.py",
     "maintenance/package_v239.py",
     "maintenance/magic_shield_regression_v239.lua",
-    "maintenance/player_changes_v239.json"
+    "maintenance/player_changes_v239.json",
+    "maintenance/patch_v240.py",
+    "maintenance/test_v240.py",
+    "maintenance/package_v240.py",
+    "maintenance/water_regression_v240.lua",
+    "maintenance/lotus_regression_v240.lua",
+    "maintenance/warehouse_button_v240.lua",
+    "maintenance/warehouse_button_v240.ljbc",
+    "maintenance/melee_timing_v240.lua",
+    "maintenance/melee_timing_v240.ljbc",
+    "maintenance/player_changes_v240.json"
   ],
   "generated_reports": [
-    "maintenance/build_v239.json",
-    "maintenance/validation_v239.json"
+    "maintenance/build_v240.json",
+    "maintenance/validation_v240.json"
   ]
 }
