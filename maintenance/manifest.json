@@ -610,10 +610,20 @@
     "maintenance/merc_mode_v254.lua",
     "maintenance/merc_mode_v254.ljbc",
     "maintenance/merc_mode_regression_v254.lua",
-    "docs/佣兵武器显示与换装_v254.md"
+    "docs/佣兵武器显示与换装_v254.md",
+    "maintenance/patch_v255.py",
+    "maintenance/test_v255.py",
+    "maintenance/package_v255.py",
+    "maintenance/player_changes_v255.json",
+    "maintenance/merc_mode_v255.lua",
+    "maintenance/merc_mode_v255.ljbc",
+    "maintenance/merc_flight_native_v255.ljbc",
+    "maintenance/merc_mode_regression_v255.lua",
+    "maintenance/merc_flight_regression_v255.lua",
+    "docs/佣兵旋转武器投射_v255.md"
   ],
   "generated_reports": [
-    "maintenance/build_v254.json",
-    "maintenance/validation_v254.json"
+    "maintenance/build_v255.json",
+    "maintenance/validation_v255.json"
   ]
 }
