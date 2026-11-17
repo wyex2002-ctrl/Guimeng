@@ -688,10 +688,24 @@
     "maintenance/luck_system_v263.lua",
     "maintenance/luck_system_v263.ljbc",
     "maintenance/oil_batch_regression_v263.lua",
-    "docs/祝福油随机批次_v263.md"
+    "docs/祝福油随机批次_v263.md",
+    "maintenance/patch_v264.py",
+    "maintenance/test_v264.py",
+    "maintenance/package_v264.py",
+    "maintenance/player_changes_v264.json",
+    "maintenance/luck_system_v264.lua",
+    "maintenance/luck_system_v264.ljbc",
+    "maintenance/oil_batch_regression_v264.lua",
+    "maintenance/oil_gift_v264.lua",
+    "maintenance/oil_gift_v264.ljbc",
+    "maintenance/oil_reset_v264.lua",
+    "maintenance/oil_reset_v264.ljbc",
+    "maintenance/gift_stack_regression_v264.lua",
+    "maintenance/autosave_regression_v264.lua",
+    "docs/祝福油与自动存档_v264.md"
   ],
   "generated_reports": [
-    "maintenance/build_v263.json",
-    "maintenance/validation_v263.json"
+    "maintenance/build_v264.json",
+    "maintenance/validation_v264.json"
   ]
 }
