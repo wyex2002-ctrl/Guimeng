@@ -680,10 +680,18 @@
     "maintenance/merc_mode_v262.lua",
     "maintenance/merc_mode_v262.ljbc",
     "maintenance/party_wait_regression_v262.lua",
-    "docs/佣兵与召唤物等待动画_v262.md"
+    "docs/佣兵与召唤物等待动画_v262.md",
+    "maintenance/patch_v263.py",
+    "maintenance/test_v263.py",
+    "maintenance/package_v263.py",
+    "maintenance/player_changes_v263.json",
+    "maintenance/luck_system_v263.lua",
+    "maintenance/luck_system_v263.ljbc",
+    "maintenance/oil_batch_regression_v263.lua",
+    "docs/祝福油随机批次_v263.md"
   ],
   "generated_reports": [
-    "maintenance/build_v262.json",
-    "maintenance/validation_v262.json"
+    "maintenance/build_v263.json",
+    "maintenance/validation_v263.json"
   ]
 }
