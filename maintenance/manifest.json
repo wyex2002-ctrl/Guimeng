@@ -643,10 +643,23 @@
     "maintenance/merc_mode_v258.lua",
     "maintenance/merc_mode_v258.ljbc",
     "maintenance/merc_flight_regression_v258.lua",
-    "docs/佣兵投射自转三倍速_v258.md"
+    "docs/佣兵投射自转三倍速_v258.md",
+    "maintenance/patch_v259.py",
+    "maintenance/test_v259.py",
+    "maintenance/package_v259.py",
+    "maintenance/player_changes_v259.json",
+    "maintenance/merc_mode_v259.lua",
+    "maintenance/merc_mode_v259.ljbc",
+    "maintenance/merc_flight_regression_v259.lua",
+    "maintenance/oil_drop_v259.lua",
+    "maintenance/oil_drop_v259.ljbc",
+    "maintenance/oil_gift_v259.lua",
+    "maintenance/oil_gift_v259.ljbc",
+    "maintenance/oil_regression_v259.lua",
+    "docs/祝福油掉落与角色赠送_v259.md"
   ],
   "generated_reports": [
-    "maintenance/build_v258.json",
-    "maintenance/validation_v258.json"
+    "maintenance/build_v259.json",
+    "maintenance/validation_v259.json"
   ]
 }
