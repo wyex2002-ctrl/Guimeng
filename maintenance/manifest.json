@@ -702,10 +702,18 @@
     "maintenance/oil_reset_v264.ljbc",
     "maintenance/gift_stack_regression_v264.lua",
     "maintenance/autosave_regression_v264.lua",
-    "docs/祝福油与自动存档_v264.md"
+    "docs/祝福油与自动存档_v264.md",
+    "maintenance/patch_v265.py",
+    "maintenance/test_v265.py",
+    "maintenance/package_v265.py",
+    "maintenance/player_changes_v265.json",
+    "maintenance/repeat_skill_v265.lua",
+    "maintenance/repeat_skill_v265.ljbc",
+    "maintenance/repeat_hold_regression_v265.lua",
+    "docs/玩家说明与1秒连发_v265.md"
   ],
   "generated_reports": [
-    "maintenance/build_v264.json",
-    "maintenance/validation_v264.json"
+    "maintenance/build_v265.json",
+    "maintenance/validation_v265.json"
   ]
 }
