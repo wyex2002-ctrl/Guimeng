@@ -666,10 +666,16 @@
     "maintenance/merc_mode_v260.lua",
     "maintenance/merc_mode_v260.ljbc",
     "maintenance/merc_flight_regression_v260.lua",
-    "docs/佣兵主动技能与己方命中_v260.md"
+    "docs/佣兵主动技能与己方命中_v260.md",
+    "maintenance/patch_v261.py",
+    "maintenance/test_v261.py",
+    "maintenance/tab_retaliation_regression_v261.lua",
+    "maintenance/package_v261.py",
+    "maintenance/player_changes_v261.json",
+    "docs/Tab自动反击开关_v261.md"
   ],
   "generated_reports": [
-    "maintenance/build_v260.json",
-    "maintenance/validation_v260.json"
+    "maintenance/build_v261.json",
+    "maintenance/validation_v261.json"
   ]
 }
