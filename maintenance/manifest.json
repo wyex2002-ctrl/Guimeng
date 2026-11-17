@@ -629,10 +629,16 @@
     "maintenance/merc_mode_v256.ljbc",
     "maintenance/merc_mode_regression_v256.lua",
     "maintenance/merc_flight_regression_v256.lua",
-    "docs/佣兵飞行速度与持续输出_v256.md"
+    "docs/佣兵飞行速度与持续输出_v256.md",
+    "maintenance/patch_v257.py",
+    "maintenance/test_v257.py",
+    "maintenance/package_v257.py",
+    "maintenance/player_changes_v257.json",
+    "maintenance/merc_flight_regression_v257.lua",
+    "docs/佣兵飞行自转修复_v257.md"
   ],
   "generated_reports": [
-    "maintenance/build_v256.json",
-    "maintenance/validation_v256.json"
+    "maintenance/build_v257.json",
+    "maintenance/validation_v257.json"
   ]
 }
