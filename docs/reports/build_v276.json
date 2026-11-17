@@ -1,0 +1,20 @@
+{
+  "version": "v1.276",
+  "base_sha256": "313acba012a989fb16a9dd534b595002b5a48f9da73c9f1f2043a743dcdcaf3a",
+  "bytes": 2738810,
+  "sha256": "88550aa91b9e7efc85ac4a2f9300123bc1579e60d00ccb94ac8f407fe0095a78",
+  "drop_helper_index": 112,
+  "test_build": true,
+  "probability_multiplier": 100000,
+  "all_bands_capped_at_one": true,
+  "autosave_seconds": 5,
+  "player_note_count": 54,
+  "ordinary_level_offset": -20,
+  "boss_level_offset": -20,
+  "roll_max": 50000,
+  "ordinary_threshold": 5,
+  "boss_threshold": 500,
+  "fallback_threshold": 1,
+  "low_boss_roll_max": 300,
+  "low_boss_threshold": 1
+}

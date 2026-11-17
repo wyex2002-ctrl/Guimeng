@@ -804,10 +804,20 @@
     "maintenance/crash_analysis_v275.json",
     "docs/技能入口诊断稳定性_v275.md",
     "docs/reports/build_v275.json",
-    "docs/reports/validation_v275.json"
+    "docs/reports/validation_v275.json",
+    "maintenance/patch_v276.py",
+    "maintenance/test_v276.py",
+    "maintenance/package_v276.py",
+    "maintenance/player_changes_v276.json",
+    "maintenance/oil_drop_v276.lua",
+    "maintenance/oil_drop_v276.ljbc",
+    "maintenance/oil_drop_regression_v276.lua",
+    "docs/祝福油高掉落测试_v276.md",
+    "docs/reports/build_v276.json",
+    "docs/reports/validation_v276.json"
   ],
   "generated_reports": [
-    "maintenance/build_v275.json",
-    "maintenance/validation_v275.json"
+    "maintenance/build_v276.json",
+    "maintenance/validation_v276.json"
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "version": "v1.276",
+  "all_passed": true,
+  "test_build": true,
+  "probability_multiplier": 100000,
+  "autosave_seconds": 5,
+  "sha256": "88550aa91b9e7efc85ac4a2f9300123bc1579e60d00ccb94ac8f407fe0095a78",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "OIL_DROP_V276_PASS normal checks=5401; retained level/RNG bands, saturated drops, native death/respawn/drop/ground, finite engine/map/graphics\n"
+    },
+    {
+      "mode": "hot",
+      "output": "OIL_DROP_V276_PASS hot checks=5401; retained level/RNG bands, saturated drops, native death/respawn/drop/ground, finite engine/map/graphics\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "historical_suites_rerun": false,
+  "full_windows_game_run": false,
+  "scope": "actual native death/spawn, read-only Sys and live hero getter, oil helper -> native item protection/drop -> full ground constructor; exact integer-roll/level thresholds and per-life guard; finite engine/map/graphics bridge, not Windows full combat",
+  "tested_files": {
+    "patch_v276.py": "4c19c099e2afc55a1db14b617b3431fd9135c893125f201cb47acb0bf912137f",
+    "test_v276.py": "c3076c30975adce98cba5dfa2f9a7dea53b88904d281c9fd90f24a402a3cefec",
+    "package_v276.py": "443f16ed76367ba0084e54a76801adc3751a97ab4a3bb2f9b74aa5f6e63586d2",
+    "player_changes_v276.json": "37b051215b5783365fd4a2e39b70c422782760626a423caa3e7acfa6dee6832b",
+    "oil_drop_v276.lua": "0ecab244d7073e5449891b4a55fb3a47c6f032f86cfce532d4168d942c442d8c",
+    "oil_drop_v276.ljbc": "3d51907d56c3f163c6e8a8b6a605fc9f0690c5ea16a8866fe9a60c39aa8fc672",
+    "oil_drop_regression_v276.lua": "6133b5dd9fc4454d7866ff06ef64e67fd82a0455553ccd2058b361ba435431a0"
+  }
+}
