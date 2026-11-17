@@ -1,10 +1,10 @@
 # 归梦维护下载
 
-当前 v1.268（2026-11-17）：打怪闪退诊断版，补充主更新、对象更新及存档前后日志；尚未确认或修复闪退根因。保留全部累计玩法。玩家说明不公开具体概率或隐藏随机参数。字体、颜色及边框未改。
+当前 v1.269（2026-11-17）：自动存档间隔改为3分钟，沿用原存档条件，手动／退出存档保持。本次闪退日志中，最后采样帧及最近一次保存均已返回，但未记录具体故障调用；根因仍未确认，本版不宣称修复闪退。保留v268诊断和全部累计玩法。字体、颜色及边框未改。
 
-- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.268.zip)
-- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.268_maintenance.zip)
-- [校验值](checksums_v268.json)
-- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/a6702a8d813dfbf4614d1b2e0d160fb6d1bf023c)
+- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.269.zip)
+- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.269_maintenance.zip)
+- [校验值](checksums_v269.json)
+- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/1ee9b88b045eb373041f00fe983c9c1cdbea2c64)
 
-退出游戏并备份存档及原Lib/game.res后安装玩家包。normal/hot诊断及原生帧／受控自动存档回归、42模块非目标检查通过。引擎和文件为有限桥接，未做Windows完整客户端实测。闪退后先复制整个log文件夹，再重启；请提供新增native_watch及原critical、run、detail日志。普通帧日志为采样，不能保证捕获硬退出确切位置。旧包继续保留，无Release。
+退出游戏并备份存档及原Lib/game.res后安装玩家包。normal/hot两剧情自动存档边界、原生时钟／完整帧／公开run及42模块非目标检查通过。文件、保存和图形存在有限桥接，未进行Windows客户端存档或闪退复现实测。若继续退出，除整个log文件夹外，需进一步结合Windows应用程序错误中的故障模块、异常代码或崩溃转储判断；重启前先复制日志。旧包继续保留，无Release。
