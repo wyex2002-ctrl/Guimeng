@@ -1,0 +1,80 @@
+{
+  "version": "v1.277",
+  "all_passed": true,
+  "sha256": "a0014ce27435f9784b3e605e9c86f3075c1cd9d685a92f4a4a1b2ddcb8c3ad75",
+  "runs": [
+    {
+      "suite": "party_wait",
+      "mode": "normal",
+      "output": "PARTY_WAIT_V277_PASS\tnormal\t4494\tchecks; actual class/motion/reset/animation, protected attributes/public owners and native copy\n"
+    },
+    {
+      "suite": "party_wait",
+      "mode": "hot",
+      "output": "PARTY_WAIT_V277_PASS\thot\t4495\tchecks; actual class/motion/reset/animation, protected attributes/public owners and native copy\n"
+    },
+    {
+      "suite": "entry_abi",
+      "mode": "normal",
+      "output": "ENTRY_ABI_V277_PASS\tnormal\t2005\tchecks; all original parameters, ignored helper returns, error identity\n"
+    },
+    {
+      "suite": "entry_abi",
+      "mode": "hot",
+      "output": "ENTRY_ABI_V277_PASS\thot\t2006\tchecks; all original parameters, ignored helper returns, error identity\n"
+    }
+  ],
+  "changed_instructions": [
+    [
+      22,
+      89,
+      0
+    ],
+    [
+      22,
+      89,
+      1
+    ],
+    [
+      22,
+      89,
+      2
+    ],
+    [
+      22,
+      89,
+      3
+    ],
+    [
+      22,
+      97,
+      0
+    ],
+    [
+      22,
+      97,
+      1
+    ],
+    [
+      22,
+      97,
+      2
+    ]
+  ],
+  "all_42_modules_checked": true,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "full_windows_game_run": false,
+  "client_crash_reproduced": false,
+  "autosave_seconds": 5,
+  "high_drop_test_retained": true,
+  "scope": "actual native event class, motion/reset/animation and protected attribute/public owner proxies; contiguous entry ABI, parameter preservation and original errors; finite graphics/actions/engine boundaries, not Windows x86 LuaJIT 2.0.4 validation",
+  "tested_files": {
+    "patch_v277.py": "4e7a98434cfd29407376acf21533cf73cb6a09cff350fb0a2e31e8a88327988c",
+    "test_v277.py": "3d8193c025891ca02179aff26754e25888c929be293f454931dc56b03d5eb383",
+    "package_v277.py": "13c789e68c3e852743f9fbebbb419873eb89e28005ee1877a7684e61460de0a5",
+    "player_changes_v277.json": "37b051215b5783365fd4a2e39b70c422782760626a423caa3e7acfa6dee6832b",
+    "party_wait_regression_v277.lua": "7a2fdef69db9c9d0e51e855d9703c6c1e2b3df8eac6c31a393613deca8916d1c",
+    "entry_abi_regression_v277.lua": "dc60afbe24bd379ac31a25e18c95aba42694ce62a18a97c03e52eb163e941639",
+    "crash_analysis_v277.json": "db048097100ec1e2631e68d3e6f0c0ce1cb92f4bfe7efbff83800f40e2021bb6"
+  }
+}

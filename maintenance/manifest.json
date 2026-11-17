@@ -814,10 +814,20 @@
     "maintenance/oil_drop_regression_v276.lua",
     "docs/祝福油高掉落测试_v276.md",
     "docs/reports/build_v276.json",
-    "docs/reports/validation_v276.json"
+    "docs/reports/validation_v276.json",
+    "maintenance/patch_v277.py",
+    "maintenance/test_v277.py",
+    "maintenance/package_v277.py",
+    "maintenance/player_changes_v277.json",
+    "maintenance/party_wait_regression_v277.lua",
+    "maintenance/entry_abi_regression_v277.lua",
+    "maintenance/crash_analysis_v277.json",
+    "docs/动画入口调用帧修正_v277.md",
+    "docs/reports/build_v277.json",
+    "docs/reports/validation_v277.json"
   ],
   "generated_reports": [
-    "maintenance/build_v276.json",
-    "maintenance/validation_v276.json"
+    "maintenance/build_v277.json",
+    "maintenance/validation_v277.json"
   ]
 }

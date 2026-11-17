@@ -1,0 +1,92 @@
+{
+  "dump_bytes": 847048356,
+  "dump_sha256": "8a093ee015680317fcbeef73a2e669e227554746f1b2bca1d35462fa529e315d",
+  "dll_sha256": "ea26f00e4f607fd02603b977d27a0b1f5ce7a3c0e4c875d65e0839b9bbc72337",
+  "registers": {
+    "gs": "0x2b",
+    "fs": "0x53",
+    "es": "0x2b",
+    "ds": "0x2b",
+    "edi": "0x5f8c110",
+    "esi": "0xfffffff4",
+    "ebx": "0x2a50d00",
+    "edx": "0x666b7f8",
+    "ecx": "0x20a817a8",
+    "eax": "0x25673840",
+    "ebp": "0x25673840",
+    "eip": "0x1003e122",
+    "cs": "0x23",
+    "eflags": "0x210202",
+    "esp": "0x1afc58",
+    "ss": "0x2b"
+  },
+  "exception_ip": "0x1003e122",
+  "exception_read_address": "0x5f8c120",
+  "jit_trace": 539,
+  "jit_exit": 11,
+  "snapshot": {
+    "mapofs": 76,
+    "nent": 19,
+    "next_mapofs": 98,
+    "jit_entry_base": "0x25673798",
+    "restored_links": [
+      {
+        "slot": 12,
+        "flags": "0x10000",
+        "link_map_index": 97,
+        "destination": "0x256737f4",
+        "restored_word": "0x3f90240",
+        "actual_word": "0x3f90240",
+        "read_compressed_entry_instead_of_link": false
+      },
+      {
+        "slot": 18,
+        "flags": "0x20000",
+        "link_map_index": 96,
+        "destination": "0x25673824",
+        "restored_word": "0x3f91d9c",
+        "actual_word": "0x3f91d9c",
+        "read_compressed_entry_instead_of_link": false
+      },
+      {
+        "slot": 19,
+        "flags": "0x10000",
+        "link_map_index": 95,
+        "destination": "0x2567382c",
+        "restored_word": "0x3ca0078",
+        "actual_word": "0x3ca0078",
+        "read_compressed_entry_instead_of_link": false
+      },
+      {
+        "slot": 21,
+        "flags": "0x10000",
+        "link_map_index": 94,
+        "destination": "0x2567383c",
+        "restored_word": "0x1f00804a",
+        "actual_word": "0x1f00804a",
+        "read_compressed_entry_instead_of_link": true
+      }
+    ]
+  },
+  "fault_reconstruction": {
+    "bad_frame_link": "0x1f00804a",
+    "restored_base": "0x666b7f8",
+    "function_pointer": "0x5f8c110",
+    "read_address": "0x5f8c120"
+  },
+  "actor": {
+    "id": 50063.0,
+    "name": "神兽",
+    "owner_id": 0.0
+  },
+  "limitations": [
+    "Captured state and native disassembly prove the frame-link restoration failure for this dump.",
+    "The high-register entry hook is a specific suspect; no corrected Windows game run or full reproduction has been performed.",
+    "Does not establish that every earlier crash shared this cause."
+  ],
+  "version": "v1.277",
+  "source_build": "v1.276",
+  "direct_failure_reconstructed": true,
+  "entry_fix_client_validated": false,
+  "privacy": "No raw dump, save data, uploaded binaries or complete process memory included."
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v1.277",
+  "base_sha256": "88550aa91b9e7efc85ac4a2f9300123bc1579e60d00ccb94ac8f407fe0095a78",
+  "bytes": 2738810,
+  "sha256": "a0014ce27435f9784b3e605e9c86f3075c1cd9d685a92f4a4a1b2ddcb8c3ad75",
+  "entry_registers": {
+    "22/89": [
+      8,
+      4
+    ],
+    "22/97": [
+      18,
+      2
+    ]
+  },
+  "changed_business_instructions": 7,
+  "instruction_counts_unchanged": true,
+  "helper_and_animation_bodies_unchanged": true,
+  "jit_globally_disabled": false,
+  "autosave_seconds": 5,
+  "blessing_oil_high_drop_test_retained": true,
+  "player_note_count": 54
+}
