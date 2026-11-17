@@ -1,10 +1,10 @@
 # 归梦维护下载
 
-当前 v1.265（2026-11-17）：按用户原编号润色玩家说明，删除原22、42条后连续编号为54项，原52现为50。单体远程技能长按开启自动连发的实际门槛由1.5秒改为1秒，原施放与退出条件保持。字体、颜色、边框及其他累计玩法不改。
+当前 v1.266（2026-11-17）：祝福油掉落按怪物类型及其与主角的等级差调整，普通怪物和Boss均有机会掉落。玩家说明不公开具体概率或隐藏随机参数。保留原击杀归属、每生命一次判定、祝福油使用和其他累计玩法。字体、颜色及边框未改。
 
-- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.265.zip)
-- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.265_maintenance.zip)
-- [校验值](checksums_v265.json)
-- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/a13baf4005508f395569212eb6858f5708af32d4)
+- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.266.zip)
+- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.266_maintenance.zip)
+- [校验值](checksums_v266.json)
+- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/6c8dbb5fdda90afbc5530cde13183308ff2268cc)
 
-退出游戏并备份存档及原Lib/game.res后安装玩家包。normal/hot专项及42模块非目标检查通过，包括原类注册／更新入口／技能槽回调、多帧率和1秒临界点；物理输入、图形及技能请求为有限桥接，未做Windows完整客户端实测。旧包继续保留，无Release。
+退出游戏并备份存档及原Lib/game.res后安装玩家包。normal/hot当前掉落专项及42模块非目标检查通过，包含原生死亡／重生／实时等级／归属／物品保护／掉落及完整地面构造器。引擎随机、地图和图形为有限桥接，未做Windows完整客户端实测。旧包继续保留，无Release。
