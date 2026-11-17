@@ -1,15 +1,10 @@
-# v1.255 佣兵旋转武器投射与6格远程
+# 归梦维护下载
 
-玩家：[归梦v2.26_魔改补丁_v1.255.zip](归梦v2.26_魔改补丁_v1.255.zip)
+当前 v1.256（2026-11-17）。佣兵投射初速为当前剧情火球术的1.2倍，到达后仍由原佣兵逻辑结算；保留原出手节奏、单次伤害与次数，首次命中延迟，稳定持续DPS对照一致。6格射程及双手近战保持。
 
-完整维护包：[Guimeng_v1.255_maintenance.zip](Guimeng_v1.255_maintenance.zip)
+- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.256.zip)
+- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.256_maintenance.zip)
+- [校验值](checksums_v256.json)
+- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/4988d81705acd94f8fb2707973fb3f678a418df7)
 
-校验：[checksums_v255.json](checksums_v255.json)
-
-退出游戏并备份存档和原Lib/game.res，再覆盖玩家包。
-
-佣兵远程普攻投出旋转武器，优先用当前武器的地面掉落图像；蝉舞、月桂、红莲、白莲、盛开保留原特效并补飞行。远程距离统一6格，7格起原追击；双手近战和其他实体／职业保持。仅视觉复用原版飞行机制，伤害、次数、MP、冷却和攻速保持原佣兵逻辑；不新增视线检测。继续允许战斗换装，不改变字体、颜色或边框。
-
-最终官方LuaJIT2.0 normal/hot专项及42模块检查通过，实际技能注册段／完整更新／原生子弹和精灵链已运行，未完成Windows像素、完整战斗、切图或退出读档验证。高速／低帧率视觉至少保留两次更新，不推迟原伤害或下一击。254历史单次JIT异常原因仍未确认，本轮最终专项未发生。详见源码PROJECT_STATUS.md及第一百三十一节。保留历史下载，无Release。
-
-源码：https://github.com/wyex2002-ctrl/Guimeng/commit/5de7014db1b5a33b802958e69dd1e9f3950f0d00
+退出游戏并备份存档及原Lib/game.res后安装玩家包。normal/hot受控专项通过；未做Windows实机画面验证。旧包继续保留。
