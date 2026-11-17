@@ -734,10 +734,17 @@
     "maintenance/native_watch_v268.lua",
     "maintenance/native_watch_v268.ljbc",
     "maintenance/native_watch_regression_v268.lua",
-    "docs/打怪闪退定位_v268.md"
+    "docs/打怪闪退定位_v268.md",
+    "maintenance/patch_v269.py",
+    "maintenance/test_v269.py",
+    "maintenance/package_v269.py",
+    "maintenance/player_changes_v269.json",
+    "maintenance/autosave_regression_v269.lua",
+    "maintenance/crash_analysis_v269.json",
+    "docs/闪退复核与3分钟存档_v269.md"
   ],
   "generated_reports": [
-    "maintenance/build_v268.json",
-    "maintenance/validation_v268.json"
+    "maintenance/build_v269.json",
+    "maintenance/validation_v269.json"
   ]
 }

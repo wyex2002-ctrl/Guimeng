@@ -1,0 +1,36 @@
+{
+  "version": "v1.269",
+  "input_version": "v1.268",
+  "crash_root_cause_confirmed": false,
+  "lua_error_recorded": false,
+  "last_log_time": "2026-11-17 17:30:39",
+  "last_watch_frame": 1411,
+  "last_watch_reason": "frame.return",
+  "last_watch_phase": "end",
+  "last_watch_save_status": "returned",
+  "hero_action": "移动",
+  "interpretation": "The sampled frame and latest observed save returned. No exact failing operation or native exception stack is present. A later unsampled frame or engine operation can still be responsible; save side effects are not excluded.",
+  "new_diagnostic_instrumentation": false,
+  "inputs": [
+    {
+      "name": "guimeng_critical_latest.txt",
+      "bytes": 24749,
+      "sha256": "e7eac4ed3ab25c62ba3fb7fd5f167eab3d906ea76d34350f2978e6457c217c29"
+    },
+    {
+      "name": "guimeng_run_latest.txt",
+      "bytes": 16296,
+      "sha256": "1e16b3ef8d63d1ba5ce999921daa642a55e074df286d8a8e76ded320079e861d"
+    },
+    {
+      "name": "guimeng_detail_latest.txt",
+      "bytes": 32125,
+      "sha256": "29e8e03a5c2fbfcbfe1b1941acc8295f6b828ed5c902286940b420baea4bc9e0"
+    },
+    {
+      "name": "guimeng_native_watch_latest.txt",
+      "bytes": 5129,
+      "sha256": "4b52452d50fedd468f2dbe2d8578cf8d2a6ed639a3a412521ece791f44614d66"
+    }
+  ]
+}
