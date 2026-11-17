@@ -672,10 +672,18 @@
     "maintenance/tab_retaliation_regression_v261.lua",
     "maintenance/package_v261.py",
     "maintenance/player_changes_v261.json",
-    "docs/Tab自动反击开关_v261.md"
+    "docs/Tab自动反击开关_v261.md",
+    "maintenance/patch_v262.py",
+    "maintenance/test_v262.py",
+    "maintenance/package_v262.py",
+    "maintenance/player_changes_v262.json",
+    "maintenance/merc_mode_v262.lua",
+    "maintenance/merc_mode_v262.ljbc",
+    "maintenance/party_wait_regression_v262.lua",
+    "docs/佣兵与召唤物等待动画_v262.md"
   ],
   "generated_reports": [
-    "maintenance/build_v261.json",
-    "maintenance/validation_v261.json"
+    "maintenance/build_v262.json",
+    "maintenance/validation_v262.json"
   ]
 }
