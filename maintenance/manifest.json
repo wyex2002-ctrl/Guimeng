@@ -769,10 +769,16 @@
     "maintenance/native_watch_v272.ljbc",
     "maintenance/native_watch_regression_v272.lua",
     "maintenance/autosave_regression_v272.lua",
-    "docs/日志降频与20秒存档_v272.md"
+    "docs/日志降频与20秒存档_v272.md",
+    "maintenance/patch_v273.py",
+    "maintenance/test_v273.py",
+    "maintenance/package_v273.py",
+    "maintenance/player_changes_v273.json",
+    "maintenance/autosave_regression_v273.lua",
+    "docs/自动存档5秒_v273.md"
   ],
   "generated_reports": [
-    "maintenance/build_v272.json",
-    "maintenance/validation_v272.json"
+    "maintenance/build_v273.json",
+    "maintenance/validation_v273.json"
   ]
 }
