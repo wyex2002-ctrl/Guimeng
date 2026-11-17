@@ -602,10 +602,18 @@
     "maintenance/merc_weapon_audit_v253.json",
     "maintenance/ground_name_color_v253.lua",
     "maintenance/ground_name_color_v253.ljbc",
-    "docs/佣兵近远程模式_v253.md"
+    "docs/佣兵近远程模式_v253.md",
+    "maintenance/patch_v254.py",
+    "maintenance/test_v254.py",
+    "maintenance/package_v254.py",
+    "maintenance/player_changes_v254.json",
+    "maintenance/merc_mode_v254.lua",
+    "maintenance/merc_mode_v254.ljbc",
+    "maintenance/merc_mode_regression_v254.lua",
+    "docs/佣兵武器显示与换装_v254.md"
   ],
   "generated_reports": [
-    "maintenance/build_v253.json",
-    "maintenance/validation_v253.json"
+    "maintenance/build_v254.json",
+    "maintenance/validation_v254.json"
   ]
 }
