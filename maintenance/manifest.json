@@ -750,10 +750,20 @@
     "maintenance/exit_watch_v270.ljbc",
     "maintenance/exit_watch_regression_v270.lua",
     "maintenance/crash_analysis_v270.json",
-    "docs/游戏内退出诊断_v270.md"
+    "docs/游戏内退出诊断_v270.md",
+    "maintenance/patch_v271.py",
+    "maintenance/test_v271.py",
+    "maintenance/package_v271.py",
+    "maintenance/player_changes_v271.json",
+    "maintenance/native_watch_v271.lua",
+    "maintenance/native_watch_v271.ljbc",
+    "maintenance/native_watch_regression_v271.lua",
+    "maintenance/autosave_regression_v271.lua",
+    "maintenance/crash_analysis_v271.json",
+    "docs/密集日志与3秒存档_v271.md"
   ],
   "generated_reports": [
-    "maintenance/build_v270.json",
-    "maintenance/validation_v270.json"
+    "maintenance/build_v271.json",
+    "maintenance/validation_v271.json"
   ]
 }

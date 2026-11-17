@@ -1,0 +1,66 @@
+{
+  "version": "v1.271",
+  "crash_root_cause_confirmed": false,
+  "current_session_version": "v1.270",
+  "current_last_time": "2026-11-17 18:17:13",
+  "current_watch_frame": 1979,
+  "current_watch_reason": "frame.enter",
+  "current_exit_stage": "installed",
+  "current_exit_requests": 0,
+  "error_file_session_version": "v1.269",
+  "error_file_time": "2026-11-17 18:04:37",
+  "error_file_path": "information YES callback -> save and quit -> native quit",
+  "interpretation": "The older error file is not the current failure. Current traces do not identify the failing operation. Exit requests were not recorded; this cannot exclude failed log writes or a bypassing native exit.",
+  "inputs": [
+    {
+      "name": "guimeng_run_latest.txt",
+      "bytes": 16361,
+      "sha256": "6407b3ce448e70a145c9884a1038c3e22d4f644cf656eee941f17a7ed24b6a14"
+    },
+    {
+      "name": "guimeng_critical_previous.txt",
+      "bytes": 97226,
+      "sha256": "0a38911789347ab5ae9349db9a8065adee747bb1e8646e21ea50c8a80c3ee85a"
+    },
+    {
+      "name": "guimeng_detail_previous.txt",
+      "bytes": 110680,
+      "sha256": "5962164949914fbdb943667be35bf35c7e6c5297a25bb253cd0053f32ee46643"
+    },
+    {
+      "name": "guimeng_native_watch_previous.txt",
+      "bytes": 6380,
+      "sha256": "0cc1d515497065ff6a5c2993bb7be0a44c009e4017ebb2ccdc92782db86d7a25"
+    },
+    {
+      "name": "guimeng_exit_latest.txt",
+      "bytes": 190,
+      "sha256": "7f38e52038e086dba678a36cc2856f340988bd6743519c465922274f7d495f1a"
+    },
+    {
+      "name": "guimeng_run_previous.txt",
+      "bytes": 24701,
+      "sha256": "9bca253f3cd1a38049e79e479871d6fcf9a7fa9ff056b9ab482364207b2c6668"
+    },
+    {
+      "name": "guimeng_critical_latest.txt",
+      "bytes": 49292,
+      "sha256": "e8cb8ea6448282350026f5138872ed07f580eadb0feedefa6276cabf690a4f49"
+    },
+    {
+      "name": "guimeng_error_latest.txt",
+      "bytes": 25899,
+      "sha256": "e3c199fa89fad7ddda6b32a64b7e3f9e8e03d2ce07a315546429ab1f54b391c9"
+    },
+    {
+      "name": "guimeng_detail_latest.txt",
+      "bytes": 58548,
+      "sha256": "3cda32e616807a5ed43e850758ed1b5fa7e27593990c0ae2f1b0bf82cebd72c2"
+    },
+    {
+      "name": "guimeng_native_watch_latest.txt",
+      "bytes": 4212,
+      "sha256": "64df6f9dd82710b725bd4442f91681bdbe7e107459505891021d06f3cdb5150b"
+    }
+  ]
+}
