@@ -620,10 +620,19 @@
     "maintenance/merc_flight_native_v255.ljbc",
     "maintenance/merc_mode_regression_v255.lua",
     "maintenance/merc_flight_regression_v255.lua",
-    "docs/佣兵旋转武器投射_v255.md"
+    "docs/佣兵旋转武器投射_v255.md",
+    "maintenance/patch_v256.py",
+    "maintenance/test_v256.py",
+    "maintenance/package_v256.py",
+    "maintenance/player_changes_v256.json",
+    "maintenance/merc_mode_v256.lua",
+    "maintenance/merc_mode_v256.ljbc",
+    "maintenance/merc_mode_regression_v256.lua",
+    "maintenance/merc_flight_regression_v256.lua",
+    "docs/佣兵飞行速度与持续输出_v256.md"
   ],
   "generated_reports": [
-    "maintenance/build_v255.json",
-    "maintenance/validation_v255.json"
+    "maintenance/build_v256.json",
+    "maintenance/validation_v256.json"
   ]
 }
