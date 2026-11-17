@@ -718,10 +718,18 @@
     "maintenance/oil_drop_v266.lua",
     "maintenance/oil_drop_v266.ljbc",
     "maintenance/oil_drop_regression_v266.lua",
-    "docs/祝福油等级掉落_v266.md"
+    "docs/祝福油等级掉落_v266.md",
+    "maintenance/patch_v267.py",
+    "maintenance/test_v267.py",
+    "maintenance/package_v267.py",
+    "maintenance/player_changes_v267.json",
+    "maintenance/oil_drop_v267.lua",
+    "maintenance/oil_drop_v267.ljbc",
+    "maintenance/oil_drop_regression_v267.lua",
+    "docs/祝福油低等级Boss掉落_v267.md"
   ],
   "generated_reports": [
-    "maintenance/build_v266.json",
-    "maintenance/validation_v266.json"
+    "maintenance/build_v267.json",
+    "maintenance/validation_v267.json"
   ]
 }
