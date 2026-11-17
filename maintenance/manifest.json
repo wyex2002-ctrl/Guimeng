@@ -760,10 +760,19 @@
     "maintenance/native_watch_regression_v271.lua",
     "maintenance/autosave_regression_v271.lua",
     "maintenance/crash_analysis_v271.json",
-    "docs/密集日志与3秒存档_v271.md"
+    "docs/密集日志与3秒存档_v271.md",
+    "maintenance/patch_v272.py",
+    "maintenance/test_v272.py",
+    "maintenance/package_v272.py",
+    "maintenance/player_changes_v272.json",
+    "maintenance/native_watch_v272.lua",
+    "maintenance/native_watch_v272.ljbc",
+    "maintenance/native_watch_regression_v272.lua",
+    "maintenance/autosave_regression_v272.lua",
+    "docs/日志降频与20秒存档_v272.md"
   ],
   "generated_reports": [
-    "maintenance/build_v271.json",
-    "maintenance/validation_v271.json"
+    "maintenance/build_v272.json",
+    "maintenance/validation_v272.json"
   ]
 }
