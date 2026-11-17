@@ -775,10 +775,25 @@
     "maintenance/package_v273.py",
     "maintenance/player_changes_v273.json",
     "maintenance/autosave_regression_v273.lua",
-    "docs/自动存档5秒_v273.md"
+    "docs/自动存档5秒_v273.md",
+    "maintenance/patch_v274.py",
+    "maintenance/test_v274.py",
+    "maintenance/package_v274.py",
+    "maintenance/player_changes_v274.json",
+    "maintenance/native_watch_v274.lua",
+    "maintenance/native_watch_v274.ljbc",
+    "maintenance/exit_watch_v274.lua",
+    "maintenance/exit_watch_v274.ljbc",
+    "maintenance/native_watch_regression_v274.lua",
+    "maintenance/skill_trace_regression_v274.lua",
+    "maintenance/target_trace_regression_v274.lua",
+    "maintenance/projectile_trace_regression_v274.lua",
+    "docs/分层战斗日志_v274.md",
+    "docs/reports/build_v274.json",
+    "docs/reports/validation_v274.json"
   ],
   "generated_reports": [
-    "maintenance/build_v273.json",
-    "maintenance/validation_v273.json"
+    "maintenance/build_v274.json",
+    "maintenance/validation_v274.json"
   ]
 }

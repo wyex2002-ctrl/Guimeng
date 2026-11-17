@@ -1,0 +1,17 @@
+{
+  "version": "v1.274",
+  "base_sha256": "0cd370eca8143e56a3612ab140bcbc7a08e2a05afe9fce561ccb73c086c3f9a4",
+  "bytes": 2736773,
+  "sha256": "ede40eb5b91f3ef509de1b5353e47e70d9ee17852bfb0c218d809267dfc73d94",
+  "watch_at": 729,
+  "watch_count": 43,
+  "exit_at": 772,
+  "exit_count": 5,
+  "constructor": 777,
+  "sample_seconds": 0.5,
+  "activity_records": 256,
+  "frozen_event_records": 128,
+  "autosave_seconds": 5,
+  "diagnostic_only": true,
+  "crash_root_cause_confirmed": false
+}
