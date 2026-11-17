@@ -741,10 +741,19 @@
     "maintenance/player_changes_v269.json",
     "maintenance/autosave_regression_v269.lua",
     "maintenance/crash_analysis_v269.json",
-    "docs/闪退复核与3分钟存档_v269.md"
+    "docs/闪退复核与3分钟存档_v269.md",
+    "maintenance/patch_v270.py",
+    "maintenance/test_v270.py",
+    "maintenance/package_v270.py",
+    "maintenance/player_changes_v270.json",
+    "maintenance/exit_watch_v270.lua",
+    "maintenance/exit_watch_v270.ljbc",
+    "maintenance/exit_watch_regression_v270.lua",
+    "maintenance/crash_analysis_v270.json",
+    "docs/游戏内退出诊断_v270.md"
   ],
   "generated_reports": [
-    "maintenance/build_v269.json",
-    "maintenance/validation_v269.json"
+    "maintenance/build_v270.json",
+    "maintenance/validation_v270.json"
   ]
 }

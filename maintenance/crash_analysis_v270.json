@@ -1,0 +1,38 @@
+{
+  "version": "v1.270",
+  "input_version": "v1.269",
+  "crash_root_cause_confirmed": false,
+  "archive_sha256": "0482e918583ea9a4e4a7b1605277748d0aeedf7c0b7e5d3cd82f02e761eac229",
+  "last_time": "2026-11-17 17:55:16",
+  "last_watch": {
+    "frame": 683,
+    "reason": "frame.return",
+    "phase": "end",
+    "save": null
+  },
+  "lua_error_recorded": false,
+  "automatic_save_recorded_this_session": false,
+  "limitations": "Last watch is a sampled completed frame, not a confirmed failing frame. No native exception or active exit call was captured. New script-exit probe has not run in this uploaded session.",
+  "inputs": [
+    {
+      "name": "guimeng_critical_latest.txt",
+      "bytes": 13779,
+      "sha256": "76906bbc249397b984c8ab6b18291ea25e2dbe371469ab9efa130221eab473ba"
+    },
+    {
+      "name": "guimeng_detail_latest.txt",
+      "bytes": 18243,
+      "sha256": "ddf20638785250ed2b27bbae5186d4f64c924b914a8469313bb0d20a21a2d76c"
+    },
+    {
+      "name": "guimeng_native_watch_latest.txt",
+      "bytes": 4921,
+      "sha256": "0699f1296f09091c5e3e37bd669a4b8d61ec9deca41d72304b46ed420bddea55"
+    },
+    {
+      "name": "guimeng_run_latest.txt",
+      "bytes": 15193,
+      "sha256": "78a057329d5bb8216014965ca12e061b2d25108bddc81004a5cb1f84928742ea"
+    }
+  ]
+}
