@@ -656,10 +656,20 @@
     "maintenance/oil_gift_v259.lua",
     "maintenance/oil_gift_v259.ljbc",
     "maintenance/oil_regression_v259.lua",
-    "docs/祝福油掉落与角色赠送_v259.md"
+    "docs/祝福油掉落与角色赠送_v259.md",
+    "maintenance/patch_v260.py",
+    "maintenance/test_v260.py",
+    "maintenance/hit_test_v260.py",
+    "maintenance/hit_regression_v260.lua",
+    "maintenance/package_v260.py",
+    "maintenance/player_changes_v260.json",
+    "maintenance/merc_mode_v260.lua",
+    "maintenance/merc_mode_v260.ljbc",
+    "maintenance/merc_flight_regression_v260.lua",
+    "docs/佣兵主动技能与己方命中_v260.md"
   ],
   "generated_reports": [
-    "maintenance/build_v259.json",
-    "maintenance/validation_v259.json"
+    "maintenance/build_v260.json",
+    "maintenance/validation_v260.json"
   ]
 }
