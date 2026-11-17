@@ -1,0 +1,102 @@
+{
+  "version": "v1.275",
+  "all_passed": true,
+  "sha256": "313acba012a989fb16a9dd534b595002b5a48f9da73c9f1f2043a743dcdcaf3a",
+  "runs": [
+    {
+      "suite": "watch",
+      "mode": "normal",
+      "output": "NATIVE_WATCH_V274_PASS normal checks=1071; bounded writes, actual constructor/public export, original varargs/returns/errors, finite file sink\nNATIVE_WATCH_ORIGINAL_LOGGER_V274_PASS normal allocation_kib=51.720703125/96.533203125\n"
+    },
+    {
+      "suite": "watch",
+      "mode": "hot",
+      "output": "NATIVE_WATCH_V274_PASS hot checks=1071; bounded writes, actual constructor/public export, original varargs/returns/errors, finite file sink\nNATIVE_WATCH_ORIGINAL_LOGGER_V274_PASS hot allocation_kib=51.720703125/98.470703125\n"
+    },
+    {
+      "suite": "skill",
+      "mode": "normal",
+      "output": "REAL_SKILL_IO\tnormal\t19\t19\t51720\t51718\nFRAME_AND_SKILL_PASS\tnormal\t2502\n"
+    },
+    {
+      "suite": "skill",
+      "mode": "hot",
+      "output": "REAL_SKILL_IO\thot\t19\t19\t51718\t51716\nFRAME_AND_SKILL_PASS\thot\t2502\n"
+    },
+    {
+      "suite": "exit",
+      "mode": "normal",
+      "output": "EXIT_WATCH_V270_PASS normal checks=3056 allocation_kib=51.6767578125/51.6767578125\n"
+    },
+    {
+      "suite": "exit",
+      "mode": "hot",
+      "output": "EXIT_WATCH_V270_PASS hot checks=3056 allocation_kib=51.6767578125/51.6767578125\n"
+    },
+    {
+      "suite": "autosave",
+      "mode": "normal",
+      "output": "NATIVE_AUTOSAVE_IO\tnormal\t8\t8\t2.16\t2.16\nAUTOSAVE_V273_PASS\tnormal\t2873\n"
+    },
+    {
+      "suite": "autosave",
+      "mode": "hot",
+      "output": "NATIVE_AUTOSAVE_IO\thot\t8\t8\t2.16\t2.16\nAUTOSAVE_V273_PASS\thot\t2873\n"
+    },
+    {
+      "suite": "target",
+      "mode": "normal",
+      "output": "TARGET_TRACE_V274_PASS normal checks=38; actual selector and frozen changes, nested error identity, late sinks\n"
+    },
+    {
+      "suite": "target",
+      "mode": "hot",
+      "output": "TARGET_TRACE_V274_PASS hot checks=38; actual selector and frozen changes, nested error identity, late sinks\n"
+    },
+    {
+      "suite": "projectile",
+      "mode": "normal",
+      "output": "PROJECTILE_TRACE_V274_PASS normal checks=1582; actual module46 factory/update/render/hit/disposal and original dispatcher; finite geometry/graphics/damage sinks\n"
+    },
+    {
+      "suite": "projectile",
+      "mode": "hot",
+      "output": "PROJECTILE_TRACE_V274_PASS hot checks=1582; actual module46 factory/update/render/hit/disposal and original dispatcher; finite geometry/graphics/damage sinks\n"
+    },
+    {
+      "suite": "selector",
+      "mode": "normal",
+      "output": "SELECTOR_TRACE_V275_PASS normal checks=272; real slot FNEW -> selector -> slot9 -> hero55, 200 varied calls, original errors/dispatch and bounded synchronous breadcrumbs\n"
+    },
+    {
+      "suite": "selector",
+      "mode": "hot",
+      "output": "SELECTOR_TRACE_V275_PASS hot checks=272; real slot FNEW -> selector -> slot9 -> hero55, 200 varied calls, original errors/dispatch and bounded synchronous breadcrumbs\n"
+    }
+  ],
+  "diagnostic_only": true,
+  "autosave_seconds": 5,
+  "sample_seconds": 0.5,
+  "crash_root_cause_confirmed": false,
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "layered Lua error identity, bounded snapshots and frozen observed target/life/skill/projectile events; actual constructor/read-only public run, original slot->hero->checkpoint/dispatcher, original projectile construction/update/hit/disposal with finite engine/graphics sinks, native frame/autosave and original exit; not client crash reproduction",
+  "tested_files": {
+    "patch_v275.py": "69da2827d3d3249dff595d93db2c394ea95b2a1297f1997a33c3412c07c41c7b",
+    "test_v275.py": "f5f3075bb410587f12cbae6b0b5d1a757ba337bc69b1ef2e6a3713bd2aaa210b",
+    "package_v275.py": "2b892ac5e4f41023ad7cd1c3d78b225dccae3e4f8d11b275248963ee29e1a827",
+    "player_changes_v275.json": "37b051215b5783365fd4a2e39b70c422782760626a423caa3e7acfa6dee6832b",
+    "native_watch_v275.lua": "be6ab33ed25db8a9a73822504e9d34f4af7a44b2df47a402986fb446028d4748",
+    "native_watch_v275.ljbc": "ea7109324ad999515e864028048f0c5545d52e8bde666d795d92fde1702adb3d",
+    "exit_watch_v275.lua": "75a462a87c506d9bcea7b019c54c0d86b6d3ba3077952c4db6ee1635cb3f75d3",
+    "exit_watch_v275.ljbc": "a12cecd3de30c773deb4ab43d1b228ea89efd7757d550176f8f255e7cbb37a54",
+    "selector_trace_v275.py": "46eee41baef92c011c3184328cc5111c8f33a8dcaa8535545bface98abf273c0",
+    "selector_trace_regression_v275.lua": "d8a19ed309a7b98fef030f0c412c3a88cc842d16a8f7e0bedac5927238d0ad0d",
+    "native_watch_regression_v274.lua": "f59e7b82a865ae877e0867ac817c2075c446809aae9ccb7e66f1a8ce5fe491f7",
+    "skill_trace_regression_v274.lua": "e5eb8a3ab8e5263b77d827560f3b2884e0073fdf31320701ef883c598d87d930",
+    "target_trace_regression_v274.lua": "b1fb469d91e9b12a9b1a9681e250f4b3e2981448832bc9f7c1fd7abe2ffe9081",
+    "projectile_trace_regression_v274.lua": "715193567180a0063704dc9e5757b836573e99f2f294da432ae732d8cf763ce2",
+    "autosave_regression_v273.lua": "fb8aa997223ce33e32e7a2aa1ca365e358cef81be38b6f86502fc9e81ce7c59c",
+    "exit_watch_regression_v270.lua": "743f3c5906baf629ae78a7796bb5833a1149de4668714b7d134c0e55557b2df0"
+  }
+}

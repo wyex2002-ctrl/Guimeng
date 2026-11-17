@@ -1,0 +1,63 @@
+{
+  "reported_version": "v1.274",
+  "root_cause_confirmed": false,
+  "full_client_crash_reproduced": false,
+  "inputs": {
+    "run": {
+      "bytes": 16545,
+      "sha256": "adcea24672e08a7c02087423edfb98daa60abd3936a6a21324ec2fa591fceb43"
+    },
+    "exit": {
+      "bytes": 212,
+      "sha256": "2f1086bfcdc539d0b5e023e2fe8568d3ff4d18c142811e846a6b62c0a5a60422"
+    },
+    "watch": {
+      "bytes": 88139,
+      "sha256": "8dc4b45d500a54579763159d9b4ef05b5cad239bd7b6e425d731389692207db8"
+    },
+    "critical": {
+      "bytes": 26279,
+      "sha256": "608f761168dca3dcdc295af5fad4a1de9030779f1e662637584f8a3b1f6f0894"
+    },
+    "detail": {
+      "bytes": 32444,
+      "sha256": "5d3d3ddde77daf3a3a798e42d50dccdc46c70c2fdc1de5e15bbf3def87a8125a"
+    }
+  },
+  "observed": {
+    "session_header": "2026-11-17 20:24:54",
+    "last_disk_watch": "2026-11-17 20:25:34",
+    "last_sampled_frame": 1160,
+    "reason": "frame.return",
+    "phase": "end",
+    "jit": true,
+    "hooks": {
+      "checkpoint": true,
+      "detail": true,
+      "projectile": true
+    },
+    "observation_failures": 0,
+    "save_enter": 4,
+    "save_returned": 4,
+    "action_enter": 28519,
+    "action_return": 28519,
+    "actor_enter": 67291,
+    "actor_return": 67291,
+    "callback_enter": 21603,
+    "callback_return": 21603,
+    "lua_heap_kib": 110046.53027344,
+    "exit_stage": "installed",
+    "exit_requests": 0,
+    "first_lua_fault_recorded": false,
+    "last_run_checkpoint": "skill.event.enter 2",
+    "last_run_time": "2026-11-17 20:25:34",
+    "following_dispatch_begin_recorded": false
+  },
+  "limits": [
+    "Sampled frame is not the proven fault frame; checkpoint omission is not an identified fault instruction.",
+    "No captured Lua exception or script exit in the five supplied files does not rule out missed logging or a native/JIT fault.",
+    "Balanced saves do not prove save safety; heap count is not full engine memory.",
+    "No Windows event logging, registry or dumps are requested or installed."
+  ],
+  "v275_action": "Repair module36/0 diagnostic scratch/register initialization and JMP liveness, preserve original decisions and branch destinations, add bounded compact sampled-attempt skill breadcrumbs; client root remains unconfirmed."
+}
