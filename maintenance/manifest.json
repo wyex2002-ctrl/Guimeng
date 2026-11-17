@@ -635,10 +635,18 @@
     "maintenance/package_v257.py",
     "maintenance/player_changes_v257.json",
     "maintenance/merc_flight_regression_v257.lua",
-    "docs/佣兵飞行自转修复_v257.md"
+    "docs/佣兵飞行自转修复_v257.md",
+    "maintenance/patch_v258.py",
+    "maintenance/test_v258.py",
+    "maintenance/package_v258.py",
+    "maintenance/player_changes_v258.json",
+    "maintenance/merc_mode_v258.lua",
+    "maintenance/merc_mode_v258.ljbc",
+    "maintenance/merc_flight_regression_v258.lua",
+    "docs/佣兵投射自转三倍速_v258.md"
   ],
   "generated_reports": [
-    "maintenance/build_v257.json",
-    "maintenance/validation_v257.json"
+    "maintenance/build_v258.json",
+    "maintenance/validation_v258.json"
   ]
 }
