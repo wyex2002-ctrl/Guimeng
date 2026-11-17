@@ -710,10 +710,18 @@
     "maintenance/repeat_skill_v265.lua",
     "maintenance/repeat_skill_v265.ljbc",
     "maintenance/repeat_hold_regression_v265.lua",
-    "docs/玩家说明与1秒连发_v265.md"
+    "docs/玩家说明与1秒连发_v265.md",
+    "maintenance/patch_v266.py",
+    "maintenance/test_v266.py",
+    "maintenance/package_v266.py",
+    "maintenance/player_changes_v266.json",
+    "maintenance/oil_drop_v266.lua",
+    "maintenance/oil_drop_v266.ljbc",
+    "maintenance/oil_drop_regression_v266.lua",
+    "docs/祝福油等级掉落_v266.md"
   ],
   "generated_reports": [
-    "maintenance/build_v265.json",
-    "maintenance/validation_v265.json"
+    "maintenance/build_v266.json",
+    "maintenance/validation_v266.json"
   ]
 }
