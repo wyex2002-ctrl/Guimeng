@@ -1,0 +1,10 @@
+{
+  "version": "v1.285",
+  "base_sha256": "960952814fa9dff8e3a5114b8e986653d2f395deeed51f05edb9aad7cece5448",
+  "bytes": 2746986,
+  "sha256": "cdc4b35d8e82f48c9e502dccc4656ef23230cfd2e12c6afca5763a657d2c9982",
+  "shop_powder_charge_multiplier": 200,
+  "shop_powder_listings": 50,
+  "low_mana_notice_ms": 1000,
+  "automatic_charge_notice_ms": 10000
+}

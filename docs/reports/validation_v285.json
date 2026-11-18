@@ -1,0 +1,34 @@
+{
+  "version": "v1.285",
+  "all_passed": true,
+  "sha256": "cdc4b35d8e82f48c9e502dccc4656ef23230cfd2e12c6afca5763a657d2c9982",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "PANEL_SHOP_V285_PASS\tnormal\t1999\n"
+    },
+    {
+      "mode": "hot",
+      "output": "PANEL_SHOP_V285_PASS\thot\t1999\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "both story panel providers, real skill-slot and hero release, native poison, currency, shop callbacks and inventory insertion with finite UI and engine bridges",
+  "tested_files": {
+    "patch_v285.py": "f4cab35b4a257052ead08da81716a21b555e60884a78e05edc47c42db8bacbf9",
+    "test_v285.py": "a148f86853d8df131e14c585db517f9dea308b46320787309e9a70ea4e67747a",
+    "information_panel_v285.lua": "c78d06e2f7fc7b22be9c9386addf0d93c26d9131c9ab3d42cd8281750a5a49ed",
+    "information_panel_v285.ljbc": "143eb88093b19a97909e42ef616f57c21c6e3c765d63e641be5e161aad84138d",
+    "melee_timing_v285.lua": "d26afc82d1d84aaf326ceb105ccad3051db86af3506763defdf1c9ad2fbe079c",
+    "melee_timing_v285.ljbc": "339357a5fcea513a98ccde6ddcbd1b7bce3a56973b4406ddfbaba5b623255f9e",
+    "auto_poison_v285.lua": "2ba159691791ddb358823e46dcd5407525b087245f57cbcf1aa668f6723d343c",
+    "auto_poison_v285.ljbc": "68bcfee063a2e21aeec8d754c471f828ddeaad56585d5e6baad39c410e5c0f18",
+    "alt_pickup_v285.lua": "a9297d539f30eefa953aefa537c6e7417ddea2cd636f436aeaeb5bad020387d5",
+    "panel_shop_regression_v285.lua": "a731b6b6c27dbf97ecb7ba729e29d3e9eb34db6287979510230e38530c2ce49a",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670",
+    "test_v282.py": "402496953d9d3167a7bbeacf6cca5dfbccade0d189a871250fd6f63a78a805ee",
+    "combat_regression_v283.lua": "95ed86304a2eef3722ebfa85d6de3ec8b95b4f1c7eeced02209d06c81b5a2a13"
+  }
+}

@@ -898,10 +898,24 @@
     "maintenance/auto_poison_v284.ljbc",
     "maintenance/auto_poison_regression_v284.lua",
     "docs/reports/build_v284.json",
-    "docs/reports/validation_v284.json"
+    "docs/reports/validation_v284.json",
+    "maintenance/patch_v285.py",
+    "maintenance/test_v285.py",
+    "maintenance/package_v285.py",
+    "maintenance/player_changes_v285.json",
+    "maintenance/information_panel_v285.lua",
+    "maintenance/information_panel_v285.ljbc",
+    "maintenance/melee_timing_v285.lua",
+    "maintenance/melee_timing_v285.ljbc",
+    "maintenance/auto_poison_v285.lua",
+    "maintenance/auto_poison_v285.ljbc",
+    "maintenance/alt_pickup_v285.lua",
+    "maintenance/panel_shop_regression_v285.lua",
+    "docs/reports/build_v285.json",
+    "docs/reports/validation_v285.json"
   ],
   "generated_reports": [
-    "maintenance/build_v284.json",
-    "maintenance/validation_v284.json"
+    "maintenance/build_v285.json",
+    "maintenance/validation_v285.json"
   ]
 }
