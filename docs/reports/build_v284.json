@@ -1,0 +1,9 @@
+{
+  "version": "v1.284",
+  "base_sha256": "eb22fa606ba1014df913670e66ad7209f93762cdb8da6f71bd303867626f468d",
+  "bytes": 2746291,
+  "sha256": "960952814fa9dff8e3a5114b8e986653d2f395deeed51f05edb9aad7cece5448",
+  "auto_poison_cooldown_seconds": 0,
+  "manual_poison_cooldown_seconds": 1.5,
+  "shared_cooldown": false
+}

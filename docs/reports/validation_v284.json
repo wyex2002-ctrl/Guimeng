@@ -1,0 +1,28 @@
+{
+  "version": "v1.284",
+  "all_passed": true,
+  "sha256": "960952814fa9dff8e3a5114b8e986653d2f395deeed51f05edb9aad7cece5448",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTO_POISON_V284_PASS\tnormal\t1718\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTO_POISON_V284_PASS\thot\t1718\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "real hero release, single-target projectile, poison, powder, and manual cooldown paths with controlled map, graphics, HP, and inventory bridges",
+  "tested_files": {
+    "patch_v284.py": "1f366c54b73fee9c70f4d868198e681e960fc217eff2e705dbf26a3cd8f1a7c5",
+    "test_v284.py": "7cacbd21c09f4450a69fd59e3bbbfda58990101e40f4c1105cf14886897da1d8",
+    "auto_poison_v284.lua": "0946fbbd5c89fdc707708753e90d8c70490b37ba9299cf06fccabf448d00f7e5",
+    "auto_poison_v284.ljbc": "cb4ba1fc8748981b1bae07dcbfeaf0a8f015508b2ce062fc8ffe0b14a4aaf8dc",
+    "auto_poison_regression_v284.lua": "ee68bdbe0b8fdb6318259ab6c9531e7dc57e42ff350d2f4253861e6d612e4c65",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670",
+    "test_v282.py": "402496953d9d3167a7bbeacf6cca5dfbccade0d189a871250fd6f63a78a805ee",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b"
+  }
+}

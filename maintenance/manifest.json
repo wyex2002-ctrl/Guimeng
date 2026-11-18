@@ -889,10 +889,19 @@
     "maintenance/alt_pickup_v283.lua",
     "maintenance/combat_regression_v283.lua",
     "docs/reports/build_v283.json",
-    "docs/reports/validation_v283.json"
+    "docs/reports/validation_v283.json",
+    "maintenance/patch_v284.py",
+    "maintenance/test_v284.py",
+    "maintenance/package_v284.py",
+    "maintenance/player_changes_v284.json",
+    "maintenance/auto_poison_v284.lua",
+    "maintenance/auto_poison_v284.ljbc",
+    "maintenance/auto_poison_regression_v284.lua",
+    "docs/reports/build_v284.json",
+    "docs/reports/validation_v284.json"
   ],
   "generated_reports": [
-    "maintenance/build_v283.json",
-    "maintenance/validation_v283.json"
+    "maintenance/build_v284.json",
+    "maintenance/validation_v284.json"
   ]
 }
