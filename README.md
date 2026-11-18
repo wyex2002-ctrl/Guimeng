@@ -1,14 +1,12 @@
 # 归梦维护下载
 
-当前 v1.281（2026-11-18，Asia/Shanghai）：半月弯刀与十方斩的锁定目标判定。
+当前版本 v1.282（2026-11-18，Asia/Shanghai）。
 
-- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.281.zip)
-- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.281_maintenance.zip)
-- [校验值](checksums_v281.json)
-- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/bd5f988aedad35c9e125f17be905d7583c5693b3)
+主角习得施毒术后，普通攻击、指定近战招式和单体远程伤害技能实际命中当前锁定的怪物时，可以自动施毒。每次出手最多尝试一次。已有一种毒时自动补另一种，两种齐全时跳过。自动施毒消耗法力和药粉，与手动施毒术共用冷却。
 
-半月弯刀和十方斩自动出手时记录原锁定敌人。结算时目标仍有效，即使移出原格子，也会进行一次命中判定。目标还在格内时沿用该格的原伤害比例。周围怪物继续按原格子判定。
+- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.282.zip)
+- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.282_maintenance.zip)
+- [校验值](checksums_v282.json)
+- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/ee87ee289e188a32da9b89b9a4af63198e15745d)
 
-本版沿用v1.280的5分钟自动存档、常规祝福油掉落与赠油提示。替换前退出游戏并备份Lib/game.res与存档。
-
-普通与JIT热路径回归覆盖原自动攻击、八方向和原格比例、原目标离开范围、换锁、重复条目及失效目标。回归使用Linux x64 LuaJIT2.0和有限引擎替身，Windows完整实战待验证。
+退出游戏并备份存档及原 Lib/game.res 后，将玩家补丁中的 Lib 文件夹覆盖到游戏目录。LuaJIT 2.0 受控回归已通过，Windows 客户端实战仍待验证。
