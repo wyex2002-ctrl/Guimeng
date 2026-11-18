@@ -1,0 +1,11 @@
+{
+  "version": "v1.282",
+  "base_sha256": "7d6232fef42264b4982324165535761d31eac20d088571b0ed5c85bcf6fa5840",
+  "bytes": 2745829,
+  "sha256": "da367f929ce91f158d61c2daf3dca27745dec2eae86e76614b7bdc81443ec4ea",
+  "database_poison": 4586,
+  "hero_root": 100,
+  "hero_helper_prototypes": 11,
+  "shared_base_cooldown_seconds": 1.5,
+  "powder_notice_seconds": 10
+}

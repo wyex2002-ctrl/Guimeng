@@ -866,10 +866,21 @@
     "maintenance/player_changes_v281.json",
     "maintenance/locked_melee_regression_v281.lua",
     "docs/reports/build_v281.json",
-    "docs/reports/validation_v281.json"
+    "docs/reports/validation_v281.json",
+    "maintenance/patch_v282.py",
+    "maintenance/test_v282.py",
+    "maintenance/package_v282.py",
+    "maintenance/player_changes_v282.json",
+    "maintenance/auto_poison_v282.lua",
+    "maintenance/auto_poison_v282.ljbc",
+    "maintenance/poison_powder_v282.lua",
+    "maintenance/poison_powder_v282.ljbc",
+    "maintenance/auto_poison_regression_v282.lua",
+    "docs/reports/build_v282.json",
+    "docs/reports/validation_v282.json"
   ],
   "generated_reports": [
-    "maintenance/build_v281.json",
-    "maintenance/validation_v281.json"
+    "maintenance/build_v282.json",
+    "maintenance/validation_v282.json"
   ]
 }

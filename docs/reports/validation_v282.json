@@ -1,0 +1,29 @@
+{
+  "version": "v1.282",
+  "all_passed": true,
+  "sha256": "da367f929ce91f158d61c2daf3dca27745dec2eae86e76614b7bdc81443ec4ea",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTO_POISON_V282_PASS\tnormal\t1599\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTO_POISON_V282_PASS\thot\t1599\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "scope": "native hero release, instance/update, hit and projectile paths; original skill callbacks, read-only Sys, database sandbox, inventory refill and status application; finite native map, graphics, final HP and bag control bridges",
+  "tested_files": {
+    "patch_v282.py": "7503ce08dc8d044ab56efdf632aa9308708908691dc4f787a1a1c91b3f34db94",
+    "test_v282.py": "402496953d9d3167a7bbeacf6cca5dfbccade0d189a871250fd6f63a78a805ee",
+    "auto_poison_v282.lua": "ebecba5432ede9b2e249d5d35bc2ce5608076e64b5f12662bf391e83af1572ee",
+    "poison_powder_v282.lua": "caae9f2161498faa72b464d64f8e2e6556593b86923ea02086a46d625f64975d",
+    "auto_poison_v282.ljbc": "463e79d86c6734cc641c6c226fe0f9a47679d1bbf803cf99015d298039241e86",
+    "poison_powder_v282.ljbc": "2a9c78fba88ac640e11d65c142ea9c3c32e40063bafb427297701164c5aac099",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b"
+  }
+}
