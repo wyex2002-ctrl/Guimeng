@@ -919,10 +919,24 @@
     "maintenance/player_changes_v286.json",
     "maintenance/powder_craft_regression_v286.lua",
     "docs/reports/build_v286.json",
-    "docs/reports/validation_v286.json"
+    "docs/reports/validation_v286.json",
+    "maintenance/patch_v287.py",
+    "maintenance/test_v287.py",
+    "maintenance/package_v287.py",
+    "maintenance/player_changes_v287.json",
+    "maintenance/auto_poison_v287.lua",
+    "maintenance/auto_poison_v287.ljbc",
+    "maintenance/melee_timing_v287.lua",
+    "maintenance/melee_timing_v287.ljbc",
+    "maintenance/alt_pickup_v287.lua",
+    "maintenance/ground_name_color_v287.lua",
+    "maintenance/ground_name_color_v287.ljbc",
+    "maintenance/combat_ui_ground_regression_v287.lua",
+    "docs/reports/build_v287.json",
+    "docs/reports/validation_v287.json"
   ],
   "generated_reports": [
-    "maintenance/build_v286.json",
-    "maintenance/validation_v286.json"
+    "maintenance/build_v287.json",
+    "maintenance/validation_v287.json"
   ]
 }

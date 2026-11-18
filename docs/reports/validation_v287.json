@@ -1,0 +1,30 @@
+{
+  "version": "v1.287",
+  "all_passed": true,
+  "sha256": "4c2611ddc715ac049fd64675c7b97532b17ed33664481f95db8f9b88c6bbaf3c",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "COMBAT_UI_GROUND_V287_PASS\tnormal\t12277\n"
+    },
+    {
+      "mode": "hot",
+      "output": "COMBAT_UI_GROUND_V287_PASS\thot\t12277\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "native skill and damage dispatch, both story currency providers, Alt input branch, blessing-oil visible label, and ground texture constructor with finite engine and graphics bridges",
+  "tested_files": {
+    "auto_poison_v287.lua": "9782768afb248a99771a85cdf266f2ebecfb31c1c45e58d1dc940c2629910fd8",
+    "auto_poison_v287.ljbc": "987304864913b8f27ad8eda2cc637f8f3f446444ad1bd2c2165005934540d91e",
+    "melee_timing_v287.lua": "7f06d2ee08d820f70e530322791c92f58a66f99f99359f8483e7254ecd3a616e",
+    "melee_timing_v287.ljbc": "6c8842562917bdc6cdd6688908c2ae9130d70ded81aeaf262fb2946d58411fe8",
+    "ground_name_color_v287.lua": "89f639e64326897bf7d26a9d2e1e73ba1172f5b4436a19a2271894fafef0dbf5",
+    "ground_name_color_v287.ljbc": "3479e4ae82e8f65190519802a1cf5a42d901ff878cecd77efbe44ecc6f1ee008",
+    "alt_pickup_v287.lua": "3e633de4095349c7c24f9712c9f631858737683b94ee96f6bf8e58e557f0098a",
+    "patch_v287.py": "5d32a6d6b248fa9a514460eb48813970987ef0459dd17df91a98c4ae8459fe09",
+    "test_v287.py": "c11e95c5e70ff9cba202651d0466a3bac1bb80f57e64e30f6b2241b37850087e",
+    "combat_ui_ground_regression_v287.lua": "37b11d6861a0a6ae896481f5f184e1b81930f5b7b6649e52e3716001ba980bdc"
+  }
+}
