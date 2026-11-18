@@ -1,18 +1,14 @@
 # 归梦维护下载
 
-当前 v1.280（2026-11-18，Asia/Shanghai）：回归v1.277游戏基础，恢复常规祝福油掉落与5分钟自动存档。
+当前 v1.281（2026-11-18，Asia/Shanghai）：半月弯刀与十方斩的锁定目标判定。
 
-- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.280.zip)
-- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.280_maintenance.zip)
-- [校验值](checksums_v280.json)
-- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/73c4be68c3169984009c36c9400d953abcc70b55)
+- [玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.281.zip)
+- [完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.281_maintenance.zip)
+- [校验值](checksums_v281.json)
+- [源码与验证说明](https://github.com/wyex2002-ctrl/Guimeng/tree/bd5f988aedad35c9e125f17be905d7583c5693b3)
 
-按用户要求暂停短周期分步保存，直接以v1.277资源构建；保留277动画稳定性修正及累计玩法，自动存档每5分钟一次，沿用原条件及同步保存方式，手动／退出保存保持。祝福油掉落恢复v1.267常规设置，取消高掉落测试，已有物品不作追溯处理。
+半月弯刀和十方斩自动出手时记录原锁定敌人。结算时目标仍有效，即使移出原格子，也会进行一次命中判定。目标还在格内时沿用该格的原伤害比例。周围怪物继续按原格子判定。
 
-首次成功领取赠油后显示“【系统赠送您1瓶祝福油，请查看背包】”。提示真正出现后满3秒才可确认或按回车关闭；排队不提前计时，早期鼠标点击不积压。满包下次进入再检测，入包成功才记录，每角色仅一次。其他提示框沿用原时序，字体颜色边框保持。
+本版沿用v1.280的5分钟自动存档、常规祝福油掉落与赠油提示。替换前退出游戏并备份Lib/game.res与存档。
 
-退出游戏，备份存档和原Lib/game.res后安装。278／279分步保存调度器不在本版游戏资源中，旧autosave日志不再更新；原日志沿用277策略，无Windows事件记录或系统转储设置。
-
-normal/hot通过实际267死亡／归属／保护／原掉落／地面链、两剧情载入领取和保存标记、完整原提示框类及3秒／排队／输入边界、5分钟时钟门控及原生完整帧／只读public.run。42模块及原分支、相对277非目标字节核对通过。Linux x64官方滚动LuaJIT2.0，文件／输入／图形和部分引擎为有限边界，非Windows x86 LuaJIT2.0.4完整客户端实测。不换DLL、不关闭全局JIT。
-
-所有旧版本双包保留，不创建Release。若再退出，重新打开游戏前复制整个log文件夹。
+普通与JIT热路径回归覆盖原自动攻击、八方向和原格比例、原目标离开范围、换锁、重复条目及失效目标。回归使用Linux x64 LuaJIT2.0和有限引擎替身，Windows完整实战待验证。
