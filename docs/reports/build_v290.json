@@ -1,0 +1,12 @@
+{
+  "version": "v1.290",
+  "base_sha256": "65bb9a4174c0c09517392d51a074b5e382301301edd6e2abf7990086f5ec71ea",
+  "bytes": 2754675,
+  "sha256": "4ace343e7f77a6520bd3776424fbc83e49f6279026f7ba2ac8a62e17cef6a832",
+  "guard_prototypes": [
+    44,
+    45,
+    50,
+    112
+  ]
+}

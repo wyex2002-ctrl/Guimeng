@@ -955,10 +955,19 @@
     "maintenance/monster_drop_filter_v289.ljbc",
     "maintenance/treatment_loot_regression_v289.lua",
     "docs/reports/build_v289.json",
-    "docs/reports/validation_v289.json"
+    "docs/reports/validation_v289.json",
+    "maintenance/guard_ignore_v290.lua",
+    "maintenance/guard_ignore_v290.ljbc",
+    "maintenance/guard_regression_v290.lua",
+    "maintenance/patch_v290.py",
+    "maintenance/test_v290.py",
+    "maintenance/package_v290.py",
+    "maintenance/player_changes_v290.json",
+    "docs/reports/build_v290.json",
+    "docs/reports/validation_v290.json"
   ],
   "generated_reports": [
-    "maintenance/build_v289.json",
-    "maintenance/validation_v289.json"
+    "maintenance/build_v290.json",
+    "maintenance/validation_v290.json"
   ]
 }
