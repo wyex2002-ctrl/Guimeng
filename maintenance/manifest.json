@@ -834,10 +834,21 @@
     "maintenance/autosave_regression_v278.lua",
     "docs/分步自动存档_v278.md",
     "docs/reports/build_v278.json",
-    "docs/reports/validation_v278.json"
+    "docs/reports/validation_v278.json",
+    "maintenance/patch_v279.py",
+    "maintenance/test_v279.py",
+    "maintenance/package_v279.py",
+    "maintenance/player_changes_v279.json",
+    "maintenance/autosave_v279.lua",
+    "maintenance/autosave_v279.ljbc",
+    "maintenance/autosave_regression_v279.lua",
+    "maintenance/autosave_analysis_v279.json",
+    "docs/分步存档引擎接口修正_v279.md",
+    "docs/reports/build_v279.json",
+    "docs/reports/validation_v279.json"
   ],
   "generated_reports": [
-    "maintenance/build_v278.json",
-    "maintenance/validation_v278.json"
+    "maintenance/build_v279.json",
+    "maintenance/validation_v279.json"
   ]
 }

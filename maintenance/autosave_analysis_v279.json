@@ -1,0 +1,85 @@
+{
+  "version": "v1.279",
+  "session_version": "v1.278",
+  "event_time": "2026-11-18 08:28:02",
+  "timezone": "Asia/Shanghai",
+  "inputs": {
+    "guimeng_error_latest.txt": {
+      "bytes": 15574,
+      "sha256": "e75a7358e613301d31308762fb7b3eccefbe269a174d8f881ebca0f399760c27"
+    },
+    "guimeng_exit_latest.txt": {
+      "bytes": 1174,
+      "sha256": "0b601ed4619f80e8007d1e39d5755c2a191b1fadb59074dc1adeec297ec8ebbe"
+    },
+    "guimeng_detail_latest.txt": {
+      "bytes": 18908,
+      "sha256": "c728216ce72b2506d18e737ad910b38c3c43300186dbcf7e17b034bbc8b56c07"
+    },
+    "guimeng_run_latest.txt": {
+      "bytes": 14540,
+      "sha256": "3a1523d6cb2ea76a7b0d9723f61c95d5aa98f253f5493732ece3da27910d63c3"
+    },
+    "guimeng_native_watch_latest.txt": {
+      "bytes": 81075,
+      "sha256": "89e117e68e9423fc1e407af61a6e8257a0de983f47ab2d7a185f1946d9022537"
+    },
+    "guimeng_skill_steps_latest.txt": {
+      "bytes": 3577,
+      "sha256": "0a5c55489cb826439bdbc56379e541884411c9f0409d5dcecd92b25140285082"
+    },
+    "guimeng_autosave_latest.txt": {
+      "bytes": 364,
+      "sha256": "d311d9c78067e323250f9f08124f52b34e87d8e9a6c80c1ef43f6f44f7c1d309"
+    },
+    "error_20261118082802.track": {
+      "bytes": 376,
+      "sha256": "cb77042dbbb186e8f647ad8451940f0aad9bb3e561d10f255929364c8761cd2f"
+    },
+    "guimeng_critical_latest.txt": {
+      "bytes": 14616,
+      "sha256": "f56d65721406d0870f17cec06a673ff2f12b499cd5b9c044bd656464ebfc3dac"
+    }
+  },
+  "observed": {
+    "stage": "collect_role",
+    "error": "Sys.lua:8473: attempt to concatenate a boolean value",
+    "queued_and_error_same_second": true,
+    "automatic_save_returned_record_present": false,
+    "script_exit_requests": 1,
+    "native_access_violation_recorded_in_this_session": false
+  },
+  "bytecode": {
+    "module": 14,
+    "prototype": 253,
+    "original_277_pc": 308,
+    "v278_pc": 333,
+    "instruction": "CAT R18 R18 R38",
+    "encrypted_name_register": 34,
+    "original_native_call_pc": 301,
+    "last_native_argument": false
+  },
+  "cause": "DM native crypto binding uses a stored main lua_State. v278 called it from an autosave coroutine; the result is pushed to the main stack instead of that coroutine. The last boolean argument is then consumed as the result and CAT fails.",
+  "limits": [
+    "Current logs identify a Lua save error and subsequent script exit, not a new native dump.",
+    "Stored-state binding was inspected read-only in the previously supplied v276 dump; the current session has no native dump.",
+    "The same line/error is reproduced with a finite stored-main-state affinity model, not a running Windows game.",
+    "Does not establish that all earlier crashes share this cause."
+  ],
+  "stored_state_evidence": {
+    "source": "previously supplied v276 dump, read-only inspection",
+    "crypto_C_entry": "0x4218b1",
+    "crypto_body": "0x421023",
+    "global_interface_slot": "0x4d93f0",
+    "interface_object": "0x7cb8e0",
+    "vtable": "0x4d6776",
+    "stored_lua_state_offset": 8,
+    "stored_lua_state": "0x2a501c0",
+    "main_lua_global": "0x2a501f0",
+    "get_bool_method": "0x465027",
+    "push_string_method": "0x464b63",
+    "parameter_interface_bytes": "68f0934d008b04248b008b00ff908000000089",
+    "stored_state_load_bytes": "8b5d088b1b83c308895d",
+    "explanation": "Native crypto accesses a global interface. Its argument/result helpers dereference interface+8 for the Lua state; the supplied caller lua_State is not used by this crypto body."
+  }
+}

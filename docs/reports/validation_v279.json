@@ -1,0 +1,43 @@
+{
+  "version": "v1.279",
+  "all_passed": true,
+  "sha256": "3fae1062fc49c683279a749a8ba6cdf3b9007887236eaef687deb67afe6b64cf",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTOSAVE_V279_REPRODUCED_278\tnormal\tC:\\cccyyy\\Sys1\\Sys.lua:8473: attempt to concatenate a boolean value\nAUTOSAVE_MODEL\tnormal\t15\t33\t2.202702\t0.001002\nAUTOSAVE_MODEL\tnormal\t30\t33\t1.102702\t0.001002\nAUTOSAVE_MODEL\tnormal\t60\t33\t0.552702\t0.001002\nAUTOSAVE_ACCELERATED_MODEL\tnormal\t8.591\t0.0123\nAUTOSAVE_V279_PASS\tnormal\t12056\tchecks; main-state engine affinity, native format/decoder, proxies, slices/gates/cancellation/errors; finite engine/file/crypto clocks\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTOSAVE_V279_REPRODUCED_278\thot\tC:\\cccyyy\\Sys1\\Sys.lua:8473: attempt to concatenate a boolean value\nAUTOSAVE_MODEL\thot\t15\t33\t2.202702\t0.001002\nAUTOSAVE_MODEL\thot\t30\t33\t1.102702\t0.001002\nAUTOSAVE_MODEL\thot\t60\t33\t0.552702\t0.001002\nAUTOSAVE_ACCELERATED_MODEL\thot\t8.591\t0.0123\nAUTOSAVE_V279_PASS\thot\t12057\tchecks; main-state engine affinity, native format/decoder, proxies, slices/gates/cancellation/errors; finite engine/file/crypto clocks\n"
+    },
+    {
+      "suite": "full_native_frame",
+      "mode": "normal",
+      "output": "NATIVE_AUTOSAVE_IO\tnormal\t8\t4\t2.16\t1.08\nAUTOSAVE_FRAME_V279_PASS\tnormal\t68\n"
+    },
+    {
+      "suite": "full_native_frame",
+      "mode": "hot",
+      "output": "NATIVE_AUTOSAVE_IO\thot\t8\t4\t2.16\t1.08\nAUTOSAVE_FRAME_V279_PASS\thot\t68\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "autosave_seconds": 10,
+  "completion_target_seconds": 9,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "full_windows_game_run": false,
+  "reproduced_v278_error_in_affinity_model": true,
+  "native_main_context_required_in_tests": true,
+  "scope": "main-state affinity model reproduces 278 CAT error; complete original collector, real Gly factory, native sort/codec/decoder prefix, proxies and UI; finite engine/file/crypto clocks, not Windows full client load/IO or timing",
+  "tested_files": {
+    "patch_v279.py": "85b2c3662908cdef172107aa65b5aab678ce05cbea8cc7a902955478a931395b",
+    "test_v279.py": "1391ca76d65ca0baeff6439a86258d035d7638077b2d98bab7eec4cd395e7e31",
+    "package_v279.py": "4ec31515660b301d7ea38ce13d2a947c7f1d53ce66bdb952981f3e9f26133b2c",
+    "player_changes_v279.json": "ad3c6eb5fe0d874054f2975ec696a7e46f8f9d2cae249848edbb011533c1a56b",
+    "autosave_v279.lua": "68f6faf76cd0e286e1c218310538c0dda78242d2a645e39343544f7533ca28da",
+    "autosave_v279.ljbc": "0da8a3d160a35ca95d760a828c7668b54d54d10db5a64cd70a35643e5b17f293",
+    "autosave_regression_v279.lua": "c35972bb8751af0c04065f471c97575f9335b59fb965b7af654783d5f3be517a",
+    "autosave_regression_v273.lua": "fb8aa997223ce33e32e7a2aa1ca365e358cef81be38b6f86502fc9e81ce7c59c"
+  }
+}

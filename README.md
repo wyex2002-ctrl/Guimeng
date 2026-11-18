@@ -1,21 +1,23 @@
 # 归梦 v2.26 魔改维护工程
 
-当前 **v1.278：10秒周期的分步自动存档与阶段计时**。
+当前 **v1.279：修复分步自动存档的引擎接口兼容问题**。
 
-沿用原自动存档条件，每10秒发起一轮，将物品采集、任务遍历、保存格式的排序和序列化分散到多帧，正常情况下以9秒内完成为目标。接近目标时提高每帧预算；不堆积任务，超时记录日志并继续完成。手动／退出保存取消未完成自动任务，立即同步保存最新数据。[实现与验证边界](docs/分步自动存档_v278.md)。
+v1.278自动存档在角色信息加密时可能取得错误类型并触发脚本退出。279保留Lua采集、复制、排序及编码的分帧执行，把引擎加密、计时和写盘等调用交回原主循环上下文执行。[原因与验证边界](docs/分步存档引擎接口修正_v279.md)。
 
-下载：[玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.278.zip)、[完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.278_maintenance.zip)、[校验值](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/checksums_v278.json)。退出游戏并备份存档及原Lib/game.res后安装。
+下载：[玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.279.zip)、[完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.279_maintenance.zip)、[校验值](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/checksums_v279.json)。退出游戏并备份存档及原Lib/game.res后安装。
 
-新增 `log/guimeng_autosave_latest.txt`／`previous.txt`，记录准备、采集、冻结副本、角色信息处理、排序、序列化、校验、加密、写盘耗时及最大执行片段耗时。原生加密和写盘、部分完整处理段仍同步，不能保证完全没有停顿，也不能在程序暂停或磁盘阻塞时硬性保证9秒。
+沿用原自动存档条件，每10秒发起一轮，正常情况下以9秒内完成为目标。接近目标提高预算，不堆积任务。手动／退出同步保存会取消旧自动任务。原生加密、写盘等完整调用仍可能短暂停顿，不能硬性保证9秒或完全不卡。
 
-**仍保留此前祝福油高掉落测试设置，建议使用存档副本。** v1.277动画入口修正、其余战斗逻辑和字体颜色边框保持。允许几秒内的数据时间差，每件物品的数量、幸运与油序列一次采集；切图、换角色或死亡时取消旧任务。
+`log/guimeng_autosave_latest.txt`／`previous.txt`记录各阶段、原生接口耗时／次数、最大切片和失败。自动save.return仅表示排队，新autosave returned表示原保存函数已返回。没有Windows事件记录或系统转储配置。
+
+**仍保留此前祝福油高掉落测试设置，建议使用存档副本。** v1.277动画入口修正、其余玩法和字体颜色边框保持，54项玩家正文不变，不公开隐藏概率。
 
 ```bash
-python3 maintenance/patch_v278.py
-python3 maintenance/test_v278.py
-python3 maintenance/package_v278.py
+python3 maintenance/patch_v279.py
+python3 maintenance/test_v279.py
+python3 maintenance/package_v279.py
 ```
 
-当前Linux x64官方滚动LuaJIT2.0 normal/hot通过完整原生采集器、新旧数据包对照、旧读档解码区段、真实变量／属性代理与table库、两剧情保存／退出、200轮保存、调度取消／失败和原生完整帧衔接。文件、加密及部分引擎为有限桥接；受控时钟结果不是Windows实机耗时或完整客户端读档验证。实际Windows x86 LuaJIT2.0.4仍需实测，不换DLL、不关闭全局JIT、不重建C运行时。
+normal/hot在主Lua状态限制模型中复现278同一行错误，279通过完整原采集器／旧格式解码区段、真实变量／属性代理与table库、两剧情保存／退出、200轮及延期／取消／错误传递和原生完整帧衔接。42模块及277／278差异核对通过，模块22整个字节不变。
 
-42模块原指令和分支核对通过，未改模块22的任何字节。玩家说明仍54项，只更新第53条存档说明，不公开隐藏概率。开始修改前不查询或拉取GitHub，完成后同步main/downloads双包，保留旧包、不创建Release。
+当前测试为Linux x64官方滚动LuaJIT2.0，文件、加密及部分引擎有限桥接，不是Windows x86 LuaJIT2.0.4实机效果或完整客户端读档验证。不换DLL、不关闭全局JIT、不重建C运行时。开始前不查询或拉取GitHub，完成后同步main/downloads双包，保留旧包，不创建Release。
