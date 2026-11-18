@@ -1,0 +1,23 @@
+{
+  "version": "v1.286",
+  "all_passed": true,
+  "sha256": "8e48976cb7cc90dbe21ee55f817e41449257dd69c960cb9cd6eb9392f2c44ef6",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "POWDER_CRAFT_V286_PASS\tnormal\t480\n"
+    },
+    {
+      "mode": "hot",
+      "output": "POWDER_CRAFT_V286_PASS\thot\t480\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "three real NPC factories and their recipe actions, native inventory count, deduction, addition and stack processing, with finite UI and engine bridges",
+  "tested_files": {
+    "patch_v286.py": "a5b7f4e7231fa733f6a4372c00c9e1ec1362d6143d75dcc1ba088a9f6e24e734",
+    "test_v286.py": "01cc31829d0c9f21570e75d71b954e8ddbcb2bc0230fd8fa3f99273ab4da637e",
+    "powder_craft_regression_v286.lua": "a9af30e88ef81b6b9b54ee4f15ee639799185f88651f360295d50dbf5f3fe631"
+  }
+}

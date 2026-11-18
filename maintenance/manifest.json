@@ -912,10 +912,17 @@
     "maintenance/alt_pickup_v285.lua",
     "maintenance/panel_shop_regression_v285.lua",
     "docs/reports/build_v285.json",
-    "docs/reports/validation_v285.json"
+    "docs/reports/validation_v285.json",
+    "maintenance/patch_v286.py",
+    "maintenance/test_v286.py",
+    "maintenance/package_v286.py",
+    "maintenance/player_changes_v286.json",
+    "maintenance/powder_craft_regression_v286.lua",
+    "docs/reports/build_v286.json",
+    "docs/reports/validation_v286.json"
   ],
   "generated_reports": [
-    "maintenance/build_v285.json",
-    "maintenance/validation_v285.json"
+    "maintenance/build_v286.json",
+    "maintenance/validation_v286.json"
   ]
 }
