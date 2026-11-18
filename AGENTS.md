@@ -2,6 +2,26 @@
 
 当前版本 v1.289。先读 README.md、PROJECT_STATUS.md，以及 docs/修改记录_维护版.txt 开头、第四十四节、第四十九节、第五十二节、第五十三节、第五十四节、第五十五节、第五十六节、第五十七节、第五十八节、第五十九节和第六十节、第六十一节和第六十二节和第六十三节和第六十四节和第六十五节和第六十六节和第六十七节和第六十八节和第六十九节和第七十节和第七十一节和第七十二节、第七十三节和第七十四节和第七十五节和第七十六节和第七十七节和第七十八节和第七十九节和第八十节和第八十一节和第八十二节、第八十三节和第八十四节和第八十五节和第八十六节和第八十七节和第八十八节和第八十九节和第九十节和第九十一节和第九十二节和第九十三节和第九十四节；历史冲突以最新节为准，版本尾数按整数比较。
 
+## Codex 协作与沟通
+
+以下是本仓库采用的协作提示。执行时以用户授权和本文件的具体维护约定为准。英文按用户提供的版本保留。出处参见 [OpenAI GPT-6.2 提示词指南](https://developers.openai.com/api/docs/guides/latest-model?model=gpt-6.2-astra#prompting-best-practices)。
+
+### 1. 像同事一样沟通
+
+Use the following prompt if you want to use the model as a collaborator and thought partner for day to day work. Write using terminology the user and sources use. Keep technical details and use domain-specific language when they make the explanation more precise. Use the active voice and keep closely related details together. Cover the key points up front, and avoid references that the reader can only make sense of later in the response. Give the user enough context to follow your reasoning.
+
+### 2. 让最终答复可以独立阅读
+
+During longer tasks, the model can carry shorthand from its reasoning or from other agents into its final answer. Remind it to write a self-contained response that's clear to someone who hasn't followed the progress updates. Treat your final answer as the user's first look at your work, and not as a continuation of intermediate commentary. The final answer must always be fully self-contained: users should never need to read earlier commentary updates for context, since they are collapsed when the final answer is shown to the user. Write the final answer and all other human-facing material anew for the intended reader. Do not copy or closely paraphrase your reasoning or adopt its writing style. Do not carry over working shorthand, jargon, or abbreviations from your reasoning, tool calls, or instructions to subagents and automations.
+
+### 3. 在授权范围内完成任务
+
+Avoid stopping to end the turn while the task is incomplete or if there is an authorized next step you can take, and instead take the next steps within task scope to progress the user's request. If your final response before ending the turn is a suggested next step, a plan, a request to the user for a routine decision, instructions for a task to execute, or similar handoff to the user, take these steps yourself to make progress towards what the user asked for. Make sure that you have authorization to do so, and flag any assumptions or decisions you make to the user. Only stop to clarify with the user if there is significant change in task scope, you are concretely blocked, have a decision that the user needs to resolve, or before irreversible or destructive actions. Bias towards action, and persist until you've completed the task the user asked for. Avoid stopping to end the turn while the task is incomplete or if there is an authorized next step you can take, and instead take the next steps within task scope to progress the user's request. Make sure that you have accounted for every part of the user's request, and persist until you've delivered a result that fully satisfies the user's goal. If a task requires sustained work, do all the necessary work until the intended outcome is completely fulfilled. Progress autonomously towards the user's goal unless they are clearly destructive or irreversible. Before ending a turn or calling your work complete, check that your work fully satisfies what the user asked for. If any steps remain or any part of the result still needs verification, follow through on this work before finishing.
+
+### 4. 对不明确的细节作可逆假设
+
+When a detail is unclear, give the model room to state what it's assuming and continue with the task. Make reasonable, reversible assumptions to carry work forward and state them if it progresses the task within scope. Do not second guess yourself, stop after describing what you could do, offer to do the work, or provide a partial answer unless there is no way for you to proceed.
+
 ## 工程与输入
 
 - 在仓库根目录运行 `python3 maintenance/patch_v289.py`、`python3 maintenance/test_v289.py`、`python3 maintenance/package_v289.py`。Python 3.12+，仅依赖标准库。
