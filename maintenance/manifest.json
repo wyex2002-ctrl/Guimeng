@@ -845,10 +845,24 @@
     "maintenance/autosave_analysis_v279.json",
     "docs/分步存档引擎接口修正_v279.md",
     "docs/reports/build_v279.json",
-    "docs/reports/validation_v279.json"
+    "docs/reports/validation_v279.json",
+    "maintenance/patch_v280.py",
+    "maintenance/test_v280.py",
+    "maintenance/package_v280.py",
+    "maintenance/player_changes_v280.json",
+    "maintenance/oil_gift_v280.lua",
+    "maintenance/oil_gift_v280.ljbc",
+    "maintenance/oil_drop_v280.ljbc",
+    "maintenance/modal_fixture_v280.lua",
+    "maintenance/modal_regression_v280.lua",
+    "maintenance/gift_stack_regression_v280.lua",
+    "maintenance/autosave_regression_v280.lua",
+    "docs/回归277基础与赠油提示_v280.md",
+    "docs/reports/build_v280.json",
+    "docs/reports/validation_v280.json"
   ],
   "generated_reports": [
-    "maintenance/build_v279.json",
-    "maintenance/validation_v279.json"
+    "maintenance/build_v280.json",
+    "maintenance/validation_v280.json"
   ]
 }

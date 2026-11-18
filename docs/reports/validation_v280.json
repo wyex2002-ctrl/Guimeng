@@ -1,0 +1,100 @@
+{
+  "version": "v1.280",
+  "all_passed": true,
+  "sha256": "30e776cc8de4a8642416462576bbf389562d33505aa0615f169e7f6cb7d7eed7",
+  "runs": [
+    {
+      "suite": "oil_drop",
+      "mode": "normal",
+      "output": "OIL_DROP_V267_PASS normal checks=3805; exact level/roll boundaries, native death/respawn/drop/ground, finite engine/map/graphics\n"
+    },
+    {
+      "suite": "oil_drop",
+      "mode": "hot",
+      "output": "OIL_DROP_V267_PASS hot checks=3805; exact level/roll boundaries, native death/respawn/drop/ground, finite engine/map/graphics\n"
+    },
+    {
+      "suite": "gift_stack",
+      "mode": "normal",
+      "output": "GIFT_STACK_V280_PASS normal checks=510; native load/add/modal request and legacy-stack preservation, finite UI/file bridges\n"
+    },
+    {
+      "suite": "gift_stack",
+      "mode": "hot",
+      "output": "GIFT_STACK_V280_PASS hot checks=510; native load/add/modal request and legacy-stack preservation, finite UI/file bridges\n"
+    },
+    {
+      "suite": "modal",
+      "mode": "normal",
+      "output": "MODAL_V280_PASS\tnormal\t650\tactual modal class/init/show/update/close/render; finite engine/input/graphics\n"
+    },
+    {
+      "suite": "modal",
+      "mode": "hot",
+      "output": "MODAL_V280_PASS\thot\t651\tactual modal class/init/show/update/close/render; finite engine/input/graphics\n"
+    },
+    {
+      "suite": "autosave",
+      "mode": "normal",
+      "output": "NATIVE_AUTOSAVE_IO\tnormal\t4\t1\t1.08\t0.27\nAUTOSAVE_V280_PASS\tnormal\t310\n"
+    },
+    {
+      "suite": "autosave",
+      "mode": "hot",
+      "output": "NATIVE_AUTOSAVE_IO\thot\t4\t1\t1.08\t0.27\nAUTOSAVE_V280_PASS\thot\t310\n"
+    }
+  ],
+  "changed_prototypes": {
+    "12": [
+      20,
+      76,
+      149,
+      180,
+      22196
+    ],
+    "14": [
+      674,
+      710,
+      726,
+      738,
+      762,
+      775
+    ],
+    "22": [
+      112
+    ],
+    "30": [
+      39,
+      87
+    ],
+    "44": [
+      1,
+      3
+    ]
+  },
+  "all_42_modules_checked": true,
+  "base": "v1.277",
+  "drop_rules": "v1.267",
+  "autosave_seconds": 300,
+  "incremental_save_present": false,
+  "native_modal_minimum_seconds": 3,
+  "full_windows_game_run": false,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "scope": "actual death/proxy/drop/ground and 267 integer thresholds; two-story login/gift/add/save-marker and real modal class/init/show/update/close; original timer, full frame and read-only public.run; finite engine/graphics/file/input bridges, not Windows full client validation",
+  "tested_files": {
+    "patch_v280.py": "c56ddd27b63c208799f40dabbea908aa6e46be33f8556b258e090f634ae53739",
+    "test_v280.py": "85b6e368950918c8f9776569b4f521ad1c11072343a71009cba71978be59f448",
+    "package_v280.py": "cc763af5115e785e27b5946e1309606f68de5f7b9421ae31d4fcd875db600c54",
+    "player_changes_v280.json": "48a011948f2fc6b02b31121e39174509ddfc8d128adee096bb7f59e2df382778",
+    "oil_gift_v280.lua": "fe9cf7f20eee44cdb7b293f7fcb7e0312100c758107fefee17a5e5f7a997b34c",
+    "oil_gift_v280.ljbc": "021c1debcee94d3afc320323ff00b12ade89460fe2caad47f3cc40d138229ddb",
+    "oil_drop_v267.lua": "2ae29bd449bdb2fcc921789797df3e1855f986cc12a9c869be137c00a439a32b",
+    "oil_drop_v267.ljbc": "521d70a2bae1b2c7decb4a6d1da3598a189307fc8e6dab6c8c5fc9b60f47ddbc",
+    "oil_drop_v280.ljbc": "9233a2c2de6720fa6c5fda1fe48a0a52f872823567c20336be738c5b8d32ac34",
+    "modal_fixture_v280.lua": "5f2da410b4865e0ab9e88915fbe77c590d5f5f0d26bd777cd75088b7f9e1676a",
+    "oil_drop_regression_v267.lua": "bb5d7d93ad8cb30c307b0f5addc9957364a6e70b9c13af6706836e3b15403168",
+    "gift_stack_regression_v280.lua": "b887f7cc9e2a5d76271081dbb4a09b7c7abdf6242d4956f2d916fd773ec0dede",
+    "modal_regression_v280.lua": "00ba252f35e07f14c6bfff8f2ace1f61c04ff2d725a4305353047728f831772a",
+    "autosave_regression_v280.lua": "89a6c8c64781c56f700bb3a716f23638282604c061e1bd7f5a7de60fa928a9f6"
+  }
+}
