@@ -1,0 +1,31 @@
+{
+  "version": "v1.283",
+  "all_passed": true,
+  "sha256": "eb22fa606ba1014df913670e66ad7209f93762cdb8da6f71bd303867626f468d",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTO_POISON_V282_PASS\tnormal\t1599\nCOMBAT_PICKUP_V283_PASS\tnormal\t2118\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTO_POISON_V282_PASS\thot\t1599\nCOMBAT_PICKUP_V283_PASS\thot\t2118\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "scope": "real hero release, poison and projectile paths, low mana selector and clock boundaries, embedded Alt pickup through original currency and pickup callbacks, with finite map, graphics, HP and UI controls",
+  "tested_files": {
+    "patch_v283.py": "43fdab1bf8c5456e41bfcbab0b4649279f769e7f1b66073abfb8406006095d24",
+    "test_v283.py": "199e9bf9ffc67e30b022aa96bfa79de470f5cc545240b451b60a078d90a7629d",
+    "auto_poison_v283.lua": "713c1bf8020c2ffeeffb88ffd22fed1b761c0904c32d912d1b14059eb205fb73",
+    "auto_poison_v283.ljbc": "28d6898d535b429d31b8b3f705011e62723835f9a014ee44719c250ca2eda065",
+    "melee_timing_v283.lua": "82efb15ec15fcebdb5bf28aaf0befab0137f7211c5ffd4d6696292bdf06af8db",
+    "melee_timing_v283.ljbc": "8c8e96a39d841645e14194c946ea8dcf4f93b9ff90f6a7cf122d2cedd10254ad",
+    "alt_pickup_v283.lua": "668c8190de6b0f81538dacf895697df6bbf3c926db47bc7bada9d331dbdf9523",
+    "combat_regression_v283.lua": "95ed86304a2eef3722ebfa85d6de3ec8b95b4f1c7eeced02209d06c81b5a2a13",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670",
+    "test_v282.py": "402496953d9d3167a7bbeacf6cca5dfbccade0d189a871250fd6f63a78a805ee",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b"
+  }
+}

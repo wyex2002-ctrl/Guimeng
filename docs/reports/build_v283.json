@@ -1,0 +1,15 @@
+{
+  "version": "v1.283",
+  "base_sha256": "da367f929ce91f158d61c2daf3dca27745dec2eae86e76614b7bdc81443ec4ea",
+  "bytes": 2747225,
+  "sha256": "eb22fa606ba1014df913670e66ad7209f93762cdb8da6f71bd303867626f468d",
+  "charge_notice_seconds": 10,
+  "low_mana_branches": {
+    "778": 790,
+    "808": 820,
+    "838": 850,
+    "936": 943,
+    "954": 961
+  },
+  "alt_currency_quiet_marker": "__gm_alt_sale_v283"
+}

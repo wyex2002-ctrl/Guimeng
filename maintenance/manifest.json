@@ -877,10 +877,22 @@
     "maintenance/poison_powder_v282.ljbc",
     "maintenance/auto_poison_regression_v282.lua",
     "docs/reports/build_v282.json",
-    "docs/reports/validation_v282.json"
+    "docs/reports/validation_v282.json",
+    "maintenance/patch_v283.py",
+    "maintenance/test_v283.py",
+    "maintenance/package_v283.py",
+    "maintenance/player_changes_v283.json",
+    "maintenance/auto_poison_v283.lua",
+    "maintenance/auto_poison_v283.ljbc",
+    "maintenance/melee_timing_v283.lua",
+    "maintenance/melee_timing_v283.ljbc",
+    "maintenance/alt_pickup_v283.lua",
+    "maintenance/combat_regression_v283.lua",
+    "docs/reports/build_v283.json",
+    "docs/reports/validation_v283.json"
   ],
   "generated_reports": [
-    "maintenance/build_v282.json",
-    "maintenance/validation_v282.json"
+    "maintenance/build_v283.json",
+    "maintenance/validation_v283.json"
   ]
 }
