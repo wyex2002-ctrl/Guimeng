@@ -1,0 +1,27 @@
+{
+  "version": "v1.291",
+  "all_passed": true,
+  "sha256": "aaa70535d036aae8d82874e47faf92096833b6f6dfa12f76c12af31ef1f80761",
+  "v284_original_class_callback_and_layout_checked": true,
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTO_POISON_V291_PASS\tnormal\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTO_POISON_V291_PASS\thot\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "tested_files": {
+    "patch_v291.py": "5f20cba71099fc23464c969c43a2a299b0e7bbc71955930eadb4b019fc522ce1",
+    "test_v291.py": "32df8d355cc9e1d98059407e88c8207133cdfe43609358e27e27b56ee3fa4d87",
+    "auto_poison_regression_v291.lua": "c821cf05a844a97ea2bd383928ac97a978011a8e252f5ea0452e37d7e86690d8",
+    "poison_powder_v291.lua": "cb66571bd9d0e9ae0c048a058c9e05f8ecde9608d8c25942436004cca2a62396",
+    "poison_powder_v291.ljbc": "36db91e9e397287a2a7e99b787e43dea03be3080f4a88b08852889db36274527",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670"
+  }
+}

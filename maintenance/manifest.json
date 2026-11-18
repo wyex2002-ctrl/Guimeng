@@ -964,10 +964,19 @@
     "maintenance/package_v290.py",
     "maintenance/player_changes_v290.json",
     "docs/reports/build_v290.json",
-    "docs/reports/validation_v290.json"
+    "docs/reports/validation_v290.json",
+    "maintenance/patch_v291.py",
+    "maintenance/test_v291.py",
+    "maintenance/package_v291.py",
+    "maintenance/poison_powder_v291.lua",
+    "maintenance/poison_powder_v291.ljbc",
+    "maintenance/auto_poison_regression_v291.lua",
+    "maintenance/player_changes_v291.json",
+    "docs/reports/build_v291.json",
+    "docs/reports/validation_v291.json"
   ],
   "generated_reports": [
-    "maintenance/build_v290.json",
-    "maintenance/validation_v290.json"
+    "maintenance/build_v291.json",
+    "maintenance/validation_v291.json"
   ]
 }

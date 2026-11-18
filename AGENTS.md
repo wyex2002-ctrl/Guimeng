@@ -1,6 +1,6 @@
 # 归梦维护约定
 
-当前已发布 v1.290。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
+当前已发布 v1.291。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
 
 ## 按任务查阅
 
@@ -29,7 +29,7 @@ When a detail is unclear, give the model room to state what it's assuming and co
 
 ## 工程与输入
 
-- 在仓库根目录运行 `python3 maintenance/patch_v290.py`、`python3 maintenance/test_v290.py`、`python3 maintenance/package_v290.py`。Python 3.12+，仅依赖标准库。
+- 在仓库根目录运行 `python3 maintenance/patch_v291.py`、`python3 maintenance/test_v291.py`、`python3 maintenance/package_v291.py`。Python 3.12+，仅依赖标准库。
 - 使用现有 checkout；云任务已隔离，除非用户要求，不创建 Git worktree。
 - 必须保留 `maintenance/manifest.json` 列出的输入，尤其 `base_v176.zip`、三组 v177 Lua/字节码和 v179 Lua/字节码，以及官方 `LuaJIT-2.0-b83bcba.tar.gz`。
 - v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190、v191、v192、v193、v194、v195、v196、v197、v198、v199、v200、v201、v202、v203、v204、v205、v206、v207、v208、v209、v210、v211、v212、v213、v214、v215、v216、v217 构建是 v218 首次完整重建的依赖，历史测试按需运行；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
