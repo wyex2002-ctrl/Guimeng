@@ -1,0 +1,26 @@
+{
+  "version": "v1.292",
+  "all_passed": true,
+  "sha256": "be391608138adefeca84958d3486cc02bdfcaaa7f2f5166e502a2751b13bd49d",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "TOWN_GUARD_V292_PASS\tnormal\n"
+    },
+    {
+      "mode": "hot",
+      "output": "TOWN_GUARD_V292_PASS\thot\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "tested_files": {
+    "patch_v292.py": "aaef8f5f78b019041f6fbd218c48a26c6987c9941bb15fdee0768163195ff25e",
+    "test_v292.py": "104f49043c8cab31d29b8df9adbf170177dedb8d108e94f16e090de9e42df1a9",
+    "guard_ignore_v292.lua": "bdfab89ab6e1390f199b67bea2eee1ca9a08ff31b84e44d4fc3e1b6db662b05f",
+    "guard_ignore_v292.ljbc": "ebfb48087036ae0b3b724e95a9cb4e1035fbb78381c7157b7af63b049af8267a",
+    "guard_summon_target_v292.lua": "b8b5a1bd01a2c7d64a85da5c2a06fb20ef991a4a7cd61ca47a04de474a06b433",
+    "guard_summon_target_v292.ljbc": "21c9c60e2e14a6038fd1f0ed36d0be9cac884de54fa9adfb6ee8e25176437ad1",
+    "guard_regression_v292.lua": "f2882e758494aabbb43b23818eaec9dbc2f146fdb04357ae0df78b578bace607"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": "v1.292",
+  "base_sha256": "aaa70535d036aae8d82874e47faf92096833b6f6dfa12f76c12af31ef1f80761",
+  "bytes": 2756250,
+  "sha256": "be391608138adefeca84958d3486cc02bdfcaaa7f2f5166e502a2751b13bd49d",
+  "native_guard_prototype": 112,
+  "original_script_prototypes": [
+    7687,
+    7688,
+    7707,
+    7708,
+    8055,
+    8056,
+    9138,
+    9139,
+    9293,
+    9294,
+    9492,
+    9493,
+    9605,
+    9606,
+    11220,
+    11221
+  ]
+}

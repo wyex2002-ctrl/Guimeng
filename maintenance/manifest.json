@@ -973,10 +973,21 @@
     "maintenance/auto_poison_regression_v291.lua",
     "maintenance/player_changes_v291.json",
     "docs/reports/build_v291.json",
-    "docs/reports/validation_v291.json"
+    "docs/reports/validation_v291.json",
+    "maintenance/patch_v292.py",
+    "maintenance/test_v292.py",
+    "maintenance/package_v292.py",
+    "maintenance/guard_ignore_v292.lua",
+    "maintenance/guard_ignore_v292.ljbc",
+    "maintenance/guard_summon_target_v292.lua",
+    "maintenance/guard_summon_target_v292.ljbc",
+    "maintenance/guard_regression_v292.lua",
+    "maintenance/player_changes_v292.json",
+    "docs/reports/build_v292.json",
+    "docs/reports/validation_v292.json"
   ],
   "generated_reports": [
-    "maintenance/build_v291.json",
-    "maintenance/validation_v291.json"
+    "maintenance/build_v292.json",
+    "maintenance/validation_v292.json"
   ]
 }
