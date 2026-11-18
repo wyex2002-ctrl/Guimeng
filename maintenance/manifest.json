@@ -933,10 +933,20 @@
     "maintenance/ground_name_color_v287.ljbc",
     "maintenance/combat_ui_ground_regression_v287.lua",
     "docs/reports/build_v287.json",
-    "docs/reports/validation_v287.json"
+    "docs/reports/validation_v287.json",
+    "maintenance/patch_v288.py",
+    "maintenance/test_v288.py",
+    "maintenance/package_v288.py",
+    "maintenance/player_changes_v288.json",
+    "maintenance/merc_mode_v288.lua",
+    "maintenance/merc_mode_v288.ljbc",
+    "maintenance/battle_regression_v288.lua",
+    "maintenance/reputation_regression_v288.lua",
+    "docs/reports/build_v288.json",
+    "docs/reports/validation_v288.json"
   ],
   "generated_reports": [
-    "maintenance/build_v287.json",
-    "maintenance/validation_v287.json"
+    "maintenance/build_v288.json",
+    "maintenance/validation_v288.json"
   ]
 }

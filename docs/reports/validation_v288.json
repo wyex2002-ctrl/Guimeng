@@ -1,0 +1,39 @@
+{
+  "version": "v1.288",
+  "all_passed": true,
+  "sha256": "9ba234252010ed59ad89319f335f7deb0fe083f28af2fef70f7798b3463cba24",
+  "runs": [
+    {
+      "suite": "battle",
+      "mode": "normal",
+      "output": "BATTLE_V288_PASS\tnormal\n"
+    },
+    {
+      "suite": "battle",
+      "mode": "hot",
+      "output": "BATTLE_V288_PASS\thot\n"
+    },
+    {
+      "suite": "reputation",
+      "mode": "normal",
+      "output": "REPUTATION_V288_PASS\tnormal\t4374\n"
+    },
+    {
+      "suite": "reputation",
+      "mode": "hot",
+      "output": "REPUTATION_V288_PASS\thot\t4374\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "tested_files": {
+    "patch_v288.py": "163d40c0678b04b4d1c0aa0fc16d09980d489a26224dc9ddcd8d81e3bb58a1f9",
+    "test_v288.py": "5764fc7afd3ce1fec46edd9a826723f6ba7b9bb356b8f9f544bef4c34936861b",
+    "merc_mode_v288.lua": "160d9afb1c9013d3d0e8cf4c06def2d7e2a8ff51c0615cefa352d68586630bde",
+    "merc_mode_v288.ljbc": "78822930ffc27411d83896682bd51e0b2b8f38c4307997960f596ef398d7503a",
+    "battle_regression_v288.lua": "42a079ae2c2a4687a67303753459695922dc5f18f0cfd7bca24a092e6e10b322",
+    "reputation_regression_v288.lua": "dbe0cf85ff337121ac0c3b94d466e9f36c8cd7f6fe5e6d7fc76507d2a01781e7",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670"
+  }
+}
