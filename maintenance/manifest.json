@@ -22,6 +22,7 @@
   "package_files": [
     ".gitignore",
     "AGENTS.md",
+    "docs/专项维护参考.md",
     "PROJECT_STATUS.md",
     "README.md",
     "docs/reports/README.md",
