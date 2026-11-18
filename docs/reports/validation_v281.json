@@ -1,0 +1,27 @@
+{
+  "version": "v1.281",
+  "all_passed": true,
+  "sha256": "7d6232fef42264b4982324165535761d31eac20d088571b0ed5c85bcf6fa5840",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "LOCKED_MELEE_V281_PASS\tnormal\t2647\n"
+    },
+    {
+      "mode": "hot",
+      "output": "LOCKED_MELEE_V281_PASS\thot\t2647\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "scope": "native hero automatic attack, skill configuration and scripts, instance and grid collection to damage dispatch with finite selection, map, graphics and final damage bridges",
+  "tested_files": {
+    "patch_v281.py": "b4a4ba8f71a86de738d06290e93bd26085bc0210e9fbfed5a7075a7fbf5b5930",
+    "test_v281.py": "5f9a970cd27b94546062fc7d45c7df0f97f07c2dbd9a01c53571cc5fe0e196cb",
+    "package_v281.py": "214d78a580adf129909291d0d2c1694b2a022fbd248673d752a647cb66fc09c7",
+    "locked_melee_regression_v281.lua": "a04119fc7c3f292137e1974c94a54750a946f5a71624f04d2a5e0249c8e9c702",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b",
+    "player_changes_v281.json": "e98559f04e29171f0524ab5e2f4801dcdc8909ae725fda0c0dcc0d20821db1ca"
+  }
+}

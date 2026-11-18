@@ -859,10 +859,17 @@
     "maintenance/autosave_regression_v280.lua",
     "docs/回归277基础与赠油提示_v280.md",
     "docs/reports/build_v280.json",
-    "docs/reports/validation_v280.json"
+    "docs/reports/validation_v280.json",
+    "maintenance/patch_v281.py",
+    "maintenance/test_v281.py",
+    "maintenance/package_v281.py",
+    "maintenance/player_changes_v281.json",
+    "maintenance/locked_melee_regression_v281.lua",
+    "docs/reports/build_v281.json",
+    "docs/reports/validation_v281.json"
   ],
   "generated_reports": [
-    "maintenance/build_v280.json",
-    "maintenance/validation_v280.json"
+    "maintenance/build_v281.json",
+    "maintenance/validation_v281.json"
   ]
 }
