@@ -1,0 +1,41 @@
+{
+  "version": "v1.278",
+  "all_passed": true,
+  "sha256": "f5b95e3918bc708a9b4ed103e985cbc05eb89d4bf30b8ce2024ea5f6dc68479b",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "AUTOSAVE_MODEL\tnormal\t15\t33\t2.202702\t0.001002\nAUTOSAVE_MODEL\tnormal\t30\t33\t1.102702\t0.001002\nAUTOSAVE_MODEL\tnormal\t60\t33\t0.552702\t0.001002\nAUTOSAVE_ACCELERATED_MODEL\tnormal\t8.591\t0.0123\nAUTOSAVE_V278_PASS\tnormal\t11754\tchecks; native format/decoder, proxies, slices/gates/cancellation/errors; finite engine/file/crypto clocks\n"
+    },
+    {
+      "mode": "hot",
+      "output": "AUTOSAVE_MODEL\thot\t15\t33\t2.202702\t0.001002\nAUTOSAVE_MODEL\thot\t30\t33\t1.102702\t0.001002\nAUTOSAVE_MODEL\thot\t60\t33\t0.552702\t0.001002\nAUTOSAVE_ACCELERATED_MODEL\thot\t8.591\t0.0123\nAUTOSAVE_V278_PASS\thot\t11755\tchecks; native format/decoder, proxies, slices/gates/cancellation/errors; finite engine/file/crypto clocks\n"
+    },
+    {
+      "suite": "full_native_frame",
+      "mode": "normal",
+      "output": "NATIVE_AUTOSAVE_IO\tnormal\t8\t4\t2.16\t1.08\nAUTOSAVE_FRAME_V278_PASS\tnormal\t68\n"
+    },
+    {
+      "suite": "full_native_frame",
+      "mode": "hot",
+      "output": "NATIVE_AUTOSAVE_IO\thot\t8\t4\t2.16\t1.08\nAUTOSAVE_FRAME_V278_PASS\thot\t68\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "autosave_seconds": 10,
+  "completion_target_seconds": 9,
+  "runtime_version": "LuaJIT 2.0.1794164847 -- Copyright (C) 2005-2026 Mike Pall. https://luajit.org/",
+  "full_windows_game_run": false,
+  "scope": "complete original collector, real Gly factory, recursive sort/encoding and old native decoder prefix; actual protected items/table library and native two-story UI gates; finite clock/files/crypto bridges, not full client load/IO or Windows frame timing",
+  "tested_files": {
+    "patch_v278.py": "cabf19bd086f30b21bb5e2254a7e536683ad35143997ffb78b0b809fc9451d7b",
+    "test_v278.py": "fe2057ac6142e6095ebb5009406b87f090ad4668e0ba471a6e566dc0467957b7",
+    "package_v278.py": "63acfd37201eee0fac4066b2bf42cda0505c5f7373b9baed9c4436d27f1f919e",
+    "player_changes_v278.json": "ad3c6eb5fe0d874054f2975ec696a7e46f8f9d2cae249848edbb011533c1a56b",
+    "autosave_v278.lua": "21d51a3b7d488f65ac9c6b2baafefc3430a7fcb553d83ec6eedbb8dc7892175d",
+    "autosave_v278.ljbc": "5415327b8217f82bc70bef6ff5ea4e5a614c95c02a3222be8fbb1abb981ab0fa",
+    "autosave_regression_v278.lua": "73d36971c0eb5a0712e4aca68573646acdfbe5e07d79170b41f740b6b5d52c24",
+    "autosave_regression_v273.lua": "fb8aa997223ce33e32e7a2aa1ca365e358cef81be38b6f86502fc9e81ce7c59c"
+  }
+}

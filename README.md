@@ -1,21 +1,21 @@
 # 归梦 v2.26 魔改维护工程
 
-当前 **v1.277：佣兵与召唤物动画入口稳定性修正**。
+当前 **v1.278：10秒周期的分步自动存档与阶段计时**。
 
-根据原始 dump 重建出的调用帧恢复异常，将动作切换和动画更新入口的新增调用移到参数后的连续临时槽，保留原有等待动画与后续动作逻辑。普通／JIT hot 针对性验证及42模块静态核对通过；尚未完成 Windows 32位客户端挂机验证，不保证涵盖全部历史闪退。[实现、证据与验证边界](docs/动画入口调用帧修正_v277.md)。
+沿用原自动存档条件，每10秒发起一轮，将物品采集、任务遍历、保存格式的排序和序列化分散到多帧，正常情况下以9秒内完成为目标。接近目标时提高每帧预算；不堆积任务，超时记录日志并继续完成。手动／退出保存取消未完成自动任务，立即同步保存最新数据。[实现与验证边界](docs/分步自动存档_v278.md)。
 
-下载：[玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.277.zip)、[完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.277_maintenance.zip)、[校验值](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/checksums_v277.json)。退出游戏并备份存档及原Lib/game.res后安装。
+下载：[玩家补丁](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/归梦v2.26_魔改补丁_v1.278.zip)、[完整维护包](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/Guimeng_v1.278_maintenance.zip)、[校验值](https://raw.githubusercontent.com/wyex2002-ctrl/Guimeng/downloads/checksums_v278.json)。退出游戏并备份存档及原Lib/game.res后安装。
 
-**本版仍保留此前祝福油高掉落测试设置，建议使用存档副本。** 自动存档仍5秒，现有日志、其他玩法与字体颜色边框保持。
+新增 `log/guimeng_autosave_latest.txt`／`previous.txt`，记录准备、采集、冻结副本、角色信息处理、排序、序列化、校验、加密、写盘耗时及最大执行片段耗时。原生加密和写盘、部分完整处理段仍同步，不能保证完全没有停顿，也不能在程序暂停或磁盘阻塞时硬性保证9秒。
+
+**仍保留此前祝福油高掉落测试设置，建议使用存档副本。** v1.277动画入口修正、其余战斗逻辑和字体颜色边框保持。允许几秒内的数据时间差，每件物品的数量、幸运与油序列一次采集；切图、换角色或死亡时取消旧任务。
 
 ```bash
-python3 maintenance/patch_v277.py
-python3 maintenance/test_v277.py
-python3 maintenance/package_v277.py
+python3 maintenance/patch_v278.py
+python3 maintenance/test_v278.py
+python3 maintenance/package_v278.py
 ```
 
-Python3.12+、标准库、现有官方LuaJIT2.0缓存。实际客户端为Windows x86 LuaJIT2.0.4，缓存是Linux x64滚动2.0分支，受控回归不等同于客户端验证。Windows测试须显式--runtime，不用2.1或普通Lua；本轮没有重建运行时，也没有替换客户端DLL。
+当前Linux x64官方滚动LuaJIT2.0 normal/hot通过完整原生采集器、新旧数据包对照、旧读档解码区段、真实变量／属性代理与table库、两剧情保存／退出、200轮保存、调度取消／失败和原生完整帧衔接。文件、加密及部分引擎为有限桥接；受控时钟结果不是Windows实机耗时或完整客户端读档验证。实际Windows x86 LuaJIT2.0.4仍需实测，不换DLL、不关闭全局JIT、不重建C运行时。
 
-只有22/89及22/97入口共7条指令的A字段与版本文字变化；参数、frame元数据、常量、调试记录、指令数量和分支目标保持。等待动画助手、伤害／技能时序、攻速、选敌／追击规则均保持。维护包仅包含脱敏后的dump证据摘要，不包含上传的原始内存、存档或DLL。
-
-玩家54项正文保持，不公开概率。保留旧版本双包，不创建Release。修改前不查询或拉取GitHub，完成后同步main/downloads。若再次退出，重新打开游戏前复制整个log文件夹；已有独立ProcDump流程可继续使用，无需配置Windows事件记录或系统转储。
+42模块原指令和分支核对通过，未改模块22的任何字节。玩家说明仍54项，只更新第53条存档说明，不公开隐藏概率。开始修改前不查询或拉取GitHub，完成后同步main/downloads双包，保留旧包、不创建Release。

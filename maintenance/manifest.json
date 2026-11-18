@@ -824,10 +824,20 @@
     "maintenance/crash_analysis_v277.json",
     "docs/动画入口调用帧修正_v277.md",
     "docs/reports/build_v277.json",
-    "docs/reports/validation_v277.json"
+    "docs/reports/validation_v277.json",
+    "maintenance/patch_v278.py",
+    "maintenance/test_v278.py",
+    "maintenance/package_v278.py",
+    "maintenance/player_changes_v278.json",
+    "maintenance/autosave_v278.lua",
+    "maintenance/autosave_v278.ljbc",
+    "maintenance/autosave_regression_v278.lua",
+    "docs/分步自动存档_v278.md",
+    "docs/reports/build_v278.json",
+    "docs/reports/validation_v278.json"
   ],
   "generated_reports": [
-    "maintenance/build_v277.json",
-    "maintenance/validation_v277.json"
+    "maintenance/build_v278.json",
+    "maintenance/validation_v278.json"
   ]
 }
