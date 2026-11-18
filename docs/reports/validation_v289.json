@@ -1,0 +1,28 @@
+{
+  "version": "v1.289",
+  "all_passed": true,
+  "sha256": "65bb9a4174c0c09517392d51a074b5e382301301edd6e2abf7990086f5ec71ea",
+  "runs": [
+    {
+      "mode": "normal",
+      "output": "TREATMENT_LOOT_V289_PASS\tnormal\t654\n"
+    },
+    {
+      "mode": "hot",
+      "output": "TREATMENT_LOOT_V289_PASS\thot\t654\n"
+    }
+  ],
+  "all_42_modules_checked": true,
+  "full_windows_game_run": false,
+  "tested_files": {
+    "patch_v289.py": "0427699e2e67e9a740a5fd1acedc59e087ab1fca2f4e08367c27308aaf140a53",
+    "test_v289.py": "4a1ed8919a5c3dd7e679998d5a305526d089dd652c4a818a645c051737aa99b6",
+    "treatment_loot_regression_v289.lua": "5a9937f3ee65f75fcd800edee48ffe97744ce4aad8c320e60bff5ca730ea9c8c",
+    "healing_lock_v289.lua": "a3f7518069d14e7c51a4cfc87f08f835b48069d507693ea5ad701c2f56eb527e",
+    "healing_lock_v289.ljbc": "24f85f0f21a4b5e8bae51f028757402be6e7dab716fa467c5c950b9cb2456c75",
+    "monster_drop_filter_v289.lua": "055098f886823b6e517a1948e44ea6d964a34102be44ed12ed1e73c9a6424bdd",
+    "monster_drop_filter_v289.ljbc": "66e460dd807510015f9878d6216feb54001b20ac5ed29ab24da2c7376862a339",
+    "melee_regression_v210.lua": "a6f35ad548f80a445113649b3c86b27db3295b5583b956a5f815abceaed5d87b",
+    "auto_poison_regression_v282.lua": "9925491335759fd4b74e4458a6d017f64e617ecac446d51035f8827c94e65670"
+  }
+}

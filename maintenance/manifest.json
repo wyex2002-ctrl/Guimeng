@@ -943,10 +943,21 @@
     "maintenance/battle_regression_v288.lua",
     "maintenance/reputation_regression_v288.lua",
     "docs/reports/build_v288.json",
-    "docs/reports/validation_v288.json"
+    "docs/reports/validation_v288.json",
+    "maintenance/patch_v289.py",
+    "maintenance/test_v289.py",
+    "maintenance/package_v289.py",
+    "maintenance/player_changes_v289.json",
+    "maintenance/healing_lock_v289.lua",
+    "maintenance/healing_lock_v289.ljbc",
+    "maintenance/monster_drop_filter_v289.lua",
+    "maintenance/monster_drop_filter_v289.ljbc",
+    "maintenance/treatment_loot_regression_v289.lua",
+    "docs/reports/build_v289.json",
+    "docs/reports/validation_v289.json"
   ],
   "generated_reports": [
-    "maintenance/build_v288.json",
-    "maintenance/validation_v288.json"
+    "maintenance/build_v289.json",
+    "maintenance/validation_v289.json"
   ]
 }
