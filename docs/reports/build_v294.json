@@ -1,0 +1,16 @@
+{
+  "version": "v1.294",
+  "base_sha256": "fbbbd3efb356c25eb6f14cea0ffe8e7b2e090cec195e0191fc721763b6c04df3",
+  "bytes": 2761845,
+  "sha256": "8be49f773196b969d2fcad33a183ecf422e60edb7875dd4d6c0e3f9dcbc38c50",
+  "potion_clock_calls": {
+    "297": 1,
+    "303": 1,
+    "308": 1,
+    "310": 1,
+    "311": 2
+  },
+  "original_gly_factory": 301,
+  "native_clock_helper": 301,
+  "patched_gly_factory": 302
+}

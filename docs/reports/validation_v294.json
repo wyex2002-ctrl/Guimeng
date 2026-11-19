@@ -1,0 +1,20 @@
+{
+  "version": "v1.294",
+  "all_passed": true,
+  "sha256": "8be49f773196b969d2fcad33a183ecf422e60edb7875dd4d6c0e3f9dcbc38c50",
+  "baseline": "V293_CLOCK_BUG_REPRODUCED normal",
+  "runs": {
+    "normal": "POTIONS_V294_PASS normal (1665 checks)",
+    "hot": "POTIONS_V294_PASS hot (1665 checks)"
+  },
+  "windows_client_tested": false,
+  "tested_files": {
+    "patch_v294.py": "1b31ed2868c4c86bc116fcdaf19662f7a7c2cea18df91847e451bfbff4cafbf3",
+    "test_v294.py": "ee83664554e2cdf0414930c547a629a4d7089578f8fa9e492f8e6b354506ed88",
+    "potion_clock_v294.lua": "1d2df5432dc839d1dad38b5e1153367717cbaa74fef556fcd134d1abe6f0609f",
+    "potion_clock_v294.ljbc": "d6c50f7fbbcf3644f7e3f5c5c63de06410662a1ca437d463b8a2497a0d7bedb4",
+    "potion_clock_regression_v294.lua": "8cb5fecfcc3e5f7c7e3d0e32e639f36a2403e1e88462f6eba99068a54de42b69",
+    "test_v293.py": "a1b43b80beca64c1551ea5a2e78e52bea5fb5e74b56c92a43d13a66e243d990f",
+    "potion_regression_v293.lua": "5d4beabe0f8a889209e6e9831d3de356c3fea52ed70f2fa60bcf8e94eb4948a8"
+  }
+}

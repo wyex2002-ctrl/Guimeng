@@ -999,10 +999,19 @@
     "maintenance/potion_use_bridge_v293.lua",
     "maintenance/potion_use_bridge_v293.ljbc",
     "docs/reports/build_v293.json",
-    "docs/reports/validation_v293.json"
+    "docs/reports/validation_v293.json",
+    "maintenance/patch_v294.py",
+    "maintenance/test_v294.py",
+    "maintenance/package_v294.py",
+    "maintenance/potion_clock_v294.lua",
+    "maintenance/potion_clock_v294.ljbc",
+    "maintenance/potion_clock_regression_v294.lua",
+    "maintenance/player_changes_v294.json",
+    "docs/reports/build_v294.json",
+    "docs/reports/validation_v294.json"
   ],
   "generated_reports": [
-    "maintenance/build_v293.json",
-    "maintenance/validation_v293.json"
+    "maintenance/build_v294.json",
+    "maintenance/validation_v294.json"
   ]
 }
