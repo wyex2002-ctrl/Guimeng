@@ -984,10 +984,25 @@
     "maintenance/guard_regression_v292.lua",
     "maintenance/player_changes_v292.json",
     "docs/reports/build_v292.json",
-    "docs/reports/validation_v292.json"
+    "docs/reports/validation_v292.json",
+    "maintenance/patch_v293.py",
+    "maintenance/test_v293.py",
+    "maintenance/package_v293.py",
+    "maintenance/player_changes_v293.json",
+    "maintenance/potion_regression_v293.lua",
+    "maintenance/potions_v293.lua",
+    "maintenance/potions_v293.ljbc",
+    "maintenance/potion_merc_v293.lua",
+    "maintenance/potion_merc_v293.ljbc",
+    "maintenance/potion_ui_v293.lua",
+    "maintenance/potion_ui_v293.ljbc",
+    "maintenance/potion_use_bridge_v293.lua",
+    "maintenance/potion_use_bridge_v293.ljbc",
+    "docs/reports/build_v293.json",
+    "docs/reports/validation_v293.json"
   ],
   "generated_reports": [
-    "maintenance/build_v292.json",
-    "maintenance/validation_v292.json"
+    "maintenance/build_v293.json",
+    "maintenance/validation_v293.json"
   ]
 }

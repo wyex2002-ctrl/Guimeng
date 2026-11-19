@@ -1,0 +1,19 @@
+{
+  "version": "v1.293",
+  "all_passed": true,
+  "sha256": "fbbbd3efb356c25eb6f14cea0ffe8e7b2e090cec195e0191fc721763b6c04df3",
+  "runs": {
+    "normal": "POTIONS_V293_PASS normal (1604 checks)",
+    "hot": "POTIONS_V293_PASS hot (1604 checks)"
+  },
+  "windows_client_tested": false,
+  "tested_files": {
+    "patch_v293.py": "0a69aa464abe23cfa2c404969945d8085f0ec6475d3804e07a578e66a5d90e6f",
+    "test_v293.py": "a1b43b80beca64c1551ea5a2e78e52bea5fb5e74b56c92a43d13a66e243d990f",
+    "potion_regression_v293.lua": "5d4beabe0f8a889209e6e9831d3de356c3fea52ed70f2fa60bcf8e94eb4948a8",
+    "potions_v293.lua": "52a4c119d35fccca7bb803276dd77c25de0fc0ed9684d3911c085e672066cbb8",
+    "potion_merc_v293.lua": "9e6eb2ea542e05367c7cb919100b05cc09007dd1fb078133d2f6d23205c8d2b8",
+    "potion_ui_v293.lua": "46b0e56a8c40ee326f75b9f94b9b4f7e516294ec0d9c7707b6546855e6f83191",
+    "potion_use_bridge_v293.lua": "4dfb91182f4a84682a2f77a605730c17466935c96fac9661e82a7e2956171046"
+  }
+}
