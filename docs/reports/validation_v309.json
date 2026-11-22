@@ -1,0 +1,25 @@
+{
+  "version": "v1.309",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "19406dc7243ed405b5eacfa1c837b2d702d7716f74e2a1f91b8fe1507cefbf41",
+  "tested_files": {
+    "game_v309.res": "19406dc7243ed405b5eacfa1c837b2d702d7716f74e2a1f91b8fe1507cefbf41",
+    "runtime_v309.lua": "4239238c2514222e124deb09d7f583d8cec222814d21c0bc2a04c93a7c0d6037",
+    "patch_v309.py": "6ab9d2fda606ffa0e77b9f04cee4d1466ed1de6a58ada0d5115af2c9e56b8df5"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "all_247_spawn_callbacks_11x_verified",
+    "all_34_boss_entries_covering_32_blueprints_rewritten_to_110_exact_10pct",
+    "all_non_blueprint_boss_drops_byte_identical",
+    "all_24_non_boss_trash_mob_blueprint_entries_untouched",
+    "drop_cache_cleared_on_story_transition",
+    "qianchi_isolated_and_story_switch_restores_original_drop_item",
+    "v308_warehouse_proxy_button_regression_pass",
+    "v307_mode2_ordinary_materials_regression_pass",
+    "v306_gather_formula_regression_pass"
+  ]
+}

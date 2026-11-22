@@ -1,0 +1,20 @@
+{
+  "version": "v1.334",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "3dd0865f4db9395dc1a42fb57c49fe74a5f2204779394a6cf4ed0f8bc8c716be",
+  "tested_files": {
+    "game_v334.res": "3dd0865f4db9395dc1a42fb57c49fe74a5f2204779394a6cf4ed0f8bc8c716be",
+    "runtime_v334.lua": "b1dddf646a1d1f0eba9724d00ee4122b5481a1c5015fd8c8f61533926e9a723d",
+    "patch_v334.py": "c14ca6407f179504e15317309520cd73d6ebf60859025aba0a19b1443fb3a12f"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "mode2_sells_white_and_1_to_6_affix_qingtongfu_and_mofachangpao_while_keeping_7_affix_and_special_state",
+    "mode2_keeps_jipin_jinglinghaigu_and_alt_mode1_still_protect_all_three",
+    "v333_v332_v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "version": "v1.295",
+  "base_sha256": "8be49f773196b969d2fcad33a183ecf422e60edb7875dd4d6c0e3f9dcbc38c50",
+  "bytes": 2761839,
+  "sha256": "883e30c3439ac2b4ec088d8d27626ebf78f050584a5d0adcc7903baa3e9859f3",
+  "replacements": [
+    {
+      "module": 12,
+      "proto": 76,
+      "slot": 57,
+      "before": "魔改版 1.294",
+      "after": "不烧心版 1.295"
+    },
+    {
+      "module": 12,
+      "proto": 76,
+      "slot": 56,
+      "before": "1.294",
+      "after": "1.295"
+    },
+    {
+      "module": 12,
+      "proto": 76,
+      "slot": 19,
+      "before": "] 魔改版 ",
+      "after": "] 不烧心版 "
+    },
+    {
+      "module": 12,
+      "proto": 22232,
+      "slot": 3102,
+      "before": "魔改版 1.292",
+      "after": "不烧心版 1.295"
+    },
+    {
+      "module": 14,
+      "proto": 676,
+      "slot": 11,
+      "before": " patch=v1.294 ",
+      "after": " patch=v1.295 "
+    },
+    {
+      "module": 14,
+      "proto": 712,
+      "slot": 5,
+      "before": "Guimeng v1.294 diagnostics | ",
+      "after": "Guimeng v1.295 diagnostics | "
+    },
+    {
+      "module": 14,
+      "proto": 728,
+      "slot": 9,
+      "before": "Guimeng patch v1.294 | local diagnostic log | ",
+      "after": "Guimeng patch v1.295 | local diagnostic log | "
+    },
+    {
+      "module": 14,
+      "proto": 740,
+      "slot": 6,
+      "before": "Guimeng v1.294 native watch | ",
+      "after": "Guimeng v1.295 native watch | "
+    },
+    {
+      "module": 14,
+      "proto": 764,
+      "slot": 18,
+      "before": "Guimeng v1.294 skill steps | ",
+      "after": "Guimeng v1.295 skill steps | "
+    },
+    {
+      "module": 14,
+      "proto": 777,
+      "slot": 2,
+      "before": "Guimeng v1.294 game exit watch | ",
+      "after": "Guimeng v1.295 game exit watch | "
+    },
+    {
+      "module": 30,
+      "proto": 39,
+      "slot": 7,
+      "before": " patch=v1.294 engine.error.callback ===",
+      "after": " patch=v1.295 engine.error.callback ==="
+    },
+    {
+      "module": 30,
+      "proto": 87,
+      "slot": 7,
+      "before": " patch=v1.294 engine.error.callback ===",
+      "after": " patch=v1.295 engine.error.callback ==="
+    }
+  ]
+}

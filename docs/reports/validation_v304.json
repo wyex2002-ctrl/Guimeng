@@ -1,0 +1,18 @@
+{
+  "version": "v1.304",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "3cea4fe6937d0fe9071d55ecb599d7155a2d4251cda56e50793fb6438d54b033",
+  "tested_files": {
+    "game_v304.res": "3cea4fe6937d0fe9071d55ecb599d7155a2d4251cda56e50793fb6438d54b033",
+    "runtime_v304.lua": "c1eb28852768f45338a042f0d3aee53324f909a43cdb93bad5b4b35953f98f85",
+    "patch_v304.py": "85c00c57c0b9a4b2a2fdb3e303bfc8e0f220ee0d5b3e5ef5e70bf55d4caf7068",
+    "test_v304.py": "09b8d56fb35ad708b00723c58b38a3bfce6949be3ee0a5517e84dd00427a5089"
+  },
+  "checks": [
+    "Outer resource diff restricted strictly to modules [12, 14, 30] + rebuild + trees()",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C scan on embedded runtime_v304.lua",
+    "Strict 类_地图物品类_.lua:696 ground-sprite render test + 14/502 内存保护(nil) guard: 猪肉 & 赤龙宝甲_男 restore live 地面精灵/精灵 handles from S.游戏道具组 while keeping rolled 品质/affixes; missing-sprite items safely skipped; 前尘忆梦 isolated",
+    "Ranged assassin merc blink behind locked target + auto-rewrap + 3s cooldown regression passed"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v1.320",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "e3042bd87e64f38014a1d23cea1b54a78cbb5ad01b3070fd0ae8064c0d66233d",
+  "tested_files": {
+    "game_v320.res": "e3042bd87e64f38014a1d23cea1b54a78cbb5ad01b3070fd0ae8064c0d66233d",
+    "runtime_v320.lua": "2a9ffe5fe044efe997894f91e751f304dda5ee7a2d062b1d268a5295dc929307",
+    "patch_v320.py": "ac3ebd4311e1381a79454039697677aaad168da18fb105993e87406147d2a9dc"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "all_4_allowed_slots_activate_simultaneously_and_unequip_cleanly",
+    "duplicate_same_set_deduplicated",
+    "old_save_legacy_other_slots_capped_at_max_1_standalone_and_mixed",
+    "merc_independent_4_allowed_plus_max_1_legacy",
+    "blueprint_drag_restriction_and_5_5pct_drop_rate_pass",
+    "qianchi_completely_isolated",
+    "v317_v316_v308_v307_v306_regressions_pass"
+  ]
+}

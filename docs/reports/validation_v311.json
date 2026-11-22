@@ -1,0 +1,28 @@
+{
+  "version": "v1.311",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "aeb6d266d97617fe974ed956983026e544c47e761b83dda883d04ae865faf17e",
+  "tested_files": {
+    "game_v311.res": "aeb6d266d97617fe974ed956983026e544c47e761b83dda883d04ae865faf17e",
+    "runtime_v311.lua": "a478e6e22cdff932486cd58fdd637e35d92a14f98481787760750fca7a1e4bd2",
+    "patch_v311.py": "46500b533b95350bbab1fdf1ac26a645943d6c2def1d106d794dfa4092f9055d"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "equipped_bracelet_guild_active_mir3_layout_and_gem_format",
+    "equipped_necklace_guild_active_no_gems_mir3_layout",
+    "all_13_baoshi_gem_stat_types_one_line_per_gem",
+    "three_strong_elements_wrap_indent",
+    "set_equipment_mir3_layout_preserves_set_bonus_elemental_lines",
+    "bag_equipment_byte_identical_no_gem_info",
+    "rewrap_after_disp_recreation_and_width_preserved",
+    "qianchi_completely_isolated",
+    "v310_boss_blueprints_11pct_regression_pass",
+    "v308_warehouse_proxy_button_regression_pass",
+    "v307_mode2_ordinary_materials_regression_pass",
+    "v306_gather_formula_regression_pass"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v1.303",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "d851e51c7709f7012d881bbc873a96beb1a39ec0833552db38135f949bc809d5",
+  "tested_files": {
+    "game_v303.res": "d851e51c7709f7012d881bbc873a96beb1a39ec0833552db38135f949bc809d5",
+    "runtime_v303.lua": "787a84105b6e8901b04659545d0bb043785e1c5f1183ef4848317f8a22b5de56",
+    "patch_v303.py": "ff7f97e81810df5be159de29361f23bc0a8bfec3bc82d0762430c159a92561ba",
+    "test_v303.py": "7fd78adb2739442a7bf80a83303c447c10a84cc1f7e7b62ba3bec31e5581ff02"
+  },
+  "checks": [
+    "Outer resource diff restricted strictly to modules [12, 14, 30] + rebuild + trees()",
+    "12/18045 (pc 117..118) & 12/18047 (pc 103..104) verified exact 3s assassin skill cooldown",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C scan on embedded runtime_v303.lua",
+    "Strict 14/502 内存保护(nil) crash guard in 22/97 VM: 猪肉 (属性=nil) & 鸡肉 (附加=nil, 属性=nil) drop cleanly; 前尘忆梦 isolated",
+    "Real init/reload order (14/781 -> 14/420 -> pickup_frame -> 14/420 reload -> pickup_frame) verified auto-rewrap",
+    "Ranged assassin merc: any adjacent enemy triggers blink behind LOCKED TARGET (target.地图格子) at ring distance 2~4 + projectile + synchronized damage & 目标动画"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "v1.298",
+  "sha256": "fec3c995db817d5a80995230dffbf3850e73d7fb7654fce8ed8c22f7e9380005",
+  "all_passed": true,
+  "changed_protos": {
+    "12": [
+      35,
+      76,
+      259,
+      302,
+      321,
+      4111,
+      22232
+    ],
+    "14": [
+      676,
+      712,
+      728,
+      740,
+      764,
+      777
+    ],
+    "30": [
+      39,
+      87
+    ]
+  },
+  "module22_total_call_gaps": 0,
+  "quickbar_autopotion_all_15_passed": true,
+  "quickbar_v297_bug_reproduced": true,
+  "quickbar_bag_priority_preserved": true,
+  "talisman_cap": 50000000,
+  "talisman_template_and_save_upgrade_passed": true,
+  "talisman_mid_untouched": true,
+  "tested_files": {
+    "game_v298.res": "fec3c995db817d5a80995230dffbf3850e73d7fb7654fce8ed8c22f7e9380005",
+    "patch_v298.py": "8e4eae31a14fee2cc46262b067239435f107c1d26a3cb4a270b188d84fe96582",
+    "test_v298.py": "e86b0881fbc326e0c43e11e20aeb65be9d3a2731eb103908578e8d430bd1d238",
+    "potions_v298.lua": "84fc0e4c9459d8f6a7f4b55894fab29effd9794fa0fba52a75286728994ce8cd"
+  }
+}

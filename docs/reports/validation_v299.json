@@ -1,0 +1,54 @@
+{
+  "version": "v1.299",
+  "all_passed": true,
+  "base_sha256": "fec3c995db817d5a80995230dffbf3850e73d7fb7654fce8ed8c22f7e9380005",
+  "sha256": "87b42bdba8aade6b6dd17ef6d87be503b7e357d694431341162f7a7c4baf1bbf",
+  "game_res_sha256": "87b42bdba8aade6b6dd17ef6d87be503b7e357d694431341162f7a7c4baf1bbf",
+  "game_res_bytes": 2782300,
+  "tested_files": {
+    "runtime_v299.lua": "c7c95b7fc814c54008a4fa6ebd11c850f8ef26379bffc5d348f12ede333a5460",
+    "patch_v299.py": "da30a3b827ca0e6d88885e01b09fc1b5bc7d4ec415d638247efeb924b784e7b8",
+    "lua51_eval.py": "27f5d45901217d939a351436e7f1e7afab09e5f536fa4b10e239ced291746465",
+    "test_v299.py": "8d149c1c575fb06ed323be3f024d01cd691bf8bec7e4bf1ae1e9c26eb17503d7"
+  },
+  "changed_modules": [
+    12,
+    14,
+    30
+  ],
+  "changed_prototypes": {
+    "12": [
+      76,
+      143,
+      217,
+      218,
+      220,
+      22232
+    ],
+    "14": [
+      256,
+      428,
+      446,
+      456,
+      481,
+      676,
+      712,
+      728,
+      740,
+      764,
+      777,
+      781
+    ],
+    "30": [
+      39,
+      87
+    ]
+  },
+  "static_audited_prototypes": 133,
+  "feature1_reputation_shop_cases_passed": 7,
+  "feature2_auto_pickup_cases_passed": 10,
+  "feature3_mount_batch_cases_passed": 15,
+  "qian_chen_yi_meng_isolated": true,
+  "verification_boundary": "Verified via 42-module reverse-diff, Dump.rebuild() round-trips, static LuaJIT 2.0 dataflow/J->maxslot/JMP.A audit, strict Lua 5.1 parse + GBK hazard check of embedded runtime_v299.lua, real LuaJIT 2.0 bytecode VM execution of all patched hooks, and controlled end-to-end execution of embedded runtime_v299.lua. Native Windows x86 client real-machine run, LuaJIT JIT hot-path trace compilation, real pixel rendering, and 30-minute live endurance comparison were NOT executed here and remain for real-client verification.",
+  "unsaved_migration_boundary": "Old-save mount sequences initialized on load persist automatically on the next normal or 20-second autosave; if the game exits abnormally before the first save completes, re-loading the unmodified old save will initialize again."
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v1.298",
+  "base_sha256": "e5e4f5cf482ac1403112fd797a7f1366f2641672097d55c56157ffc72cec7233",
+  "bytes": 2762983,
+  "sha256": "fec3c995db817d5a80995230dffbf3850e73d7fb7654fce8ed8c22f7e9380005",
+  "quickbar_autopotion_fix": {
+    "proto": "12/302",
+    "pc": 76,
+    "old_target": 90,
+    "new_target": 84
+  },
+  "talisman_cap": 50000000,
+  "talisman_template_kstr": {
+    "old_shared_k": 9748,
+    "new_ling_k": 18412
+  },
+  "added_instructions": {
+    "12/35": 5,
+    "12/259": 5,
+    "12/321": 9
+  },
+  "version_string_updates": 11
+}

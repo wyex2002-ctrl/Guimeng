@@ -1,0 +1,16 @@
+{
+  "version": "v1.329",
+  "base_sha256": "ab36ffbda8c3685920d8d2d3dc440155537e20f22d4d6f9a08045a1f3235f8cf",
+  "bytes": 2824904,
+  "sha256": "6e43c1c991eeef054f6ab836a6051a37676fa878547c022abf94cdf2556aa86c",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v329_lua_gbk_bytes": 112059,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "affix_tooltip_updates_v329": {
+    "color_hex": "#FFE27A",
+    "color_argb_signed": -7558,
+    "format": "属性:+数字 (and 属性:+数字% / 等级需求降低:数字)",
+    "section_boundary": "stops before 镶嵌信息/镶嵌属性/套装信息/附魔属性"
+  }
+}

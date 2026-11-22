@@ -1,0 +1,23 @@
+{
+  "version": "v1.328",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "ab36ffbda8c3685920d8d2d3dc440155537e20f22d4d6f9a08045a1f3235f8cf",
+  "tested_files": {
+    "game_v328.res": "ab36ffbda8c3685920d8d2d3dc440155537e20f22d4d6f9a08045a1f3235f8cf",
+    "runtime_v328.lua": "8d6b828bcc318bba46bec229299d7f0df83e4b4bca90c2e5e19f3e3423efbe36",
+    "patch_v328.py": "9e63514854f307d304ee7fc986d70680ca20442d97f6422d1a61dbb830760a75"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "allowed_enchant_slots_weapon_armor_helmet_scroll_hint_and_drag_guard",
+    "hero_and_merc_recalc_activates_only_weapon_armor_helmet_ignores_boots_mount",
+    "ineligible_slots_grey_outlined_scroll_name_and_red_weapon_armor_helmet_note",
+    "eligible_helmet_active_green_scroll_name_and_no_eligibility_note",
+    "save_load_deferral_live_refresh_shelp_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

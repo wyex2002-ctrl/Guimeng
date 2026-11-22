@@ -1,0 +1,22 @@
+{
+  "version": "v1.329",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "6e43c1c991eeef054f6ab836a6051a37676fa878547c022abf94cdf2556aa86c",
+  "tested_files": {
+    "game_v329.res": "6e43c1c991eeef054f6ab836a6051a37676fa878547c022abf94cdf2556aa86c",
+    "runtime_v329.lua": "13a1318f42d7cf7734ef67b42e8da2ca95bbdd3b3fe2b9b65f8623b5a0ae06d0",
+    "patch_v329.py": "208913c5ed9cd79a90ebd584b8a14b4b8686103b131facaa13fe4ad76ab099b1"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "equip_affixes_reformatted_to_stat_colon_plus_val_and_warm_gold_FFE27A",
+    "all_m12_321_affix_variants_including_pct_and_lv_reduce_verified",
+    "base_stats_luck_gem_and_enchant_colors_untouched",
+    "v328_weapon_armor_helmet_rules_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

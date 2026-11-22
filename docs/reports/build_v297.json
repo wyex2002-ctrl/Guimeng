@@ -1,0 +1,12 @@
+{
+  "version": "v1.297",
+  "base_sha256": "345acf85e29af000d1a87a3eb3e51fcd300a7eb6516a42968e2095dd12dd913b",
+  "bytes": 2762877,
+  "sha256": "e5e4f5cf482ac1403112fd797a7f1366f2641672097d55c56157ffc72cec7233",
+  "gold_pile_cap": 5000,
+  "split_mode": "dynamic_5000_plus_remainder",
+  "scope": "来世续缘 only",
+  "proto_12_14_added_instructions": 3,
+  "proto_22_96_total_instructions": 201,
+  "version_string_updates": 11
+}

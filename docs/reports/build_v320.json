@@ -1,0 +1,22 @@
+{
+  "version": "v1.320",
+  "base_sha256": "834eb5e4da79ab744981c19303c817585e71a11f9bb04da853cc9aa7673493f1",
+  "bytes": 2819999,
+  "sha256": "e3042bd87e64f38014a1d23cea1b54a78cbb5ad01b3070fd0ae8064c0d66233d",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v320_lua_gbk_bytes": 100383,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "set_blueprint_rules_v320": {
+    "allowed_slots_simultaneous": [
+      "武器",
+      "衣服",
+      "头盔",
+      "坐骑"
+    ],
+    "required_pieces_per_slot": 1,
+    "duplicate_same_set_dedup": true,
+    "old_save_legacy_other_slots_cap": "max 1 active across all non-allowed slots",
+    "boss_blueprint_drop_rate_under_11x": "11/200 = 5.50%"
+  }
+}

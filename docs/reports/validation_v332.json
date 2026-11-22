@@ -1,0 +1,23 @@
+{
+  "version": "v1.332",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "6020ecc9263ff5c3db70fd2418f6a17a422b30452cab11d3c5793ebfe81ee00f",
+  "tested_files": {
+    "game_v332.res": "6020ecc9263ff5c3db70fd2418f6a17a422b30452cab11d3c5793ebfe81ee00f",
+    "runtime_v332.lua": "fd2199647eebca4571cd1d62aaf3a14532d78686274360f6f7dc8e9a06fe2fb7",
+    "patch_v332.py": "792408df4460afc8c275fa4d0a9814e8408631d7f83394110f0f047d7c9d560b"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "corpse_drop_merges_flattened_jipin_stats_into_out_shuxing_across_function_callable_table_and_fallback",
+    "corpse_drop_passes_normal_drop_args_to_wr_quantuchuangko_and_preserves_saved_dig_jipin_stats",
+    "merc_ranged_tag_only_global_on_pure_assassin_ranged_weapons_and_merc_slot_only_on_general_weapons",
+    "stale_ranged_tag_stripped_and_cached_hero_bag_weapon_tooltips_refreshed_once_on_load",
+    "pickup_frame_restores_merc_name_wrapper_after_m14_420_clobber_and_qianchi_isolated",
+    "v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

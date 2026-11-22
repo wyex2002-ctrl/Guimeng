@@ -1,0 +1,16 @@
+{
+  "version": "v1.322",
+  "base_sha256": "61ccae9bc211bfe86e0540a2c6d2e848987b0e8ffdeab370ed63e9b06fd35f78",
+  "bytes": 2823119,
+  "sha256": "8f760f8c7d04fd4c892b1a752eb5f7b2cface7b19669abb67289399dbcac8547",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v322_lua_gbk_bytes": 107722,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "features_v322": [
+    "bag_and_unequipped_equipment_set_info_shown_as_active_green",
+    "equipped_slots_preserve_real_active_vs_inactive_grey_state",
+    "rename_display_name_图纸_to_附魔卷_in_templates_bag_tooltips_and_prompts_preserving_internal_名称",
+    "instant_slot_tooltip_refresh_on_equip_unequip_drag_drop_and_scroll_apply"
+  ]
+}

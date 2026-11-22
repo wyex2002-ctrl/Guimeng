@@ -1,0 +1,22 @@
+{
+  "version": "v1.330",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "ef769f0671c314b5fcd794911365e5ecfb2337c9c1883d75aaff49dc552753cf",
+  "tested_files": {
+    "game_v330.res": "ef769f0671c314b5fcd794911365e5ecfb2337c9c1883d75aaff49dc552753cf",
+    "runtime_v330.lua": "c95d1fb9cd4be759711422e6cee9a51f5a34ee850c97b433352f813cef24ccc7",
+    "patch_v330.py": "9b868cd69ce7db5c1528257dae5d213cac0c0132c4a076d700d5a80ffca4378e"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "hero_and_merc_old_save_gem_migration_to_left_and_fresh_locked_right",
+    "hero_and_merc_right_click_split_gem_window_titles_and_slots",
+    "hero_and_merc_11part_gem_stat_recalc_with_reincarnation_multiplier",
+    "independent_left_right_tooltip_gem_sections_and_v329_warm_gold_affixes",
+    "qianchi_complete_isolation_and_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

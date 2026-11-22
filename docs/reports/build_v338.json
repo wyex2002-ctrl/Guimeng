@@ -1,0 +1,15 @@
+{
+  "version": "v1.338",
+  "base_sha256": "e90fd5c684eef9b19163d256c34e2c92edec6afe082a8671fd889aaab91bbf73",
+  "bytes": 2849084,
+  "sha256": "022a19cc2e1cf0c25a927c85ede5ff805c0db2d8a6243a8b6f7dfb8807fc97d7",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v338_lua_gbk_bytes": 167661,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v338": {
+    "enchant_slots_mount_medal_seal": "Allowed enchant slots changed to 坐骑 / 勋章 / 印记 (子类 坐骑/勋章/饰品) in strict priority order 坐骑 -> 勋章 -> 印记; all scroll/tooltip/drag/overwrite prompts updated accordingly",
+    "all_equip_no_job_req": "All equipment (分类==装备) sets 职业要求=不限 and all 武器/衣服/头盔 set 附加.装备通用=0 in 来世续缘 (both S.游戏道具组 templates and existing S.包裹物品组 items), preserving gender/slot limits and restoring originals in 前尘忆梦",
+    "qianchi_isolated": "前尘忆梦 untouched"
+  }
+}

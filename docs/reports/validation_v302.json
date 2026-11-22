@@ -1,0 +1,18 @@
+{
+  "version": "v1.302",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "00c2acb1c566a1bf6776189156156f01c3ebc76515442c125fa685e85b604430",
+  "tested_files": {
+    "game_v302.res": "00c2acb1c566a1bf6776189156156f01c3ebc76515442c125fa685e85b604430",
+    "runtime_v302.lua": "415b0a6f6e25b01109d874554e32b1308704ffca2550e89ff7e409bb37483789",
+    "patch_v302.py": "cc4af4b8e2337d8ab582c14c6bab2008ed0692432e85b26248435613e00137aa",
+    "test_v302.py": "1bfa3d67d7905a0c8913af64f8b6d9a039e59fdd1131efc4c2302cf1fd9cbca6"
+  },
+  "checks": [
+    "Outer resource diff restricted strictly to modules [12, 14, 30] + rebuild + trees()",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C scan on embedded runtime_v302.lua",
+    "Real client env split test (Gly独/文本加解密/table.loadstring ONLY in S.script_setting, raw actor has NO 附加): 鸡/牛/赤龙魔王/镖车/前尘忆梦 all verified via 22/97 VM",
+    "Real client env split test (取两点间方向 ONLY in S.script_setting): ranged assassin merc blink + projectile + delayed damage & 目标动画 verified"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v1.321",
+  "base_sha256": "e3042bd87e64f38014a1d23cea1b54a78cbb5ad01b3070fd0ae8064c0d66233d",
+  "bytes": 2821147,
+  "sha256": "61ccae9bc211bfe86e0540a2c6d2e848987b0e8ffdeab370ed63e9b06fd35f78",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v321_lua_gbk_bytes": 102457,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "fixes_v321": [
+    "register_wrapped_qs_item_box_main_in_S_shelp_so_S_fun_never_drops_ev1_ev2_ev3_ev4",
+    "always_call_hidden_更新道具属性_even_on_empty_stats_so_绑定属性更新_refreshes_hero_and_merc",
+    "direct_O1_S_包裹物品组_lookup_in_recalc_single_set_and_zero_alloc_pickup_frame_guard",
+    "track_req_fn_identity_and_refresh_元素图标_and_佣兵窗口_on_equipped_blueprint_drag"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "v1.314",
+  "base_sha256": "6b6ecec150f770e7fbbff211d2953b69f29c00e16e4c72f57aed850a7d3bf91e",
+  "bytes": 2814047,
+  "sha256": "62d4e37703ffe0c409e6b6f73bfa4377147053cdb136752b29a64ccac5c74d74",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v314_lua_gbk_bytes": 88488,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v314_changes": {
+    "set_blueprint_tooltips": "all 40 sets in Ux雌.天竺葵家() left-aligned and formatted line-by-line in Mir3 no-+ style matching 镶嵌信息 (e.g. 伤害:0-50, 准确:40, 攻击元素: 雷(电击) 30, 强元素: 雷(电击) 20, 魔法值:-200)",
+    "equip_set_section": "also formatted consistently under 套装信息 while preserving #H grey for inactive sets vs bright green/lime for active sets"
+  }
+}

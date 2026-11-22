@@ -1,0 +1,26 @@
+{
+  "version": "v1.306",
+  "base_sha256": "94717ae72bfe6c98257e155c2f6216c28e452ed7421c4c832e8d6f10d860b6fa",
+  "bytes": 2796916,
+  "sha256": "0575204f1f4017a6e647b77cdc600cae5aebb9e5dcf2afef7780abcb034e0497",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v306_lua_gbk_bytes": 52874,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "features": {
+    "gather_xp_monsters": [
+      "鸡",
+      "猪",
+      "牛",
+      "羊",
+      "狼"
+    ],
+    "gather_drop_formula": {
+      "denom <= 1": "1.0 (100%)",
+      "gather_lv == 0": "1 / (3 * denom)",
+      "gather_lv == 1": "min(1, 2.5 / denom)",
+      "gather_lv == 2": "min(1, 5.0 / denom)  # e.g. 蝉舞(100) => 5/100",
+      "gather_lv == 3": "min(1, 7.5 / denom)"
+    }
+  }
+}

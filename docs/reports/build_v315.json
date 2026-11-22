@@ -1,0 +1,14 @@
+{
+  "version": "v1.315",
+  "base_sha256": "62d4e37703ffe0c409e6b6f73bfa4377147053cdb136752b29a64ccac5c74d74",
+  "bytes": 2814189,
+  "sha256": "c23312e78435bb92de8b1ed964844ec16297de899e5a8a9a2a2e3212556f4485",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v315_lua_gbk_bytes": 88722,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v315_changes": {
+    "set_attack_element": "攻击元素: <el>(<desc>) +<N> (exact match to m12/320 equipment tooltip)",
+    "set_strong_element": "强元素:<el>(<desc>)×<N> (exact match to m12/321 equipment tooltip)"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "v1.317",
+  "base_sha256": "fb8cfd5dfef2cf1540e641f92c29d5b7fcf94e225874609aeae9d7c0336ba2b0",
+  "bytes": 2814590,
+  "sha256": "52bc5e06facc6c8c7e3bd79bf4185c8d53775fceb2dc5e8100bc344ff00d04e2",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v317_lua_gbk_bytes": 89844,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v317_changes": {
+    "compact_equip_bonus_parens": "removes space before (+N)/(-N) across all equipment stats (e.g. 防御力:0-15(+9), 自然系魔法:13-0(+13), 准确:+4(+4), 舒适:1(-1))"
+  }
+}

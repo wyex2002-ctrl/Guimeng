@@ -1,0 +1,20 @@
+{
+  "version": "v1.325",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "00bdfbeaacea106fcd4503b37057054a393aa39e177b0c6b082a1c49e601f3f2",
+  "tested_files": {
+    "game_v325.res": "00bdfbeaacea106fcd4503b37057054a393aa39e177b0c6b082a1c49e601f3f2",
+    "runtime_v325.lua": "c801640acb7b8f61cc776b78e35d19992114dabbb69fe3ced22f86927903f6ef",
+    "patch_v325.py": "827bf850b082df2f7c78d730bee4d4d583ddd4162ac9ee4d92ba138dd786bdb0"
+  },
+  "scope": "来世续缘 only for gameplay/UI; m12/37 BC_JMP A-slot fix restores LuaJIT bytecode validity",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_all_9_jmp_a0_fixed_and_zero_jmp_below_params",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "save_load_tooltip_refresh_deferred_and_live_refresh_preserved",
+    "outlined_宋_9_炭灰_and_v323_3slot_rules_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

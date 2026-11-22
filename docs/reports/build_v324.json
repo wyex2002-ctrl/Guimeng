@@ -1,0 +1,15 @@
+{
+  "version": "v1.324",
+  "base_sha256": "a7e142ea2256d5182e04fc29af04f0aa563168aa8f3b0853f484ff7631c3da8b",
+  "bytes": 2823690,
+  "sha256": "27568ce22e989e95f33fcc0d442241f30b8257cddc52427c8f8146a9ddd41ca0",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v324_lua_gbk_bytes": 108985,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "outlined_headers_v324": {
+    "gem_header": "#f(宋_9_炭灰,#c(-3381556)镶嵌属性#W)",
+    "enchant_header": "#f(宋_9_炭灰,#c(-11162881)附魔属性#W)",
+    "enchant_scroll_name": "#f(宋_9_炭灰,#c(-16711936)<name>#W)"
+  }
+}

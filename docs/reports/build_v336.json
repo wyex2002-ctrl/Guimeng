@@ -1,0 +1,15 @@
+{
+  "version": "v1.336",
+  "base_sha256": "43fa1cf89756e180773336659e00822a677b5d728c6dc3d9ade9243f78fe4504",
+  "bytes": 2842727,
+  "sha256": "c8034e8e15459d8dd28a2c9ce3308d2ecacd166f588e12554bbcc51b7b9da715",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v336_lua_gbk_bytes": 151831,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v336": {
+    "ordinary_materials_ground_white": "36 ORDINARY_MOB_MATERIALS ground drop names rendered in white (-1 / #FFFFFF) via 地图物品类.初始化 wrapper; item.颜色值 restored immediately after label creation; partial pickup preserves white via __gm_ground_label_color_v287",
+    "corpse_drop_jipin_hardened": "corpse_drop_v301 coerces tonumber(mlv) or 15, strengthens unproxy() with __call fallback, and records roll counters in S.__gm_corpse_jipin_stats_v336",
+    "qianchi_isolated": "前尘忆梦 untouched (ordinary materials keep green ground name; corpse digging untouched)"
+  }
+}

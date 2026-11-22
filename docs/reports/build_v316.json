@@ -1,0 +1,14 @@
+{
+  "version": "v1.316",
+  "base_sha256": "c23312e78435bb92de8b1ed964844ec16297de899e5a8a9a2a2e3212556f4485",
+  "bytes": 2814475,
+  "sha256": "fb8cfd5dfef2cf1540e641f92c29d5b7fcf94e225874609aeae9d7c0336ba2b0",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v316_lua_gbk_bytes": 89565,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v316_changes": {
+    "compact_elements": "攻击元素:<el>(<desc>)+<N> and 强元素:<el>(<desc>)x<N> (ASCII lowercase x, no extra spaces) across equipment, set blueprints, and equipment 套装信息",
+    "set_and_gem_non_element_stats": "formatted with + prefix (e.g. 破坏:+0-6, 破坏:+12-0, 伤害:+0-15, 防御:+0-12, 魔防:+1-0, 准确:+35, 魔法值:-200)"
+  }
+}

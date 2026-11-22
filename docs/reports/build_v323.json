@@ -1,0 +1,16 @@
+{
+  "version": "v1.323",
+  "base_sha256": "8f760f8c7d04fd4c892b1a752eb5f7b2cface7b19669abb67289399dbcac8547",
+  "bytes": 2823458,
+  "sha256": "a7e142ea2256d5182e04fc29af04f0aa563168aa8f3b0853f484ff7631c3da8b",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v323_lua_gbk_bytes": 108446,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "features_v323": [
+    "rename_套装信息_to_blue_附魔属性_and_镶嵌信息_to_pink_镶嵌属性",
+    "move_scroll_name_from_above_equip_name_to_below_附魔属性_preserving_original_color",
+    "restrict_enchant_slots_to_武器_衣服_鞋子_only",
+    "old_save_enchants_on_all_other_slots_do_not_take_effect_and_show_grey"
+  ]
+}

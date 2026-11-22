@@ -1,0 +1,31 @@
+{
+  "version": "v1.295",
+  "base_sha256": "8be49f773196b969d2fcad33a183ecf422e60edb7875dd4d6c0e3f9dcbc38c50",
+  "sha256": "883e30c3439ac2b4ec088d8d27626ebf78f050584a5d0adcc7903baa3e9859f3",
+  "bytes": 2761839,
+  "tested_files": {
+    "patch_v295.py": "29796c26ebf5b2e70ee592a3e378179d85e4056ae296bd4580fce8b51b68d49f",
+    "test_v295.py": "7b247b5210fbe35d1f183178cc7b8d0c09c29c4161ff9c85af9a4770e62962df"
+  },
+  "checks": {
+    "remaining_old_label": [],
+    "new_label_hits": [
+      [
+        12,
+        76,
+        "不烧心版 1.295"
+      ],
+      [
+        12,
+        76,
+        "] 不烧心版 "
+      ],
+      [
+        12,
+        22232,
+        "不烧心版 1.295"
+      ]
+    ]
+  },
+  "all_passed": true
+}

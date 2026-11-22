@@ -1,0 +1,21 @@
+{
+  "version": "v1.339",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "5ab8c1bef429e11d7e8be5556a7936576a87341b335a876fac1a2a6d6f2cdf44",
+  "tested_files": {
+    "game_v339.res": "5ab8c1bef429e11d7e8be5556a7936576a87341b335a876fac1a2a6d6f2cdf44",
+    "runtime_v339.lua": "6d9d2608fcca48db28eb6b943a3cd33003c9d65a3d4d34b4866ca6dc03222c9f",
+    "patch_v339.py": "155034aaee48ce168945ae87e719b8a26af8fb3bc0084106efe90009c3579a0d"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v339_hero_merc_boundary_preserved_and_hero3_unrestricted",
+    "v339_v338_save_items_auto_healed",
+    "v338_mount_medal_seal_enchants_priority_and_confirm_pass",
+    "v336_v335_v334_v333_v332_v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

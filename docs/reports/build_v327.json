@@ -1,0 +1,16 @@
+{
+  "version": "v1.327",
+  "base_sha256": "2454d5b3e318921e14b29f951cb9b464969fb9fd7c8623b1ae053df40544033b",
+  "bytes": 2824012,
+  "sha256": "27701fc919fc4b21a8a4f63e42256aed793706dc66cc471c2d8544d408ba08fb",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v327_lua_gbk_bytes": 109824,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_updates_v327": {
+    "gem_header": "#f(宋_9_炭灰,#c(-22312)镶嵌属性#W)",
+    "enchant_header": "#f(宋_9_炭灰,#c(-7350017)附魔属性#W)",
+    "ineligible_scroll_name": "#f(宋_9_炭灰,#c(-5592406)<name>#W)",
+    "ineligible_note": "#R附魔仅在武器/衣服/鞋子生效#W"
+  }
+}

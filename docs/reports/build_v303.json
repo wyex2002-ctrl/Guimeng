@@ -1,0 +1,17 @@
+{
+  "version": "v1.303",
+  "base_sha256": "00c2acb1c566a1bf6776189156156f01c3ebc76515442c125fa685e85b604430",
+  "bytes": 2793244,
+  "sha256": "d851e51c7709f7012d881bbc873a96beb1a39ec0833552db38135f949bc809d5",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v303_lua_gbk_bytes": 46940,
+  "runtime_gc_index_14_781": 218,
+  "added_instructions": {},
+  "version_string_updates": 11,
+  "fixes": {
+    "corpse_drop_nil_attr_crash": "Ensure decrypted corpse-dig items always have table 附加 & 属性 (plus missing scalar template fields from Sys.get) so 22/97 数据保护 never receives nil (fixes pig/chicken crash).",
+    "merc_ranged_blink_behind_locked_target": "When ANY alive enemy is adjacent (dist <= 1), ranged assassin merc skills blink to a suitable walkable tile behind the currently locked attack target (target.地图格子), preferring tiles not adjacent to any enemy.",
+    "merc_ranged_rewrap_guard": "Compare __gm_merc_visual_prepare_v255 ~= wrapped_prepare_v303 on pickup_frame so game_start (14/421 -> 14/420) reloads can never overwrite the wrapper.",
+    "assassin_merc_skill_cooldown_3s": "Changed 12/18045 (pc 117..118) & 12/18047 (pc 103..104) post-skill status duration from 15..20s to 3s."
+  }
+}

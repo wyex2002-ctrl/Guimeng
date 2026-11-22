@@ -1,0 +1,20 @@
+{
+  "version": "v1.328",
+  "base_sha256": "27701fc919fc4b21a8a4f63e42256aed793706dc66cc471c2d8544d408ba08fb",
+  "bytes": 2824002,
+  "sha256": "ab36ffbda8c3685920d8d2d3dc440155537e20f22d4d6f9a08045a1f3235f8cf",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v328_lua_gbk_bytes": 109859,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "enchant_slot_updates_v328": {
+    "allowed_slots": [
+      "武器",
+      "衣服",
+      "头盔"
+    ],
+    "scroll_hint": "#Y拖到武器/衣服/头盔使用#W",
+    "drag_block_prompt": "附魔卷只能用于武器、衣服或头盔",
+    "ineligible_note": "#R附魔仅在武器/衣服/头盔生效#W"
+  }
+}

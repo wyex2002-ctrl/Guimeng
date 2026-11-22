@@ -1,0 +1,18 @@
+{
+  "version": "v1.309",
+  "base_sha256": "d0119c26a4f3d3bab3de28d1f5dcbd74334bb3211ac46cc63da021fe7b206763",
+  "bytes": 2804798,
+  "sha256": "19406dc7243ed405b5eacfa1c837b2d702d7716f74e2a1f91b8fe1507cefbf41",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v309_lua_gbk_bytes": 68351,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "boss_blueprint_drop_tuning": {
+    "blueprint_items_count": 32,
+    "boss_entries_modified": 34,
+    "target_denominator": 110,
+    "active_global_drop_multiplier": 11,
+    "effective_baseline_rate": "11/110 = 10.00%",
+    "non_boss_trash_mob_entries_untouched": 24
+  }
+}

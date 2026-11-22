@@ -1,0 +1,24 @@
+{
+  "version": "v1.316",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "fb8cfd5dfef2cf1540e641f92c29d5b7fcf94e225874609aeae9d7c0336ba2b0",
+  "tested_files": {
+    "game_v316.res": "fb8cfd5dfef2cf1540e641f92c29d5b7fcf94e225874609aeae9d7c0336ba2b0",
+    "runtime_v316.lua": "aa0d729adc27a60db66e13a8cd28d5bf0f941ff13a90194b51dec02dc70a168e",
+    "patch_v316.py": "afb5ea50dc3e934d83a34ec33523511b7282a39f5f92ee25b7ebc6f44734b82e"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "compact_elements_and_lowercase_x_across_bag_equipped_sets",
+    "all_40_real_sets_plus_prefix_and_negative_preserved",
+    "all_30_real_gems_and_equip_socket_plus_prefix",
+    "qianchi_completely_isolated",
+    "v310_boss_blueprints_11pct_regression_pass",
+    "v308_warehouse_proxy_button_regression_pass",
+    "v307_mode2_ordinary_materials_regression_pass",
+    "v306_gather_formula_regression_pass"
+  ]
+}

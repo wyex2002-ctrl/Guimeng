@@ -1,0 +1,15 @@
+{
+  "version": "v1.331",
+  "base_sha256": "ef769f0671c314b5fcd794911365e5ecfb2337c9c1883d75aaff49dc552753cf",
+  "bytes": 2829834,
+  "sha256": "b9d05b41d64f2dbfd657c4c2a466f3bcb90b8af63a009aeded60b9a2dea385d2",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v331_lua_gbk_bytes": 125001,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "gem_cache_refresh_v331": {
+    "on_hero_gem_change_327_331": "refresh_slot_tooltip_v322(1..13, false)",
+    "on_merc_gem_change_411_415": "refresh_slot_tooltip_v322(397..409, false)",
+    "on_post_migration_frame": "refresh_slot_tooltip_v322({5,6,7,8,401,402,403,404}, false) once after load finishes"
+  }
+}

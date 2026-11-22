@@ -1,0 +1,18 @@
+{
+  "version": "v1.305",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "94717ae72bfe6c98257e155c2f6216c28e452ed7421c4c832e8d6f10d860b6fa",
+  "tested_files": {
+    "game_v305.res": "94717ae72bfe6c98257e155c2f6216c28e452ed7421c4c832e8d6f10d860b6fa",
+    "patch_v305.py": "14de9f0d0793e7e489a32bd100571e2c01d4879a96b751c230a4fd13805fc890",
+    "test_v305.py": "dc0b0ab10785ba5eee8afc86a6867a75bca370fb56fc474ce9a72cb146f1709e"
+  },
+  "checks": [
+    "Outer resource diff restricted strictly to modules [12, 14, 30] + rebuild + trees()",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C scan on updated 14/428 gc 230 (【一键出售】)",
+    "End-to-end 【一键出售】 test in 「来世续缘」: all 36 ordinary-mob corpse-dig materials sold (incl. stacked quantities) with exact half-price calculation & breakdown prompt",
+    "Boss/rare/quest/seal items (沃玛号角/精灵骸骨/飞龙剑碎片/火影晶体/震天魔印/商会物资/印记), potions, Blessing Oil, and 禁止出售 items strictly kept",
+    "「前尘忆梦」 100% isolated (ordinary-mob materials not sold)"
+  ]
+}

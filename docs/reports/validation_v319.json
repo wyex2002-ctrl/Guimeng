@@ -1,0 +1,24 @@
+{
+  "version": "v1.319",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "834eb5e4da79ab744981c19303c817585e71a11f9bb04da853cc9aa7673493f1",
+  "tested_files": {
+    "game_v319.res": "834eb5e4da79ab744981c19303c817585e71a11f9bb04da853cc9aa7673493f1",
+    "runtime_v319.lua": "85c005567bdabe837ade1365036cce3d5606608c2827139c361eb3c6f354a137",
+    "patch_v319.py": "04994fb6ee0185281ecf818a07e6dd2bffcea7d73c89d091997432417a985994"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "blueprint_drag_restricted_to_weapon_armor_helmet_mount",
+    "all_40_sets_require_1_piece_and_restore_on_qianchi",
+    "whole_body_max_1_set_hero_and_merc_with_authentic_m48_proxies",
+    "old_save_legacy_slots_capped_at_max_1_and_deprioritized_below_allowed_slots",
+    "all_34_boss_entries_covering_32_blueprints_rewritten_to_200_exact_5_5pct",
+    "blueprint_tooltip_yellow_hint_lists_4_allowed_slots",
+    "qianchi_completely_isolated",
+    "v317_v316_v308_v307_v306_regressions_pass"
+  ]
+}

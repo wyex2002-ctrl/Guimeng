@@ -1,0 +1,15 @@
+{
+  "version": "v1.302",
+  "base_sha256": "b7335dc65f4c32582fe8bfe1e78eaad162aea39fac2df0e954dca71fa76d4534",
+  "bytes": 2792787,
+  "sha256": "00c2acb1c566a1bf6776189156156f01c3ebc76515442c125fa685e85b604430",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v302_lua_gbk_bytes": 46200,
+  "runtime_gc_index_14_781": 218,
+  "added_instructions": {},
+  "version_string_updates": 11,
+  "fixes": {
+    "corpse_direct_drop_proxy_lookup": "Resolve 附加.挖取 via S.script_setting.Gly独.事件对象(tonumber(actor.id)) (where 12/14572 writes it) instead of raw actor.附加.",
+    "script_setting_env_resolution": "Resolve 文本加解密, Gly独, table.loadstring, 取两点间方向 from S.script_setting first before falling back to _G."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v1.335",
+  "base_sha256": "3dd0865f4db9395dc1a42fb57c49fe74a5f2204779394a6cf4ed0f8bc8c716be",
+  "bytes": 2840955,
+  "sha256": "43fa1cf89756e180773336659e00822a677b5d728c6dc3d9ade9243f78fe4504",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v335_lua_gbk_bytes": 148608,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v335": {
+    "friendly_click_no_cancel": "mouse click while hovering 所属阵营==友方 (Mercenary/Summons) no longer cancels auto-cast",
+    "windows_no_cancel": "opening 背包/仓库/商店/交易/设置/存档/读档/对话/菜单 windows or input focus no longer cancels auto-cast",
+    "non_hotbar_keys_only_esc_cancels": "Tab/Shift/Ctrl/R/Space/B/F/C/M/etc. no longer cancel auto-cast; only ESC (27) cancels",
+    "qianchi_isolated": "前尘忆梦 delegates directly to original m26/88"
+  }
+}

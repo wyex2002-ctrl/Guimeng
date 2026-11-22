@@ -1,0 +1,28 @@
+{
+  "version": "v1.296",
+  "base_sha256": "883e30c3439ac2b4ec088d8d27626ebf78f050584a5d0adcc7903baa3e9859f3",
+  "sha256": "345acf85e29af000d1a87a3eb3e51fcd300a7eb6516a42968e2095dd12dd913b",
+  "bytes": 2761801,
+  "tested_files": {
+    "patch_v296.py": "761fe65fa77c2b9b56f76855107091285e9b9603fa0d69e7303f22b91428e20d",
+    "test_v296.py": "16a12c5f4f924d492c9797a366bb27e222d7261cc2a69b6d559be013e93ba767"
+  },
+  "checks": {
+    "before_module22_gap_protos": {
+      "4": 1,
+      "29": 20,
+      "30": 47,
+      "44": 2,
+      "47": 1,
+      "52": 1,
+      "53": 1,
+      "70": 1,
+      "72": 5,
+      "73": 10,
+      "74": 2
+    },
+    "after_module22_gap_protos": {},
+    "repaired_protos_jmp_a_notes": {}
+  },
+  "all_passed": true
+}

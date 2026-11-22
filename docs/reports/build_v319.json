@@ -1,0 +1,24 @@
+{
+  "version": "v1.319",
+  "base_sha256": "e048d215fec806c874d208d2e97d841dc487939598ef86774b1a58fcfb9607b7",
+  "bytes": 2819850,
+  "sha256": "834eb5e4da79ab744981c19303c817585e71a11f9bb04da853cc9aa7673493f1",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v319_lua_gbk_bytes": 100136,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "set_blueprint_rules_v319": {
+    "allowed_equipment_subclasses": [
+      "武器",
+      "衣服",
+      "头盔",
+      "坐骑"
+    ],
+    "required_pieces_to_activate": 1,
+    "max_active_sets_per_body": 1,
+    "old_save_legacy_slots": "fallback priority after allowed slots, still capped at max 1 active set total",
+    "boss_blueprint_target_denom": 200,
+    "effective_baseline_drop_rate_under_11x": "11/200 = 5.50%",
+    "blueprint_drag_hint": "#Y拖到武器/衣服/头盔/坐骑使用#W"
+  }
+}

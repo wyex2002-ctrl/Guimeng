@@ -1,0 +1,14 @@
+{
+  "version": "v1.304",
+  "base_sha256": "d851e51c7709f7012d881bbc873a96beb1a39ec0833552db38135f949bc809d5",
+  "bytes": 2793748,
+  "sha256": "3cea4fe6937d0fe9071d55ecb599d7155a2d4251cda56e50793fb6438d54b033",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v304_lua_gbk_bytes": 47857,
+  "runtime_gc_index_14_781": 218,
+  "added_instructions": {},
+  "version_string_updates": 11,
+  "fixes": {
+    "corpse_drop_live_sprite_restore": "Construct corpse-dig dropped items on top of live S.游戏道具组[名称] template so live engine handles (地面精灵, 精灵, 发现音效, 动画效果, 格子底图, 格子动画) stripped by table.tostring() are intact when 类_地图物品类_.lua:696 renders the drop."
+  }
+}

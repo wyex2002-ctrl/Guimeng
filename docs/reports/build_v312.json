@@ -1,0 +1,15 @@
+{
+  "version": "v1.312",
+  "base_sha256": "aeb6d266d97617fe974ed956983026e544c47e761b83dda883d04ae865faf17e",
+  "bytes": 2812114,
+  "sha256": "ecc34f51376963cd1d4cd7d0a867c1bfdb2d23b0e975fd2a9a8d041826edaade",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v312_lua_gbk_bytes": 82498,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v312_changes": {
+    "gem_item_tooltip": "appends 武器 / 防具 / 首饰 socket effects from Ux雌.暴食模块() without + signs (e.g. 武器: 破坏 12-0, 防具: 防御力 0-12, 首饰: 破坏 0-6)",
+    "equip_socket_section": "removes + and (+X) from 镶嵌信息 lines (e.g. 破坏:0-1, 防御力:0-2, 准确:5, 生命值:10, 魔法值:20)",
+    "equip_base_stats": "completely unchanged (keeps existing Mir3 layout & (+X) / + display)"
+  }
+}

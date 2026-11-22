@@ -1,0 +1,23 @@
+{
+  "version": "v1.338",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "022a19cc2e1cf0c25a927c85ede5ff805c0db2d8a6243a8b6f7dfb8807fc97d7",
+  "tested_files": {
+    "game_v338.res": "022a19cc2e1cf0c25a927c85ede5ff805c0db2d8a6243a8b6f7dfb8807fc97d7",
+    "runtime_v338.lua": "e2f20ddfa75a5439f78d9b26a930c05efdec69f20cf65b0525286ace42b344ce",
+    "patch_v338.py": "3b3fc8c376904ae8491fb8468e9cfaf6f1e7ee9c28aa92987f5c5092d88da837"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v338_enchant_slots_mount_medal_seal_scroll_hint_and_drag_guard",
+    "v338_duplicate_enchant_priority_mount_medal_seal_hero_and_merc",
+    "v338_overwrite_confirm_dialog_on_mount_medal_seal",
+    "v338_all_equip_no_job_req_all_74_assassin_and_hero_templates_plus_bag_migration",
+    "v338_merc_ranged_tag_shared7_note_and_qianchi_restore_pass",
+    "v336_v335_v334_v333_v332_v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "v1.333",
+  "base_sha256": "6020ecc9263ff5c3db70fd2418f6a17a422b30452cab11d3c5793ebfe81ee00f",
+  "bytes": 2834571,
+  "sha256": "d0bb5562071a543f63317488cb7764b8c77c92ef17f6782db3b4d10abf44f6bd",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v333_lua_gbk_bytes": 136026,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v333": {
+    "shared_weapon_tooltip_note": "append #c(-7543041)主角/佣兵（远程）通用#W (before Shift+左键放入备用背包 or at bottom) to the 7 Hero/Merc shared ranged weapons (纯净的白灵之刃/威武的狂战之刃/不朽的法老之刃/恐怖的亡灵之刃/锋利的灵魂之刃/精灵骸骨/拍拍手), and refresh both Hero and Merc slots once on load",
+    "autosell_safety_hardening": "check_plain_white_equip_v333 & can_bulk_sell_ground now block 坐骑/符咒/时装/宝石/灵石, 禁止丢弃, enchanted/transmogged/reinforced/unsavable gear; check_plain_white_equip_v333 additionally verifies white 颜色值 (-1/4294967295/nil) on both item & template; Mode 2 also protects 幸运 > 0 equipment",
+    "bulk_white_only_sell": "plain white 青铜斧, 魔法长袍_女, 精灵骸骨 are sellable in Mode 2 【拾取+出售】 while non-white/jipin rolls of those 3 items remain protected; Alt pickup and Mode 1 still protect all 3 items as before"
+  }
+}

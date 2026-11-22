@@ -1,0 +1,33 @@
+{
+  "version": "v1.300",
+  "all_passed": true,
+  "sha256": "dea530c0d8c61b622b28be864563dc32669f901870fa514af0a2e84b323bdbe7",
+  "game_res_sha256": "dea530c0d8c61b622b28be864563dc32669f901870fa514af0a2e84b323bdbe7",
+  "game_res_bytes": 2786530,
+  "tested_files": {
+    "game_v300.res": "dea530c0d8c61b622b28be864563dc32669f901870fa514af0a2e84b323bdbe7",
+    "runtime_v300.lua": "0f1225eaf0346b98066b566604bbcb67d8ede7132c9176c3fcc27f2ac0d78378",
+    "patch_v300.py": "7415239b16c418f83a9b2dc13ca8a94fba8c8d87cf1881c989390c8e9ce22380",
+    "test_v300.py": "3fa48f6d2f9e7365d4ad080be7ab0342a94740797c1aabed1bfcca4d2b07a3ae"
+  },
+  "changed_modules": [
+    12,
+    14,
+    30
+  ],
+  "bytecode_instruction_changes": 0,
+  "static_audit": "PASS (12/143,217,218,220; 14/256,428,446,456,481,781; Module 22 all 123 protos)",
+  "lua51_syntax_and_gbk": "PASS (0 0x5C hazards)",
+  "checks": {
+    "interval_500ms": "PASS (400ms/499ms skipped, 500ms fires)",
+    "button_3state_cycle_sandbox": "PASS (0->1->2->0 under _G==nil, distinct grey/green/royal-blue skins, hover, dots)",
+    "hover_tooltip_sandbox": "PASS (concise 2-line tip: green #c(-11739014) + bright blue #c(-8204545), dynamic edges, Gly独 fallback)",
+    "mode1_green_normal": "PASS (white equip only sold, rare equip & books picked up)",
+    "mode2_royalblue_bulk_sell": "PASS (sells white + 1~6-affix rare + non-4/5 books; keeps 7-affix rare, 4/5 books by rank & prefix, 禁止出售, 保护名单, 任务/剧情, oil, gold)",
+    "manual_alt_isolation": "PASS (stays white-equip-only even while Mode 2 active)",
+    "stability_and_guards": "PASS (full-bag no-spam, map switch persistence, Game_State & death guards)",
+    "mount_batch_regression": "PASS",
+    "qiancheng_isolation": "PASS (button/tooltip/auto-pickup/mount all untouched)"
+  },
+  "status": "PASS"
+}

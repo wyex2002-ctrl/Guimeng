@@ -1,0 +1,24 @@
+{
+  "version": "v1.308",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "d0119c26a4f3d3bab3de28d1f5dcbd74334bb3211ac46cc63da021fe7b206763",
+  "tested_files": {
+    "game_v308.res": "d0119c26a4f3d3bab3de28d1f5dcbd74334bb3211ac46cc63da021fe7b206763",
+    "runtime_v308.lua": "f0b3ffa99d9b5b79949eaaf59131afac531ba8d14c1ca4ed622db8581e5a2386",
+    "patch_v308.py": "1dc902890323487f225720bf78ebd03f40fb3e2ecefe19e162ad748b64c0bbc0"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "authentic_m48_callable_table_proxy_verified_type_table",
+    "warehouse_btn_guild_inactive_2click_cycle_on_real_proxy",
+    "warehouse_btn_guild_active_3click_cycle_and_distinct_tints_on_real_proxy",
+    "warehouse_btn_sound_proxy_called_on_every_click",
+    "warehouse_btn_external_close_resets_color",
+    "warehouse_btn_qianchi_isolated_and_story_switch_restore",
+    "mode2_ordinary_materials_36_all_pass",
+    "v306_gather_formula_regression_intact"
+  ]
+}

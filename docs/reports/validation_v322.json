@@ -1,0 +1,21 @@
+{
+  "version": "v1.322",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "8f760f8c7d04fd4c892b1a752eb5f7b2cface7b19669abb67289399dbcac8547",
+  "tested_files": {
+    "game_v322.res": "8f760f8c7d04fd4c892b1a752eb5f7b2cface7b19669abb67289399dbcac8547",
+    "runtime_v322.lua": "020a75063402546b88aa72b4b3cdbbb47ec573e20040b5009930fe4e3d6414fc",
+    "patch_v322.py": "7c1719a86dbff52ab8f7909c2d0ed66f589454db7987e9d7639de9a8005a23aa"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "bag_equipment_set_info_active_green_and_equipped_inactive_preserved",
+    "all_29_blueprint_templates_and_saved_bag_items_renamed_to_附魔卷_preserving_internal_名称",
+    "instant_slot_tooltip_refresh_on_equip_unequip_and_scroll_apply",
+    "qianchi_restores_original_blueprint_names_and_set_rules",
+    "v321_shelp_v319_5_5pct_v317_v316_v308_v307_v306_regressions_pass"
+  ]
+}

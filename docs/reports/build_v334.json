@@ -1,0 +1,13 @@
+{
+  "version": "v1.334",
+  "base_sha256": "d0bb5562071a543f63317488cb7764b8c77c92ef17f6782db3b4d10abf44f6bd",
+  "bytes": 2834587,
+  "sha256": "3dd0865f4db9395dc1a42fb57c49fe74a5f2204779394a6cf4ed0f8bc8c716be",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v334_lua_gbk_bytes": 136024,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v334": {
+    "mode2_bulk_sell_qingtongfu_mofachangpao": "青铜斧 and 魔法长袍_女 removed from BULK_WHITE_ONLY_ITEMS so both white and 1..6 affix jipin rolls are sold in Mode 2 【拾取+出售】 (7-affix orange and special-state gear still kept); 精灵骸骨 remains white-only in Mode 2; Alt pickup and Mode 1 still protect all 3 items; 鹤嘴锄 remains protected in all modes"
+  }
+}

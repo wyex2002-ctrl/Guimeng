@@ -1,0 +1,22 @@
+{
+  "version": "v1.326",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "2454d5b3e318921e14b29f951cb9b464969fb9fd7c8623b1ae053df40544033b",
+  "tested_files": {
+    "game_v326.res": "2454d5b3e318921e14b29f951cb9b464969fb9fd7c8623b1ae053df40544033b",
+    "runtime_v326.lua": "234e54536c3efc7d3a4e8801bf97364ac96f45014f9925a6825252e8500a8566",
+    "patch_v326.py": "07039bb3e9b710eeaa0586194717f0732bfcc5f8152a334eb60608c625a1e493"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "soft_luminous_header_colors_pink_FFA8D8_blue_8FD8FF",
+    "ineligible_slots_grey_outlined_scroll_name_AAAAAA_and_eligibility_note_once",
+    "eligible_slots_active_green_scroll_name_and_no_eligibility_note",
+    "save_load_deferral_live_refresh_3slot_rules_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

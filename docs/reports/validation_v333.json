@@ -1,0 +1,21 @@
+{
+  "version": "v1.333",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "d0bb5562071a543f63317488cb7764b8c77c92ef17f6782db3b4d10abf44f6bd",
+  "tested_files": {
+    "game_v333.res": "d0bb5562071a543f63317488cb7764b8c77c92ef17f6782db3b4d10abf44f6bd",
+    "runtime_v333.lua": "8d66862435364c52c7bd1cb3e3a423ea14bdb939c3cf96b387a65c66b7e31488",
+    "patch_v333.py": "3d28a95c13c8d041e310d2e9a1659246d31686b607926c97463910940e581610"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "seven_shared_ranged_weapons_append_tooltip_note_and_refresh_hero_merc_slots",
+    "autosell_blocks_non_white_color_mounts_charms_no_drop_and_special_state_gear",
+    "mode2_sells_plain_white_qingtongfu_mofachangpao_jinglinghaigu_while_keeping_jipin_and_alt_mode1_protected",
+    "v332_v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

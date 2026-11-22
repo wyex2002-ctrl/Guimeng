@@ -1,0 +1,11 @@
+{
+  "version": "v1.308",
+  "base_sha256": "9bddf977e34cc0aa4bedcbc61a128bba56fd735c070d0cd5f442e096029f916f",
+  "bytes": 2801414,
+  "sha256": "d0119c26a4f3d3bab3de28d1f5dcbd74334bb3211ac46cc63da021fe7b206763",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v308_lua_gbk_bytes": 63083,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "fix": "Engine window proxies (m48/1 + m48/2: 仓库窗口, 行会仓库) return the proxy table itself with __call when indexing 打开/关闭 (type(win.打开) == \"table\", not \"function\"). v1.307 checked type(win.打开) == \"function\", causing clicks to no-op in real client. v1.308 invokes callable proxy tables via call_proxy_method() (accepting both function and table)."
+}

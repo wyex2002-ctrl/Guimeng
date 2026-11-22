@@ -1,0 +1,29 @@
+{
+  "version": "v1.299",
+  "base_sha256": "fec3c995db817d5a80995230dffbf3850e73d7fb7654fce8ed8c22f7e9380005",
+  "bytes": 2782300,
+  "sha256": "87b42bdba8aade6b6dd17ef6d87be503b7e357d694431341162f7a7c4baf1bbf",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "reputation_shop": {
+    "proto": "12/143",
+    "slot1_entry": "祝福油附加祝福油附加2000附加0附加声望",
+    "old_count": 53,
+    "new_count": 54,
+    "whitelist_removed_oil": [
+      217,
+      220
+    ],
+    "rollback_proto": "12/218"
+  },
+  "runtime_v299_lua_gbk_bytes": 29384,
+  "added_instructions": {
+    "12/218": 20,
+    "14/781": 7,
+    "14/428": 9,
+    "14/456": 7,
+    "14/481": 7,
+    "14/446": 7,
+    "14/256": 35
+  },
+  "version_string_updates": 11
+}

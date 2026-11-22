@@ -1,0 +1,20 @@
+{
+  "version": "v1.300",
+  "base_sha256": "87b42bdba8aade6b6dd17ef6d87be503b7e357d694431341162f7a7c4baf1bbf",
+  "bytes": 2786530,
+  "sha256": "dea530c0d8c61b622b28be864563dc32669f901870fa514af0a2e84b323bdbe7",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v300_lua_gbk_bytes": 35926,
+  "runtime_gc_index_14_781": 218,
+  "added_instructions": {},
+  "version_string_updates": 11,
+  "features": {
+    "check_interval_ms": 500,
+    "modes": [
+      "0: 关闭（灰色）",
+      "1: 普通自动拾取（绿色，仅自动出售白板装备）",
+      "2: 自动拾取+出售（宝蓝色，出售可售装备与技能书，保留7条极品装备、4/5级技能书及保护/禁售物品）"
+    ],
+    "hover_tooltip": "S.气泡提示 / Gly独.鼠标气泡 with distinct color tags per mode"
+  }
+}

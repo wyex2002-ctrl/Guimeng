@@ -1,0 +1,21 @@
+{
+  "version": "v1.331",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "b9d05b41d64f2dbfd657c4c2a466f3bcb90b8af63a009aeded60b9a2dea385d2",
+  "tested_files": {
+    "game_v331.res": "b9d05b41d64f2dbfd657c4c2a466f3bcb90b8af63a009aeded60b9a2dea385d2",
+    "runtime_v331.lua": "b44508854bbc67d5f1abae31ff55c0cb7adafeb8c5b4c5013670f79135a87ba1",
+    "patch_v331.py": "14e0aa9bac230049b1b53220849bc2a4b19211ef97a74e20f876ab6b88da7342"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "gem_insert_remove_refreshes_equipped_tooltip_caches_for_bag_comparison_popups",
+    "post_migration_one_shot_tooltip_cache_refresh_deferred_past_save_load",
+    "v330_split_gem_full_suite_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

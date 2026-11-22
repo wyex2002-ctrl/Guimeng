@@ -1,0 +1,58 @@
+{
+  "version": "v1.325",
+  "base_sha256": "27568ce22e989e95f33fcc0d442241f30b8257cddc52427c8f8146a9ddd41ca0",
+  "bytes": 2823724,
+  "sha256": "00bdfbeaacea106fcd4503b37057054a393aa39e177b0c6b082a1c49e601f3f2",
+  "scope": "来世续缘 only for gameplay/UI; m12/37 BC_JMP A-slot fix restores LuaJIT bytecode validity without changing 前尘忆梦 behavior",
+  "runtime_v325_lua_gbk_bytes": 109088,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "m12_37_jmp_fixes": {
+    "4398": {
+      "target": 4450,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4401": {
+      "target": 4405,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4404": {
+      "target": 4450,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4411": {
+      "target": 4450,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4418": {
+      "target": 4450,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4421": {
+      "target": 4450,
+      "old_a": 0,
+      "new_a": 5
+    },
+    "4427": {
+      "target": 4441,
+      "old_a": 0,
+      "new_a": 11
+    },
+    "4440": {
+      "target": 4442,
+      "old_a": 0,
+      "new_a": 13
+    },
+    "4451": {
+      "target": 15,
+      "old_a": 0,
+      "new_a": 6
+    }
+  },
+  "save_load_tooltip_refresh_deferred": true
+}

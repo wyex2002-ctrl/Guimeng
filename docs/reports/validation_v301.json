@@ -1,0 +1,24 @@
+{
+  "version": "v1.301",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "b7335dc65f4c32582fe8bfe1e78eaad162aea39fac2df0e954dca71fa76d4534",
+  "tested_files": {
+    "game_v301.res": "b7335dc65f4c32582fe8bfe1e78eaad162aea39fac2df0e954dca71fa76d4534",
+    "runtime_v301.lua": "a1cc036290c9cfeaafaf50210c87021471276d305614cb03e6b109e4e59ea583",
+    "patch_v301.py": "17d1f09b7de0c207ed22d9d4d353f321b8fbb6486de2426954907696bbb859ef",
+    "test_v301.py": "79f1c7d2429af14fcf8a42f14f995898387d6e788148ebd2e524ec6956741eed"
+  },
+  "checks": [
+    "42-module reverse-diff integrity against game_v300.res (only modules 12, 14, 22, 30 changed)",
+    "Module 22 proto diff restricted strictly to 22/97",
+    "Dump.rebuild() round-trip + trees() on all changed modules",
+    "Static LuaJIT 2.0 J->maxslot / JMP.A audit on 22/97 and all 123 protos of Module 22",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C hazard scan on embedded runtime_v301.lua",
+    "Real bytecode VM execution of 22/97: normal monster + empty drop-table monster + 0-multiplier monster + 镖车 excluded + 前尘忆梦 isolated",
+    "End-to-end merc_mode_v288 + runtime_v301: any-enemy-adjacent blink with safe tile preference for all 5 skills (蝉舞/盛开/白莲/红莲/月桂)",
+    "End-to-end merc_mode_v288 + runtime_v301: ranged skill projectile launch + synchronized damage & 目标动画 (命中动画延迟) deferral to arrival",
+    "前尘忆梦 full isolation for both corpse drop and assassin merc skills",
+    "v1.300 regression (0.5s unfocused auto-pickup & 3-state cycle)"
+  ]
+}

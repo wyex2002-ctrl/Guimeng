@@ -1,0 +1,20 @@
+{
+  "version": "v1.335",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "43fa1cf89756e180773336659e00822a677b5d728c6dc3d9ade9243f78fe4504",
+  "tested_files": {
+    "game_v335.res": "43fa1cf89756e180773336659e00822a677b5d728c6dc3d9ade9243f78fe4504",
+    "runtime_v335.lua": "446565f34c134fcd14cc32197312677475b26659e4f08dc8405ee34003ce8293",
+    "patch_v335.py": "c4a65154e7261787d5fec856ad18261b57e71f796e40b74e814b2267fdbb8d02"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "repeat_autocast_keeps_active_on_friendly_click_open_windows_and_non_hotbar_keys",
+    "repeat_autocast_cancels_on_esc_skill_key_and_neutral_ui_click_with_qianchi_isolated",
+    "v334_v333_v332_v331_v330_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

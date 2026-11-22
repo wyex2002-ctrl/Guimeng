@@ -1,0 +1,23 @@
+{
+  "version": "v1.337",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "e90fd5c684eef9b19163d256c34e2c92edec6afe082a8671fd889aaab91bbf73",
+  "tested_files": {
+    "game_v337.res": "e90fd5c684eef9b19163d256c34e2c92edec6afe082a8671fd889aaab91bbf73",
+    "runtime_v337.lua": "9f723ad74dca2e4bce9cb7fed26ef9051ffea8eff7f7c407abd5875c841db451",
+    "patch_v337.py": "fa2c5eb4cc7560f02f86c56a24a53dc19624534389fbc81bd6666c61cd442fea"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v337_scroll_tooltip_appends_non_stack_note",
+    "v337_duplicate_enchant_priority_weapon_armor_helmet_hero_and_merc",
+    "v337_unequip_and_mouse_lift_immediately_flip_duplicate_tooltip",
+    "v337_overwrite_confirm_dialog_ok_cancel_stale_open_and_fresh_copy",
+    "v337_qianchi_isolated",
+    "v336_v335_v334_v333_v332_v331_v330_v328_v319_v317_v308_v307_v306_regressions_pass"
+  ]
+}

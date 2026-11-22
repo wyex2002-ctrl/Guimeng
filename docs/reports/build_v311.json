@@ -1,0 +1,20 @@
+{
+  "version": "v1.311",
+  "base_sha256": "99d7f72d7da3ee8a14da360facbd76273f2467e2bd21278982c8d9cf39b59534",
+  "bytes": 2811245,
+  "sha256": "aeb6d266d97617fe974ed956983026e544c47e761b83dda883d04ae865faf17e",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v311_lua_gbk_bytes": 80488,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v311_fix": {
+    "root_cause": "m12/321 clobbered register R4 (template table) with integer 0/1/set_count in guild-gem and set-info branches, causing m12/320 to bail out on type(template)~=\"table\"",
+    "mir3_layout_restored_for": [
+      "equipped hero gear (guild active)",
+      "equipped merc gear (guild active)",
+      "set bonus equipment (bag & equipped)"
+    ],
+    "gem_format": "one line per socketed gem in traditional Mir3 format (e.g. 破坏:0-1 (+1), 防御力:0-2 (+2), 准确:+5 (+5), 生命值:+10 (+10), 魔法值:+10 (+10))",
+    "bag_gem_display": "unchanged (gems are slot-bound on 行会[部位]/佣兵行会[部位], not item-bound)"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": "v1.336",
+  "all_passed": true,
+  "base_sha256": "43fa1cf89756e180773336659e00822a677b5d728c6dc3d9ade9243f78fe4504",
+  "sha256": "c8034e8e15459d8dd28a2c9ce3308d2ecacd166f588e12554bbcc51b7b9da715",
+  "bytes": 2842727,
+  "tested_files": {
+    "game_v336.res": "c8034e8e15459d8dd28a2c9ce3308d2ecacd166f588e12554bbcc51b7b9da715",
+    "runtime_v336.lua": "f2e8f88ef324d198ef008ddee77ef88f7b4324fa4245263fdbd7c93e4c940afd",
+    "patch_v336.py": "b44a0b1d4a30fbedfe5e01a92ea006bdf3799efee88ec5c94042e9360b241ce1",
+    "test_v336.py": "08ff5b3d71e0ca8621dae598e474054f80958c6170e773ca3b42574b2368def9"
+  },
+  "checks": [
+    "outer_diff_strictly_12_14_30",
+    "dump_rebuild_roundtrip_and_trees",
+    "m12_37_zero_bad_jmp_A",
+    "runtime_v336_syntax_and_zero_gbk_0x5c",
+    "v1336_36_ordinary_materials_ground_white_and_color_restored",
+    "v1336_non_ordinary_materials_keep_original_ground_color",
+    "v1336_pickup_frame_rewraps_ground_init",
+    "v1336_qianchi_ground_color_untouched",
+    "v1336_corpse_drop_jipin_mlv_coerce_arg4_1_and_call_proxy",
+    "v1335_repeat_autocast_ux_regression",
+    "v1334_mode2_qingtongfu_mofachangpao_non7_regression",
+    "v1333_shared_weapon_note_and_autosell_safety_regression",
+    "v1332_corpse_drop_jipin_stats_regression",
+    "v1331_gem_tooltip_cache_refresh_regression",
+    "v1330_split_bracelet_ring_gems_regression",
+    "v1319_real_boss_blueprint_drops_5_5pct_regression",
+    "v1317_compact_equip_spaces_regression",
+    "v1308_authentic_proxy_warehouse_button_regression",
+    "v1307_mode2_ordinary_materials_regression",
+    "v1306_regression"
+  ]
+}

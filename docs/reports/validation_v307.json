@@ -1,0 +1,25 @@
+{
+  "version": "v1.307",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "9bddf977e34cc0aa4bedcbc61a128bba56fd735c070d0cd5f442e096029f916f",
+  "tested_files": {
+    "game_v307.res": "9bddf977e34cc0aa4bedcbc61a128bba56fd735c070d0cd5f442e096029f916f",
+    "runtime_v307.lua": "4c2b58965964cad449f72934ac55bee0fa305005c02803927755ebcfcbd2e662",
+    "patch_v307.py": "1cc5c648d7dfbff6482d3b1c601f1103e7219b58297cf53e057678669c12f79d"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "warehouse_btn_guild_inactive_2click_cycle_and_color_reset",
+    "warehouse_btn_guild_active_3click_cycle_distinct_colors",
+    "warehouse_btn_external_close_reset_and_npc_open_handling",
+    "warehouse_btn_qianchi_isolated_and_story_switch_restore",
+    "mode2_sells_all_36_ordinary_mob_materials_across_categories",
+    "mode2_keeps_boss_rare_quest_seal_and_flag_protected_items",
+    "mode2_end_to_end_gold_and_mixed_notification",
+    "mode1_and_manual_alt_keep_ordinary_materials",
+    "v306_gather_formula_regression_intact"
+  ]
+}

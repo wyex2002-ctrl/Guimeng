@@ -1,0 +1,16 @@
+{
+  "version": "v1.337",
+  "base_sha256": "c8034e8e15459d8dd28a2c9ce3308d2ecacd166f588e12554bbcc51b7b9da715",
+  "bytes": 2847253,
+  "sha256": "e90fd5c684eef9b19163d256c34e2c92edec6afe082a8671fd889aaab91bbf73",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v337_lua_gbk_bytes": 163183,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v337": {
+    "scroll_tooltip_non_stack_note": "All enchant scroll tooltips append #Y同名附魔不重复叠加#W below #Y拖到武器/衣服/头盔使用#W",
+    "duplicate_enchant_priority_display": "Equipped duplicate enchants follow strict 武器 -> 衣服 -> 头盔 order (Hero & Merc independent); lower-priority duplicate slots render inactive (grey outlined scroll name + #H stats) with #R同名附魔不重复叠加#W at bottom and auto-refresh on equip/unequip/enchant/load",
+    "enchant_overwrite_confirm_dialog": "Dragging an enchant scroll onto an already-enchanted 武器/衣服/头盔 releases Q_鼠标 and opens Gly独.询问 confirmation: 该装备已有【<名字>】的附魔。\\n确认是否覆盖？",
+    "qianchi_isolated": "前尘忆梦 untouched"
+  }
+}

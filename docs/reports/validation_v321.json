@@ -1,0 +1,23 @@
+{
+  "version": "v1.321",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "61ccae9bc211bfe86e0540a2c6d2e848987b0e8ffdeab370ed63e9b06fd35f78",
+  "tested_files": {
+    "game_v321.res": "61ccae9bc211bfe86e0540a2c6d2e848987b0e8ffdeab370ed63e9b06fd35f78",
+    "runtime_v321.lua": "bacfbad3e878eb78dff93b7aadb6a13fccfaebd444f6f700e3e83716e580d5d1",
+    "patch_v321.py": "6b9060d1f46ae58e097760d5f7816159a852ceeb6d7801aac594b42cb41b23fd"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "authentic_S_fun_S_shelp_dispatch_ev1_ev2_ev3_gem_ui_ev4_pass",
+    "all_4_allowed_slots_activate_simultaneously_and_empty_unequip_refreshes_stats",
+    "recreated_sets_table_reapplies_1_piece_requirement",
+    "old_save_legacy_other_slots_capped_at_max_1_hero_and_merc",
+    "blueprint_drag_restriction_and_5_5pct_drop_rate_pass",
+    "qianchi_completely_isolated",
+    "v317_v316_v308_v307_v306_regressions_pass"
+  ]
+}

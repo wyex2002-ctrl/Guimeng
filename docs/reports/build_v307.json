@@ -1,0 +1,34 @@
+{
+  "version": "v1.307",
+  "base_sha256": "0575204f1f4017a6e647b77cdc600cae5aebb9e5dcf2afef7780abcb034e0497",
+  "bytes": 2801134,
+  "sha256": "9bddf977e34cc0aa4bedcbc61a128bba56fd735c070d0cd5f442e096029f916f",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v307_lua_gbk_bytes": 62627,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "features": {
+    "remote_warehouse_button": {
+      "click_cycle_guild_active": "closed -> 普通仓库 (warm amber tint) -> 关闭普通仓库+打开行会仓库 (cool teal tint) -> 关闭行会仓库 (default grey)",
+      "click_cycle_guild_inactive": "closed -> 普通仓库 (warm amber tint) -> 关闭普通仓库 (default grey)",
+      "guild_activation_check": "type(Ux雌.啾啾啵啵().行会) == \"table\"",
+      "external_close_reset": "Restores default grey tint immediately when window 可视 becomes false"
+    },
+    "mode2_autopickup_sell_materials": {
+      "count": 36,
+      "matches_bulk_sell_v305": true,
+      "excluded": [
+        "商会物资",
+        "沃玛号角",
+        "精灵骸骨",
+        "火影晶体",
+        "震天魔印",
+        "飞龙剑碎片",
+        "all 30 *_印记",
+        "禁止出售",
+        "任务关联",
+        "剧情关联"
+      ]
+    }
+  }
+}

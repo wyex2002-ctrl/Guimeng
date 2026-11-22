@@ -1,0 +1,19 @@
+{
+  "version": "v1.306",
+  "all_passed": true,
+  "status": "PASS",
+  "sha256": "0575204f1f4017a6e647b77cdc600cae5aebb9e5dcf2afef7780abcb034e0497",
+  "tested_files": {
+    "game_v306.res": "0575204f1f4017a6e647b77cdc600cae5aebb9e5dcf2afef7780abcb034e0497",
+    "runtime_v306.lua": "0c4cbd90858ed51ae2d2c97925ddbc626296c89fd5cc9cbd76368de4410c9810",
+    "patch_v306.py": "70499cc4fdfac0e7d7ab13b698ae6e2ed7fc901319b1ab73c6c3ef5d95f6ac66",
+    "test_v306.py": "5a3714ca6e7fcd24055bb26642f843af9ffe66aeaf980792f7cab75c0dee7d67"
+  },
+  "checks": [
+    "Outer resource diff restricted strictly to modules [12, 14, 30] + rebuild + trees()",
+    "Strict Lua 5.1 syntax parse + GBK 0x5C scan on embedded runtime_v306.lua",
+    "Exact formula + 10,000-trial Monte Carlo per level (Lv0=1/300, Lv1=2.5/100, Lv2=5/100, Lv3=7.5/100 for denom=100)",
+    "22/97 VM: killing 鸡/猪/牛/羊/狼 within 16 tiles awards 采集 XP; off-screen & non-list mobs excluded",
+    "22/97 VM: fresh death-time rolling with 全图窗口 equipment affixes, meat 品质/价格, live 精灵 restoration, 挖取 cleared, and 「前尘忆梦」 isolated"
+  ]
+}

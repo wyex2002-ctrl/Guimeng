@@ -1,0 +1,16 @@
+{
+  "version": "v1.339",
+  "base_sha256": "022a19cc2e1cf0c25a927c85ede5ff805c0db2d8a6243a8b6f7dfb8807fc97d7",
+  "bytes": 2848599,
+  "sha256": "5ab8c1bef429e11d7e8be5556a7936576a87341b335a876fac1a2a6d6f2cdf44",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v339_lua_gbk_bytes": 165925,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v339": {
+    "hero_merc_boundary_preserved": "Restored Hero <-> Mercenary (刺客) equipment boundary; Hero 3 classes (战士/法师/道士) remain unrestricted across all Hero equipment (already 职业要求=不限 in m12/4111)",
+    "v338_save_self_heal": "Auto-heals any S.包裹物品组 items touched by v1.338 back to match clean S.游戏道具组 templates (restoring 刺客 职业要求 and clearing non-template 装备通用=0)",
+    "mount_medal_seal_enchants_retained": "Retains all v1.338 坐骑/勋章/印记 enchant rules, 坐骑 -> 勋章 -> 印记 duplicate priority, scroll tooltips, and overwrite confirmation dialog",
+    "qianchi_isolated": "前尘忆梦 untouched"
+  }
+}

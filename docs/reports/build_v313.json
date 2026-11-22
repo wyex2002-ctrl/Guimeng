@@ -1,0 +1,14 @@
+{
+  "version": "v1.313",
+  "base_sha256": "ecc34f51376963cd1d4cd7d0a867c1bfdb2d23b0e975fd2a9a8d041826edaade",
+  "bytes": 2812155,
+  "sha256": "6b6ecec150f770e7fbbff211d2953b69f29c00e16e4c72f57aed850a7d3bf91e",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v313_lua_gbk_bytes": 82710,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v313_changes": {
+    "gem_defense_labels": "防御力 -> 防御, 魔法防御 -> 魔防 (both gem item tooltips and equipment 镶嵌信息)",
+    "gem_tooltip_alignment": "100% left-aligned (strips #md / #rt from all 30 socketable gem tooltips)"
+  }
+}

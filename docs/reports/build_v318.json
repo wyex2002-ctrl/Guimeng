@@ -1,0 +1,13 @@
+{
+  "version": "v1.318",
+  "base_sha256": "52bc5e06facc6c8c7e3bd79bf4185c8d53775fceb2dc5e8100bc344ff00d04e2",
+  "bytes": 2814662,
+  "sha256": "e048d215fec806c874d208d2e97d841dc487939598ef86774b1a58fcfb9607b7",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v318_lua_gbk_bytes": 89953,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "tooltip_v318_changes": {
+    "drag_to_equip_hint_color": "#c(-45824)拖到装备使用 -> #Y拖到装备使用#W (yellow) on all 40 set blueprint tooltips"
+  }
+}

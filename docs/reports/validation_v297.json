@@ -1,0 +1,39 @@
+{
+  "version": "v1.297",
+  "sha256": "e5e4f5cf482ac1403112fd797a7f1366f2641672097d55c56157ffc72cec7233",
+  "all_passed": true,
+  "changed_protos": {
+    "12": [
+      14,
+      76,
+      22232
+    ],
+    "14": [
+      676,
+      712,
+      728,
+      740,
+      764,
+      777
+    ],
+    "22": [
+      96
+    ],
+    "30": [
+      39,
+      87
+    ]
+  },
+  "module22_total_call_gaps": 0,
+  "module22_bad_jmp_a_count": 0,
+  "boundary_cases_passed": 17,
+  "randomized_monster_trials_passed": 200,
+  "qiancheng_isolation_passed": true,
+  "direct_12_14_fallback_passed": true,
+  "tested_files": {
+    "game_v297.res": "e5e4f5cf482ac1403112fd797a7f1366f2641672097d55c56157ffc72cec7233",
+    "patch_v297.py": "8fdf887a79aac5272d0f59c80d2e3747ea9b9ae2838a18b419c5ff8213153dd9",
+    "test_v297.py": "dd5732c8529f0b7cdce0975ed4177664643877f6d206b7d2f8337830f718566c",
+    "monster_drop_filter_v297.lua": "c3a1ff8ee63bd56fbe1e3d51c6822f2bdfc3aeca1431b684a95816db440a1414"
+  }
+}

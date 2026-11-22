@@ -1,0 +1,23 @@
+{
+  "version": "v1.323",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "a7e142ea2256d5182e04fc29af04f0aa563168aa8f3b0853f484ff7631c3da8b",
+  "tested_files": {
+    "game_v323.res": "a7e142ea2256d5182e04fc29af04f0aa563168aa8f3b0853f484ff7631c3da8b",
+    "runtime_v323.lua": "d513c0fa003bd6f96c0119f2d2a9ada0663c417bfbc0b2f876ba8077539ff23c",
+    "patch_v323.py": "ddad4b0783e0232207f455fbfd992ba096f0367dfc61611d712b33786d83fb1c"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "headers_renamed_to_pink_镶嵌属性_and_blue_附魔属性",
+    "scroll_name_moved_below_附魔属性_preserving_original_color",
+    "only_武器_衣服_鞋子_activate_and_accept_scrolls_across_all_10_subtypes",
+    "old_save_disallowed_slots_zero_effect_and_grey_tooltip",
+    "authentic_S_fun_S_shelp_right_click_gem_ui_and_instant_refresh_pass",
+    "qianchi_completely_isolated",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

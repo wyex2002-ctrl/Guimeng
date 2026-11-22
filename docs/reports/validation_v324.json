@@ -1,0 +1,19 @@
+{
+  "version": "v1.324",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "27568ce22e989e95f33fcc0d442241f30b8257cddc52427c8f8146a9ddd41ca0",
+  "tested_files": {
+    "game_v324.res": "27568ce22e989e95f33fcc0d442241f30b8257cddc52427c8f8146a9ddd41ca0",
+    "runtime_v324.lua": "e5460dadeebaeee040b3102eecf0d000c32e4a447dba30ebe64b1d8ac9199112",
+    "patch_v324.py": "fc51e119828a67b3c59c5fa3da98b87a65be7f9713cd2cd4e7e1721aabecccf6"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "outlined_宋_9_炭灰_on_镶嵌属性_附魔属性_and_scroll_name",
+    "v323_3slot_rules_and_qianchi_isolation_pass",
+    "v319_5_5pct_v317_v308_v307_v306_regressions_pass"
+  ]
+}

@@ -1,6 +1,6 @@
 # 归梦维护约定
 
-当前已发布 v1.294。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
+当前已发布 v1.339。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
 
 ## 按任务查阅
 
@@ -43,7 +43,7 @@ When a detail is unclear, give the model room to state what it's assuming and co
 - 随机整数使用原 Gly 函数相同的引擎 API；不为绕过错误开放内部对象。
 - 每次修改同步当前状态和完整维护记录。改源码后使用官方运行时重编译，审查编译字节码及资源哈希。
 - 发布前按下述最新精简流程验证：完成本次重建、相关回归与一次最终交付检查；不默认反复重编译运行时、重跑所有历史版本或多次干净重建。
-- 更新 `maintenance/manifest.json` 中的文件清单，确保维护包包括所有必要输入和当前文档。不要把构建缓存、游戏目录或存档提交 Git。
+- 更新 `maintenance/manifest.json` 中的文件清单，确保维护包包括所有必要输入和当前文档。每次更新后在仓库根目录同步覆写 `使用说明_玩家版.txt`（不带版本号）。不要把构建缓存、游戏目录或存档提交 Git。
 
 v181按用户明确要求移除了物品、角色及脚本反篡改检测，不得把旧惩罚或强退分支迁回。数据库的变量白名单和公开API隔离继续保留；正常保存退出、背包容量、穿戴与任务条件不能作为反作弊脚本删除。
 

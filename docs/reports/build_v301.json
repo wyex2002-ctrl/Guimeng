@@ -1,0 +1,18 @@
+{
+  "version": "v1.301",
+  "base_sha256": "dea530c0d8c61b622b28be864563dc32669f901870fa514af0a2e84b323bdbe7",
+  "bytes": 2792089,
+  "sha256": "b7335dc65f4c32582fe8bfe1e78eaad162aea39fac2df0e954dca71fa76d4534",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v301_lua_gbk_bytes": 45112,
+  "runtime_gc_index_14_781": 218,
+  "added_instructions": {
+    "22/97": 18
+  },
+  "version_string_updates": 11,
+  "features": {
+    "corpse_direct_drop": "All 附加.挖取 corpse-digging items drop directly on monster death (incl. empty 掉宝数据表 monsters); 附加.挖取 cleared to prevent double-loot; 镖车 excluded.",
+    "merc_ranged_any_enemy_blink": "Ranged assassin mercenary skills (蝉舞/盛开/白莲/红莲/月桂) blink behind any adjacent enemy monster (Chebyshev dist <= 1), preferring tiles not adjacent to any enemy.",
+    "merc_ranged_skill_projectile": "Ranged assassin mercenary skills still launch the spinning weapon projectile and defer both damage and skill hit animation (目标动画) to projectile arrival."
+  }
+}

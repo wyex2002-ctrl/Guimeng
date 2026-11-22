@@ -1,0 +1,23 @@
+{
+  "version": "v1.315",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "c23312e78435bb92de8b1ed964844ec16297de899e5a8a9a2a2e3212556f4485",
+  "tested_files": {
+    "game_v315.res": "c23312e78435bb92de8b1ed964844ec16297de899e5a8a9a2a2e3212556f4485",
+    "runtime_v315.lua": "47143114fed490df514796295fd480df1cbbb91a456626e0b2e9e354e6f52e64",
+    "patch_v315.py": "de1d220ef3ecc6cc78c0406658f55a87281fe6a2d20baa3cf8dd3d6a9ec83b0f"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "all_40_sets_attack_and_strong_elements_match_mir3_equip_format_exact_halfwidth",
+    "skull_and_tongue_set_tooltips_verified",
+    "v313_gems_and_equip_socket_regression_pass",
+    "v310_boss_blueprints_11pct_regression_pass",
+    "v308_warehouse_proxy_button_regression_pass",
+    "v307_mode2_ordinary_materials_regression_pass",
+    "v306_gather_formula_regression_pass"
+  ]
+}

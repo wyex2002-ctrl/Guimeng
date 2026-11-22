@@ -1,0 +1,14 @@
+{
+  "version": "v1.332",
+  "base_sha256": "b9d05b41d64f2dbfd657c4c2a466f3bcb90b8af63a009aeded60b9a2dea385d2",
+  "bytes": 2832832,
+  "sha256": "6020ecc9263ff5c3db70fd2418f6a17a422b30452cab11d3c5793ebfe81ee00f",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v332_lua_gbk_bytes": 131458,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "fixes_v332": {
+    "corpse_drop_jipin_stats": "build_live_drop_item merges flattened rolled stats from wr.全图窗口 into out.属性[k] (matching m14/86 & m14/447); corpse_drop_v301 accepts callable tables / S.游戏道具组 fallback and calls wr.全图窗口(item_name, mlv, nil, nil, mon_extra)",
+    "merc_ranged_weapon_tag": "install_merc_name_v332 wraps __gm_merc_name_v253 (G_ROOT & S.script_setting): only pure assassin ranged weapons (职业要求==刺客 & 绑定技能==刺客普通攻击, 15 weapons) always show （远程）; non-刺客 general weapons (7 装备通用=0 weapons incl. 精灵骸骨/拍拍手/...) only show （远程） in Merc slots (333..410), stripping stale （远程） outside Merc slots and refreshing existing save tooltips once on load"
+  }
+}

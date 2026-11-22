@@ -1,0 +1,22 @@
+{
+  "version": "v1.296",
+  "base_sha256": "883e30c3439ac2b4ec088d8d27626ebf78f050584a5d0adcc7903baa3e9859f3",
+  "bytes": 2761801,
+  "sha256": "345acf85e29af000d1a87a3eb3e51fcd300a7eb6516a42968e2095dd12dd913b",
+  "repaired_module22_instructions": {
+    "22/4": 6,
+    "22/29": 20,
+    "22/30": 108,
+    "22/44": 14,
+    "22/47": 8,
+    "22/52": 3,
+    "22/53": 4,
+    "22/70": 6,
+    "22/72": 29,
+    "22/73": 41,
+    "22/74": 12
+  },
+  "total_repaired_instructions": 251,
+  "version_string_updates": 11,
+  "jit_globally_disabled": false
+}
