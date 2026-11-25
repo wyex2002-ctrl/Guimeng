@@ -1243,7 +1243,12 @@
     "maintenance/patch_v339.py",
     "maintenance/test_v339.py",
     "maintenance/package_v339.py",
-    "maintenance/player_changes_v339.json"
+    "maintenance/player_changes_v339.json",
+    "maintenance/runtime_v340.lua",
+    "maintenance/patch_v340.py",
+    "maintenance/test_v340.py",
+    "maintenance/package_v340.py",
+    "maintenance/player_changes_v340.json"
   ],
   "generated_reports": [
     "maintenance/build_v300.json",
@@ -1355,7 +1360,11 @@
     "maintenance/build_v339.json",
     "maintenance/validation_v339.json",
     "docs/reports/build_v339.json",
-    "docs/reports/validation_v339.json"
+    "docs/reports/validation_v339.json",
+    "maintenance/build_v340.json",
+    "maintenance/validation_v340.json",
+    "docs/reports/build_v340.json",
+    "docs/reports/validation_v340.json"
   ],
-  "version": "v1.339"
+  "version": "v1.340"
 }

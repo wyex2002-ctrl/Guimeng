@@ -1,0 +1,22 @@
+{
+  "version": "v1.340",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "772c68e5d127c0cbfa910e937623d68d8bdf7cfd6a6bed950b1fdf9b76f7ade4",
+  "tested_files": {
+    "game_v340.res": "772c68e5d127c0cbfa910e937623d68d8bdf7cfd6a6bed950b1fdf9b76f7ade4",
+    "runtime_v340.lua": "8bc0a275cf6a99b3081b9c3d9eec15021f5b074b87985a0784951a5d7bc12363",
+    "patch_v340.py": "4ad54d17c1f2f9d517111d6bac8e2141158a8b9f40469e03a7e7f7e72a200d4d"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v340_merc_ranged_body_edge_impact_normal_and_boss_pass",
+    "v340_merc_ranged_zero_post_arrival_gap_skip_and_hitstun_pass",
+    "v340_merc_ranged_1cell_visibility_moving_target_all_6_skills_rewrap_pass",
+    "v340_qianchi_isolated_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}

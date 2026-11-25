@@ -1,0 +1,16 @@
+{
+  "version": "v1.340",
+  "base_sha256": "5ab8c1bef429e11d7e8be5556a7936576a87341b335a876fac1a2a6d6f2cdf44",
+  "bytes": 2852471,
+  "sha256": "772c68e5d127c0cbfa910e937623d68d8bdf7cfd6a6bed950b1fdf9b76f7ade4",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v340_lua_gbk_bytes": 172993,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v340": {
+    "merc_ranged_body_edge_impact": "Triggers projectile impact when spinning weapon edge reaches live target body boundary (adaptive to 模型大小/中心Y偏移 & weapon icon size, capped on 1-cell throws) instead of exact center pixel",
+    "merc_ranged_instant_arrival_flush": "Flushes shot.raw() immediately on the exact arrival frame inside bullet.更新 (bypassing shot.skip and never waiting for shot.retired or merc hitstun 硬直) with flushed_this_frame double-dt guard",
+    "merc_ranged_dps_and_blink_preserved": "Preserves original shot.retire cast cadence/DPS, v1.303 blink-behind-locked-target, and auto-rewrap guard on pickup_frame",
+    "qianchi_isolated": "前尘忆梦 untouched"
+  }
+}

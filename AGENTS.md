@@ -1,6 +1,6 @@
 # 归梦维护约定
 
-当前已发布 v1.339。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
+当前已发布 v1.340。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
 
 ## 按任务查阅
 
