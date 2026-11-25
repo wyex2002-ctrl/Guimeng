@@ -1,0 +1,23 @@
+{
+  "version": "v1.341",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "fed99de0e6bd44f3b418e56775eb2beab6ab940971fb120718240f43da8ee55f",
+  "tested_files": {
+    "game_v341.res": "fed99de0e6bd44f3b418e56775eb2beab6ab940971fb120718240f43da8ee55f",
+    "runtime_v341.lua": "150a5a7d025f3541fe6486fab6fba1899115a1044e7e2de64daf1f3a30a1f8ef",
+    "patch_v341.py": "0507a95f593577055dc968eef9e286bbd06585721ecc00862ece9e1949b47000"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v341_magic04_hit_fx_blank_strip_delay_reset_speed_tighten_prime_pass",
+    "v341_ranged_merc_skill_action_speed_scaling_and_melee_isolation_pass",
+    "v341_chanwu_launch_unblock_epsilon_align_and_reload_rewrap_pass",
+    "v341_qianchi_isolated_pass",
+    "v340_merc_ranged_hit_timing_200x_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}

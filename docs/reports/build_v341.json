@@ -1,0 +1,16 @@
+{
+  "version": "v1.341",
+  "base_sha256": "772c68e5d127c0cbfa910e937623d68d8bdf7cfd6a6bed950b1fdf9b76f7ade4",
+  "bytes": 2855026,
+  "sha256": "fed99de0e6bd44f3b418e56775eb2beab6ab940971fb120718240f43da8ee55f",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v341_lua_gbk_bytes": 177837,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v341": {
+    "merc_hit_fx_blank_strip_and_prime": "Wraps 特效类.初始化 for Magic_04.empak <技能>_命中 to strip leading 4x4/blank frames from a fresh copy of 动画配置.key, normalize 延迟时间=0, tighten 播放速度=0.65, and pre-prime first visible frame via 置当前帧",
+    "merc_ranged_skill_action_speed": "Wraps 类_事件.播放指定动作 for ranged assassin merc 跳斩/跳刺 to scale with 攻击速度 matching 横切 (~24f at high attack speed instead of fixed 0.5 / ~41f), keeping melee two-handed assassin untouched",
+    "merc_chanwu_launch_unblock": "Clears stale actor.播放动作=false on 蝉舞 prepare for live ranged merc so m22/4 PC 485 never stalls target-switch 蝉舞 behind a prior action; aligns state.命中动画延迟=(延迟dt or 0)-1e-9 and uses explicit string keys in MERC_RETREAT_DIST",
+    "qianchi_isolated": "前尘忆梦 untouched"
+  }
+}
