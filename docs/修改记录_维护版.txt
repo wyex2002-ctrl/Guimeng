@@ -4112,3 +4112,17 @@ v1.289 的22/0原生构造器直接把只读Sys.get('hero')返回的主角实体
     3. 在 `test_v344.py` 新增 `assert_luajit20_local_limits(rt_src, max_limit=195)` 全 AST 递归审计，确保所有函数及嵌套块不再触发 LuaJIT 2.0 `200` 局部变量上限。
 - **版本号同步**：更新 `m12/76` 游戏窗口标题栏（`1.344` / `不烧心版 1.344`）与 `m12/22232` 登录界面等全部版本号。
 - 资源 2,873,473 字节，SHA-256 `61c6a22b90694b45f777a444893e812dde6fa1e6a9e636b4698400e5b5761f98`。
+
+
+
+## v1.345
+- 仅作用于「来世续缘」（「前尘忆梦」完全保持原版行为；完整保留 v1.344 及之前全部改动）。
+- **彻底修复 `v1.344` 实机读档完成即闪退的问题（`d:\guimeng2.26\Log\guimeng_exit_latest.txt` 崩溃栈定位）**：
+  - **根因**：`v1.344` 为绕过 `Gly独` 只读元表调用 `pcall(rawset, tbl, k, v)`，触发引擎底层 `C:\cccyyy\main:66-68 -> 公共方法_.lua:216: exit -> Sys.lua:38: Osexit`（直接执行 `os.exit()`，`pcall` 无法拦住），导致读档收尾调用 `install_wal_hooks_v343()` 时进程直接退出。
+  - **修复**（`runtime_v345.lua` / `patch_v345.py` / `test_v345.py`）：
+    1. 从 `runtime_v345.lua` 完全移除 `wal_safe_rawset`、`wal_hook_single_gly`、`install_wal_hooks_v343` 以及全部 `rawset` / `Gly独` 表写入，改为向纯表 `S` 挂载回调（WAL IIFE 槽位同步更新为 `S.__gm_wal_boot_v345`，`<main>` 保持 `183 <= 200` 活跃局部变量）。
+    2. 在 `m14/253`（`Gly独.存档`）PC `0` 注入 `S.__gm_wal_try_save_v345(path, hero_data, key)`，命中 `GMWAL1` 分帧快存直接 `RET0`；走原版分支则在 `核心.写到文件`（PC `565`）后调用 `S.__gm_wal_after_vanilla_save_v345(path)` 刷新 `base_md5` 并删除过期 `.wal` / `.wal.tmp`。
+    3. 在 `m14/99`（`Gly独.结束游戏`）PC `9`（`__gm_diag_exit_v164` 前）注入 `S.__gm_wal_on_exit_v345(flag)` 执行正常退出原版同步 `.dat` 刷盘并清理 `.wal`；保留 `m14/256` PC `1045` / `1111` 双 WAL 恢复钩子。
+    4. `test_v345.py` 在全局 `rawset` 与双方 `Gly独.__newindex` 均植入抛错陷阱条件下完成 `GMWAL1` 200 次复用全流程验证。
+- **版本号同步**：更新 `m12/76` 游戏窗口标题栏（`1.345` / `不烧心版 1.345`）与 `m12/22232` 登录界面等全部版本号。
+- 资源 2,872,671 字节，SHA-256 `319d761dd161aeb02cac0a4f9dbdd0da07a6c4dc5b8954e71069e819dad54ce6`。

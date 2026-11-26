@@ -1,0 +1,25 @@
+{
+  "version": "v1.345",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "319d761dd161aeb02cac0a4f9dbdd0da07a6c4dc5b8954e71069e819dad54ce6",
+  "tested_files": {
+    "game_v345.res": "319d761dd161aeb02cac0a4f9dbdd0da07a6c4dc5b8954e71069e819dad54ce6",
+    "runtime_v345.lua": "b5ac93bae891db15bf6fa727940368d09e47a7a715b7dee35391a4d5392b41a7",
+    "patch_v345.py": "07b59fce13d9f2abb3805b0788c91808a1657c315c865ed81c7d1a8e04323c77"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_76_window_title_and_m12_22232_version_1_345_verified",
+    "m12_37_zero_jmp_below_params_preserved",
+    "m14_253_m14_99_m14_256_wal_bytecode_hooks_verified",
+    "strict_lua51_syntax_zero_gbk_0x5c_zero_rawset_and_luajit20_200_local_audit_pass",
+    "v345_zero_gly_mutation_trapped_rawset_and_newindex_pass",
+    "v345_wal_stream_roundtrip_slicing_3s_autosave_afk_skip_guards_exit_flush_200x_pass",
+    "v345_qianchi_isolated_pass",
+    "v342_settings_save_btn_pass",
+    "v341_merc_skill_resp_and_v340_sanity_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}

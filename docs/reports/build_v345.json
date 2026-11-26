@@ -1,0 +1,21 @@
+{
+  "version": "v1.345",
+  "base_sha256": "61c6a22b90694b45f777a444893e812dde6fa1e6a9e636b4698400e5b5761f98",
+  "bytes": 2872671,
+  "sha256": "319d761dd161aeb02cac0a4f9dbdd0da07a6c4dc5b8954e71069e819dad54ce6",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v345_lua_gbk_bytes": 214164,
+  "runtime_gc_index_14_781": 218,
+  "m14_253_const_try": 111,
+  "m14_253_const_after": 112,
+  "m14_99_const_exit": 5,
+  "version_string_updates": 11,
+  "window_title_updates_m12_76": 2,
+  "changes_v345": {
+    "fix_v344_rawset_crash": "Removes ALL rawset calls and ALL table writes to Gly独 (which triggered native C:\\cccyyy\\main:68 -> os.exit() in v1.344 right after loading a save)",
+    "bytecode_hooks_m14_253_and_m14_99": "Hooks m14/253 (Gly独.存档) via S.__gm_wal_try_save_v345 (PC 0) & S.__gm_wal_after_vanilla_save_v345 (post 核心.写到文件) and m14/99 (Gly独.结束游戏) via S.__gm_wal_on_exit_v345 (PC 9) using pure S upvalue fields with zero Gly独 mutation",
+    "retains_wal_3s_autosave_and_save_btn": "Retains m14/256 WAL fast-load hooks, GMWAL1 3ms/frame sliced fast-save, 3-second continuous auto-save, N-key [Save] button, and LuaJIT 2.0 <= 200 active locals",
+    "version_window_title_sync": "Updates all version strings including OS game window title bar (m12/76) and login UI (m12/22232) to 1.345",
+    "qianchi_isolated": "前尘忆梦 keeps original save/load/exit behavior completely untouched"
+  }
+}
