@@ -4099,3 +4099,16 @@ v1.289 的22/0原生构造器直接把只读Sys.get('hero')返回的主角实体
   4. **异常恢复与退出兼容**：`m14/256` 在 `load.decode`（PC `1103`）优先调用 `S.__gm_wal_try_load_v343(path, base_md5, is_raw)` 恢复已校验 `.wal`；若 `base_md5` 不匹配（玩家手动还原旧 `.dat`）自动删除陈旧 `.wal` 并回退读取 `.dat`，校验失败同样无缝回退。`Gly独.结束游戏` 包装后在「来世续缘」正常退出时执行一次同步原版 `m14/253` 写回标准 `.dat` 并清理 `.wal`。
 - **版本号同步**：更新 `m12/76` 游戏窗口标题栏（`1.343` / `不烧心版 1.343`）与 `m12/22232` 登录界面等全部版本号，并在 `AGENTS.md` 固化“每次发版及部署测试包同步更新窗口标题栏版本号”约定。
 - 资源 2,872,678 字节，SHA-256 `e73cccc4a04d64685038ac92ece8e85d3dc075608899234a0e427ae4bbdff595`。
+
+
+
+## v1.344
+- 仅作用于「来世续缘」（「前尘忆梦」完全保持原版行为；完整保留 v1.343 及之前全部改动）。
+- **修复 `v1.343` 在实机 LuaJIT 2.0 下运行库静默未加载问题（根因：主块超出单函数 `200` 个活跃局部变量硬限制）**：
+  - **根因**：`v1.342` 的 `runtime_v342.lua` `<main>` 已有 `184` 个活跃局部变量；`v1.343` 在 `runtime_v343.lua` 顶层使用 `do ... end` 隔离 WAL 模块，而在 Lua 5.1 / LuaJIT 2.0 中 `do ... end` 仍累加到外层函数局部变量槽位，使 `<main>` 峰值达到 `210 > 200`，`m14/781` 执行 `loadstring(runtime_v343.lua)` 时编译失败返回 `nil` 并被 `ISF` 静默跳过，造成 `N` 键【Save】按钮消失及 3 秒 `.wal` 快存均未执行（强杀进程时未产生 `*.dat.wal`）。
+  - **修复**（`runtime_v344.lua` / `patch_v344.py` / `test_v344.py`）：
+    1. 将 WAL 子系统重构为显式传参即时执行函数 `S.__gm_wal_boot_v344=(function(S,G_ROOT,get_env_val,get_U,is_laishi,unproxy,now_ms) ... end)(...)`，并以 `S.__gm_wal_on_load_state_v343` 替代顶层 `local wal_on_load_state_v343`，将 `<main>` 峰值活跃局部变量降至 `183`（远低于 `200` 硬限制）。
+    2. 加固 `install_wal_hooks_v343()`：对 `S.script_setting.Gly独` 与 `_G.Gly独` 双宿主通过 `rawset` 绕过 `m14/302` 的只读 `__newindex` 元表锁定，并以 `known_save_wraps`/`known_exit_wraps` 去重防止重复包裹；所有角色槽位读取统一用 `tonumber(U.人物选择)`。
+    3. 在 `test_v344.py` 新增 `assert_luajit20_local_limits(rt_src, max_limit=195)` 全 AST 递归审计，确保所有函数及嵌套块不再触发 LuaJIT 2.0 `200` 局部变量上限。
+- **版本号同步**：更新 `m12/76` 游戏窗口标题栏（`1.344` / `不烧心版 1.344`）与 `m12/22232` 登录界面等全部版本号。
+- 资源 2,873,473 字节，SHA-256 `61c6a22b90694b45f777a444893e812dde6fa1e6a9e636b4698400e5b5761f98`。

@@ -1,0 +1,18 @@
+{
+  "version": "v1.344",
+  "base_sha256": "e73cccc4a04d64685038ac92ece8e85d3dc075608899234a0e427ae4bbdff595",
+  "bytes": 2873473,
+  "sha256": "61c6a22b90694b45f777a444893e812dde6fa1e6a9e636b4698400e5b5761f98",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v344_lua_gbk_bytes": 216443,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "window_title_updates_m12_76": 2,
+  "changes_v344": {
+    "fix_luajit20_200_local_overflow": "Converts WAL subsystem from do..end (which pushed runtime_v343 <main> to 210 > 200 active locals and broke LuaJIT 2.0 loadstring compilation) into an explicit-parameter IIFE with its own register frame (<main> back to ~183 active locals)",
+    "harden_gly_hooks_rawset_and_dual_host": "Hooks both S.script_setting.Gly独 and _G.Gly独 via rawset (safe against read-only __newindex metatable in m14/302) and normalizes slot with tonumber(U.人物选择)",
+    "retains_v343_wal_and_3s_autosave_and_v342_save_btn": "Retains m14/256 WAL hooks (PC 1045 & PC 1111), GMWAL1 3ms/frame sliced fast-save, 3-second MMO silent auto-save, normal-exit vanilla flush, and N-key settings [Save] button for 来世续缘",
+    "version_window_title_sync": "Updates all version strings including OS game window title bar (m12/76) and login UI (m12/22232) to 1.344",
+    "qianchi_isolated": "前尘忆梦 keeps original save/load/exit behavior completely untouched"
+  }
+}
