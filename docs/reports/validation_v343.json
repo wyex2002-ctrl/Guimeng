@@ -1,0 +1,24 @@
+{
+  "version": "v1.343",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "e73cccc4a04d64685038ac92ece8e85d3dc075608899234a0e427ae4bbdff595",
+  "tested_files": {
+    "game_v343.res": "e73cccc4a04d64685038ac92ece8e85d3dc075608899234a0e427ae4bbdff595",
+    "runtime_v343.lua": "1bc81fc80576f17af087b96779da1b3380d8f6c7bd6195ae5771a8d1e5741f9b",
+    "patch_v343.py": "da1d7916924c88b19aafde197ef8fd745d0f296361766eb828ab8ef38c78e06d"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_76_window_title_and_m12_22232_version_1_343_verified",
+    "m12_37_zero_jmp_below_params_preserved",
+    "m14_256_wal_load_and_direct_table_r4_8_bytecode_verified",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v343_wal_stream_roundtrip_slicing_3s_autosave_afk_skip_guards_exit_flush_200x_pass",
+    "v343_qianchi_isolated_pass",
+    "v342_settings_save_btn_pass",
+    "v341_merc_skill_resp_and_v340_sanity_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}

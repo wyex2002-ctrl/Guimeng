@@ -1,0 +1,20 @@
+{
+  "version": "v1.343",
+  "base_sha256": "70c9710680769aa0c9ac911d0ce6f87eac4ca5e69b1ff6ab4c3be8a399c7340b",
+  "bytes": 2872678,
+  "sha256": "e73cccc4a04d64685038ac92ece8e85d3dc075608899234a0e427ae4bbdff595",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v343_lua_gbk_bytes": 214896,
+  "runtime_gc_index_14_781": 218,
+  "wal_14_256_bc_delta": 19,
+  "wal_14_256_k_idx": 177,
+  "version_string_updates": 11,
+  "window_title_updates_m12_76": 2,
+  "changes_v343": {
+    "dual_layer_wal_save": "Routes 来世续缘 in-game saves (manual [Save], native auto-save triggers, and 3s continuous auto-save) through a frame-sliced GMWAL1 tagged-stream serializer (<=3ms/frame budget, zero sort_table/核心.RC4 stall) with atomic .wal.tmp -> .wal replace and MD5 + base_md5 binding",
+    "mmo_3s_continuous_autosave": "Adds 3-second silent continuous auto-save in pickup_frame (respecting N-key 游戏自动存档 toggle 镜头选择框.选中 ~= true and loading/alive/cursor/物品格子18/蝶恋花 guards), skipping redundant disk writes while AFK when content MD5 is unchanged",
+    "crash_recovery_and_vanilla_exit_flush": "m14/256 recovers validated .wal directly on load (with seamless fallback to vanilla .dat if missing/corrupt/mismatched); Gly独.结束游戏 flushes one synchronous vanilla m14/253 save to .dat and removes .wal on normal exit for 100% vanilla compatibility",
+    "version_window_title_sync": "Updates all version strings including OS game window title bar (m12/76) and login UI (m12/22232) to 1.343",
+    "qianchi_isolated": "前尘忆梦 keeps original save/load/exit behavior completely untouched"
+  }
+}
