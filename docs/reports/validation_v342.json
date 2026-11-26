@@ -1,0 +1,21 @@
+{
+  "version": "v1.342",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "70c9710680769aa0c9ac911d0ce6f87eac4ca5e69b1ff6ab4c3be8a399c7340b",
+  "tested_files": {
+    "game_v342.res": "70c9710680769aa0c9ac911d0ce6f87eac4ca5e69b1ff6ab4c3be8a399c7340b",
+    "runtime_v342.lua": "8c1b65dfc022addac4a65282e2a2f0ae8461fc9926f2132cd342a3bcc1c76a73",
+    "patch_v342.py": "cd2ff3f7a22aa1adb83820c4cc6a9901be53b0b2be7a8ab1421a68212009f1ef"
+  },
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_37_zero_jmp_below_params_preserved",
+    "strict_lua51_syntax_and_zero_gbk_0x5c_hazard",
+    "v342_settings_save_btn_layout_3slice_states_slot0_guards_fallback_200x_pass",
+    "v342_qianchi_isolated_pass",
+    "v341_merc_skill_resp_and_v340_sanity_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}

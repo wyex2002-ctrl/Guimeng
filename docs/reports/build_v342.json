@@ -1,0 +1,16 @@
+{
+  "version": "v1.342",
+  "base_sha256": "fed99de0e6bd44f3b418e56775eb2beab6ab940971fb120718240f43da8ee55f",
+  "bytes": 2858562,
+  "sha256": "70c9710680769aa0c9ac911d0ce6f87eac4ca5e69b1ff6ab4c3be8a399c7340b",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v342_lua_gbk_bytes": 186560,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "changes_v342": {
+    "settings_save_button_layout": "Adds 手动存档按钮_v342 (\"Save\") in N-key settings window (系统窗口, id=561) aligned between 单图按钮12 (Quit Game, 62,348,97x25) and 单图按钮10 (close [X], 241,345,30x30) at (167, 348, 66x25)",
+    "settings_save_button_visuals": "Uses 1:1 3-slice rendering from built-in stone button -1480207602.img (80x25, metallic gold caps) with normal/hover/pressed/900ms jade-gold confirmation flash states and -1657209002.img 9-slice fallback",
+    "settings_save_action_and_guards": "Invokes native Ux雌.窗口相关.存档读档(\"存档\", Ux雌.人物选择, nil, 0) with loading, 1000ms debounce, cursor-item, alive-HP, and valid-slot (incl. slot==0) guards + 屏幕提示 feedback",
+    "qianchi_isolated": "前尘忆梦 keeps Save button hidden and disabled"
+  }
+}

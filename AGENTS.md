@@ -1,6 +1,6 @@
 # 归梦维护约定
 
-当前已发布 v1.341。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
+当前已发布 v1.342。开始维护时先读 [README.md](README.md) 和 [PROJECT_STATUS.md](PROJECT_STATUS.md)。版本尾数按整数比较。
 
 ## 按任务查阅
 
@@ -35,6 +35,7 @@ When a detail is unclear, give the model room to state what it's assuming and co
 - v177、v179、v180、v181、v182、v183、v184、v185、v186、v187、v188、v189、v190、v191、v192、v193、v194、v195、v196、v197、v198、v199、v200、v201、v202、v203、v204、v205、v206、v207、v208、v209、v210、v211、v212、v213、v214、v215、v216、v217 构建是 v218 首次完整重建的依赖，历史测试按需运行；`patch_v139.py`、`ljtool.py`、`ljdis.py`、`bytecode_relocate.py`、`resource_tools.py`、`native_test_utils.py` 仍被导入，不能按旧版本号删除。
 - Linux 测试会构建/复用官方 LuaJIT 2.0 缓存。Windows 必须显式传 `--runtime`。不得用 LuaJIT 2.1 或普通 Lua 替代。
 - 历史和结果只保留一份：完整记录在 `docs/修改记录_维护版.txt`，归档报告在 `docs/reports/`；生成报告在 maintenance 的忽略路径，不将随包结果冒充本轮通过。
+- 美术与贴图参考目录 `D:\guimeng_art`（解包 PNG 与索引）：界面 `.img` 视觉核对与切图尺寸查询使用 `guimeng_png_reference/index.csv` 与 `guimeng_png_reference/png/<id>.png`；角色/怪物/装备/特效帧图参考 `guimeng_character_reference`，地图/场景参考 `guimeng_environment_reference`。按 `agy-fast` 规则由只读子代理查看 PNG 图像后返回文本结果，不在主会话直接载入图片。
 
 ## 修改与验证
 
