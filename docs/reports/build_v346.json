@@ -1,0 +1,18 @@
+{
+  "version": "v1.346",
+  "base_sha256": "319d761dd161aeb02cac0a4f9dbdd0da07a6c4dc5b8954e71069e819dad54ce6",
+  "bytes": 2873453,
+  "sha256": "16e5b454ae9f58764924d07e9eef10ba48d17579db87130dfd211b8e1c86be09",
+  "scope": "来世续缘 only (前尘忆梦 untouched)",
+  "runtime_v346_lua_gbk_bytes": 216067,
+  "runtime_gc_index_14_781": 218,
+  "version_string_updates": 11,
+  "window_title_updates_m12_76": 2,
+  "changes_v346": {
+    "suppress_native_ingame_autosaves": "Wraps Ux雌.窗口相关.存档读档 in 来世续缘 to suppress all native in-game automatic save triggers (periodic timer, quest/escort/shop/forge/item triggers, and automatic C: backup saves) once in-game with an existing .dat; replaced uniformly by the 3-second silent WAL auto-save",
+    "preserved_save_paths": "Manual [Save] button (next_save_manual=true), Quit Game normal exit flush (force_vanilla=true), new-character creation / missing .dat, all 读档 loads, and 100% of 前尘忆梦 saves remain completely allowed",
+    "retains_v345_zero_mutation_wal": "Retains m14/253, m14/99, and m14/256 zero-mutation WAL bytecode hooks and LuaJIT 2.0 <= 200 active locals",
+    "version_window_title_sync": "Updates all version strings including OS game window title bar (m12/76) and login UI (m12/22232) to 1.346",
+    "qianchi_isolated": "前尘忆梦 keeps original auto-save, save, load, and exit behavior completely untouched"
+  }
+}
