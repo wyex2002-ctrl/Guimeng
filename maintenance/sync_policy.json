@@ -1,9 +1,7 @@
 {
   "sync_mode": "local_first_on_demand",
-  "last_source_sync_version": "v1.346",
-  "pending_source_versions": [
-    "v1.347"
-  ],
+  "last_source_sync_version": "v1.347",
+  "pending_source_versions": [],
   "next_source_sync_version": "v1.348",
   "downloads_update": "on_demand",
   "main_push_authorized_now": false,

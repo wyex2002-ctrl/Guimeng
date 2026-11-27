@@ -1282,6 +1282,7 @@
     "maintenance/runtime_v347.lua",
     "maintenance/patch_v347.py",
     "maintenance/test_v347.py",
+    "maintenance/package_v347.py",
     "maintenance/player_changes_v347.json"
   ],
   "generated_reports": [

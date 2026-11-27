@@ -5,6 +5,7 @@
 ```bash
 python3 maintenance/patch_v347.py
 python3 maintenance/test_v347.py
+python3 maintenance/package_v347.py
 ```
 
 [工程状态](PROJECT_STATUS.md)
