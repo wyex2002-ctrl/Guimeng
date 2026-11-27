@@ -1,10 +1,10 @@
 {
-  "source_sync_every_versions": 1,
+  "sync_mode": "local_first_on_demand",
   "last_source_sync_version": "v1.346",
   "pending_source_versions": [],
   "next_source_sync_version": "v1.347",
-  "downloads_update": "every version",
-  "main_push_authorized_now": true,
-  "source_update": "every version",
+  "downloads_update": "on_demand",
+  "main_push_authorized_now": false,
+  "source_update": "on_demand",
   "fetch_before_modification": "only when user instructs"
 }
