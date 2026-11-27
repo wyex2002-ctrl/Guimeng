@@ -1278,7 +1278,11 @@
     "maintenance/patch_v346.py",
     "maintenance/test_v346.py",
     "maintenance/package_v346.py",
-    "maintenance/player_changes_v346.json"
+    "maintenance/player_changes_v346.json",
+    "maintenance/runtime_v347.lua",
+    "maintenance/patch_v347.py",
+    "maintenance/test_v347.py",
+    "maintenance/player_changes_v347.json"
   ],
   "generated_reports": [
     "maintenance/build_v300.json",
@@ -1418,7 +1422,11 @@
     "maintenance/build_v346.json",
     "maintenance/validation_v346.json",
     "docs/reports/build_v346.json",
-    "docs/reports/validation_v346.json"
+    "docs/reports/validation_v346.json",
+    "maintenance/build_v347.json",
+    "maintenance/validation_v347.json",
+    "docs/reports/build_v347.json",
+    "docs/reports/validation_v347.json"
   ],
-  "version": "v1.346"
+  "version": "v1.347"
 }

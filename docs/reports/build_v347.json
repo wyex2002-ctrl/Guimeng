@@ -1,0 +1,20 @@
+{
+  "version": "v1.347",
+  "base_sha256": "16e5b454ae9f58764924d07e9eef10ba48d17579db87130dfd211b8e1c86be09",
+  "bytes": 2875286,
+  "sha256": "851140719965aa1bfc4b2fb7a3ef510659c9fe24ad86ab91927b22ad752ca832",
+  "scope": "m12 boss timers/configs + 来世续缘 runtime boss loop",
+  "runtime_v347_lua_gbk_bytes": 219892,
+  "runtime_gc_index_14_781": 218,
+  "mingying_config_12_18558_idx": 1497,
+  "chilong_timer_protos_count": 247,
+  "version_string_updates": 11,
+  "window_title_updates_m12_76": 2,
+  "changes_v347": {
+    "mingying_45s_respawn": "Updates m12/18558 #1497 (冥影魔王, ID 1377) 刷新间隔=0 -> 45 so m22 natively respawns 冥影魔王 45s after death in 火影地牢密室",
+    "chilong_queen_to_demon_45s": "Patches all 247 copies of 随着剧烈的震动 timer proto in m12 (PC 9/17/26: 300/450/150 -> 45) so killing 赤龙女王 spawns 赤龙魔王 after 45s across all difficulties",
+    "chilong_demon_to_queen_45s_loop": "Adds S.__gm_boss_cycle_boot_v347 IIFE in runtime_v347.lua wrapping 类_事件.死亡 so killing 赤龙魔王 in 赤龙城 (来世续缘) schedules a 45s countdown toast and spawns 赤龙女王 (ID 1477) via 经验倍率(50,24,nil,nil,1477,\"指定\"), looping indefinitely",
+    "retains_v346_wal_and_suppression": "Retains v1.346 native autosave suppression, v1.345 zero-mutation WAL hooks, N-key [Save], and LuaJIT 2.0 <= 200 active locals",
+    "version_window_title_sync": "Updates all version strings including OS game window title bar (m12/76) and login UI (m12/22232) to 1.347"
+  }
+}

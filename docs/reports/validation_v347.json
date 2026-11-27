@@ -1,0 +1,27 @@
+{
+  "version": "v1.347",
+  "status": "PASS",
+  "all_passed": true,
+  "sha256": "851140719965aa1bfc4b2fb7a3ef510659c9fe24ad86ab91927b22ad752ca832",
+  "tested_files": {
+    "game_v347.res": "851140719965aa1bfc4b2fb7a3ef510659c9fe24ad86ab91927b22ad752ca832",
+    "runtime_v347.lua": "a893a7a2e29c6ec5d166e6b698f8d9e976c3858d7dfc9d1338070b667b55ef7b",
+    "patch_v347.py": "57dd7459364c3dcfc1890df72696f26735942b598272eed48295b76d5da86d7c"
+  },
+  "scope": "m12 boss timers/configs + 来世续缘 runtime boss loop",
+  "checks": [
+    "outer_diff_restricted_to_12_14_30_and_trees_valid",
+    "m12_76_window_title_and_m12_22232_version_1_347_verified",
+    "m12_18558_1497_mingying_respawn_45s_verified",
+    "m12_247_chilong_queen_to_demon_45s_timers_verified",
+    "m12_37_zero_jmp_below_params_preserved",
+    "m14_253_m14_99_m14_256_wal_bytecode_hooks_verified",
+    "strict_lua51_syntax_zero_gbk_0x5c_zero_rawset_and_luajit20_200_local_audit_pass",
+    "v347_chilong_demon_to_queen_45s_loop_200x_traps_and_qianchi_isolated_pass",
+    "v346_native_autosave_suppression_200x_pass",
+    "v345_zero_gly_mutation_wal_and_3s_autosave_200x_pass",
+    "v342_settings_save_btn_pass",
+    "v341_merc_skill_resp_and_v340_sanity_pass",
+    "v339_v338_v335_regressions_pass"
+  ]
+}
